@@ -1,0 +1,22 @@
+.bannerTeam{
+    background-image: url('../../Assets/Images/background/team-bg02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 34em;
+  }
+
+.bannerAbout{
+    background-image: url('../../Assets/Images/background/home-page01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 34em;
+}
+
+.bannerHome{
+    background-image: url('../../Assets/Images/background/home-page-04.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 36em;
+    /* filter: grayscale(50%); */
+    /* filter:brightness(40%); */
+}
