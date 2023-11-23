@@ -12,8 +12,9 @@ const Team = ({ className = "" }) => {
     const textAlignment = isOdd ? 'right' : 'left';
 
 return (
-    <div
-      className={`team-member__container team-member__container--${imageAlignment}`}
+  <div>
+     <div
+      className={`team-member__container flex-row lg:flex hidden team-member__container--${imageAlignment}`}
     >
       {imageAlignment === 'left' && (
         <div className="team-member__img">
@@ -40,6 +41,25 @@ return (
         </div>
       )}
     </div>
+    <div
+      className={`team-member__container flex-col lg:hidden flex   team-member__container--${imageAlignment}`}
+    >
+      {imageAlignment && (
+        <div className="team-member__img mt-[20px] mb-[-50px]">
+          <Image
+            src={require(`../../Assets/Images/team/${image}`)}
+            alt=""
+          />
+        </div>
+      )}
+      <div className={`team-member__details text-[.9em] text-${textAlignment}`}>
+        <p className="team-member__title">{title}</p>
+        <h4 className="team-member__name">{name}</h4>
+        <p className="team-member__description">{description}</p>
+      </div>
+    </div>
+  </div>
+    
   );
 };
 

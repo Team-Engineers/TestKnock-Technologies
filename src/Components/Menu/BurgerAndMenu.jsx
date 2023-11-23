@@ -4,8 +4,7 @@ import styled from "styled-components";
 const StyledBurger = styled.button`
   position: relative;
   display: flex;
-  margin:auto 20px;
-
+  margin: auto 20px;
   flex-direction: column;
   justify-content: space-around;
   width: 1.5rem;
@@ -15,34 +14,27 @@ const StyledBurger = styled.button`
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
-
-  &:focus {
-    outline: none;
+  z-index: 100;
+  div:first-child {
+    transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
   }
 
+  div:nth-child(2) {
+    opacity: ${({ open }) => (open ? "0" : "1")};
+    transform: ${({ open }) => (open ? "translateX(0.5rem)" : "translateX(0)")};
+  }
+
+  div:nth-child(3) {
+    transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+  }
   div {
     width: 1.5rem;
     height: 0.125rem;
-    background: ${({ open }) => (open ? "#0D0C1D" : "#EFFFFA")};
+    background: ${({ open }) => (open ? "white" : "white")};
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
     transform-origin: 1px;
-
-    :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
-    }
-
-    :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) =>
-        open ? "translateX(20px)" : "translateX(0)"};
-    }
-
-    :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
   }
 `;
 
@@ -52,16 +44,16 @@ const StyledMenu = styled.nav`
   justify-content: center;
   backdrop-filter: blur(10px);
   backdrop-filter: blur(20px);
-  transform: ${({ open }) =>
-  open ? "translateX(0)" : "translateX(100%)"};
-  right: 0; 
-  height: 60vh;100
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  right: 0;
+  height: 60vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
   top: 0;
-  transition: transform 0.3s ease-in-out;
+  background: black;
 
+  transition: transform 0.3s ease-in-out;
   @media (max-width: 576px) {
     width: 50%;
   }
@@ -74,7 +66,6 @@ const StyledMenu = styled.nav`
     color: white;
     text-decoration: none;
     transition: color 0.3s linear;
-
     @media (max-width: 576px) {
       font-size: 1rem;
       text-align: center;
@@ -88,14 +79,9 @@ const StyledMenu = styled.nav`
 
 const BurgerAndMenu = () => {
   const [open, setOpen] = useState(false);
-
-  const handleToggle = () => {
-    setOpen(!open);
-  };
-
   return (
     <>
-      <StyledBurger open={open} onClick={handleToggle}>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />

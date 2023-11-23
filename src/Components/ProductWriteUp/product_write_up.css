@@ -33,6 +33,23 @@
     line-height: 1.75rem;
   } */
   
+ .eeee{
+  background-color: #3498db6e; /* Set the background color */
+  border: none;
+  color: beige;
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+
+  &:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+ }
   .product_wp {
     margin: auto 60px;
     font-family: sans-serif;

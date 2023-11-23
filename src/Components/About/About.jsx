@@ -36,8 +36,9 @@ const About = ({ className = "" }) => {
     const textAlignment = isOdd ? 'right' : 'left';
 
 return (
-    <div
-      className={`about-member__container flex flex-col lg:flex-row about-member__container--${imageAlignment}`}
+  <div>
+<div
+      className={`about-member__container hidden  md:flex flex-col lg:flex-row about-member__container--${imageAlignment}`}
     >
       {imageAlignment === 'left' && (
         <div className="about-member__img">
@@ -62,9 +63,26 @@ return (
           />
         </div>
       )}
-
-      
     </div>
+    <div
+      className={`about-member__container md:hidden flex flex-col lg:flex-row about-member__container--${imageAlignment}`}
+    >
+      {imageAlignment && (
+        <div className="about-member__img">
+          <Image
+            src={require(`../../Assets/Images/about/${image}`)}
+            alt=""
+          />
+        </div>
+      )}
+      <div className={`about-member__details text-${textAlignment}`}>
+        <p className="about-member__title">{title}</p>
+        <p className="about-member__description">{description}</p>
+      </div>
+    </div>
+  </div>
+    
+    
   );
 };
 
@@ -79,30 +97,21 @@ return (
       </Row>
     </Container>
 
-    <div className="py-[10px] px-4 mx-auto lg:mr-[70px] lg:ml-[70px] ml:[10px] mr-[10px] ">
+    <div className="py-[10px]">
   <div className="flex justify-center">
-    <h2 className="font-bold text-[40px] p-[30px]">OUR TEAM</h2>
+    <h2 className="font-bold text-[40px]  max-md:mt-[40px] p-[30px]">OUR TEAM</h2>
   </div>
-  <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-6">
-    <div className=" h-[300px] my-0 hover:scale-90 duration-100 relative">
+  <div className="max-w-[1240px]  mx-auto md:grid grid-cols-2 gap-6">
+    <div className=" h-[300px] mx-auto max-w-[550px] my-0 hover:scale-90 duration-100 relative">
       <Image
         src={require('../../Assets/Images/team/devendra_singh_rana.jpeg')}
         alt=""
-        className="h-[280px]"
+        className="h-full w-full object-cover"
         layout="fill"
         objectFit="cover"
       />
     </div>
-    <div className=" h-[300px] my-0  hover:scale-90 duration-100 relative">
-      <Image
-        src={require('../../Assets/Images/team/nitya_dwivedi.jpg')}
-        alt=""
-        className="h-[280px] relative left-[8vw]"
-        layout="fill"
-        objectFit="cover"
-      />
-    </div>
-    <div className="h-[300px] p-[10px] text-justify about-member__description">
+    <div className="h-[300px] md:hidden block p-[10px] text-justify about-member__description">
     <div className="flex flex-col justify-center my-[10px] ">
         <h2 className="font-bold text-[30px] text-indigo-600	 ">Founder<p className="font-bold text-black text-[20px]">Devendra Singh Rana</p>
 </h2>
@@ -110,7 +119,32 @@ return (
       <h>
       Devendra Singh Rana, our Founder, brings a wealth of international expertise, having spearheaded transformative initiatives at an esteemed Australian firm. His tenure as MTS 1 at Fyle Company further solidifies his strategic prowess in shaping technological landscapes, and fostering a culture of excellence. His visionary leadership and extensive industry experience drive the technological prowess that underpins our innovation.      </h>
     </div>
-    <div className="h-[300px] p-[10px] text-justify about-member__description">
+    <div className="h-[300px] mx-auto  max-w-[400px] max-md:my-5 bg-black hover:scale-90 duration-100 relative flex items-center">
+  <Image
+    src={require('../../Assets/Images/team/nitya_dwivedi.jpg')}
+    alt=""
+    className="h-full mx-auto"
+    layout="fill"
+  />
+</div>
+
+
+    <div className="h-[300px] md:hidden block  p-[10px] text-justify about-member__description">
+    <div className="flex flex-col justify-center my-[10px] ">
+        <h2 className="font-bold text-[30px] text-indigo-600	">Co-Founder<p className="text-black font-bold text-[20px]">Nitya Dwivedi</p>
+</h2>
+      </div>       <h>
+      Nitya Dwivedi, an IIT Delhi alumna, embodies the epitome of a versatile full stack developer. With a year of invaluable experience, she adeptly navigates both frontend and backend realms while occasionally delving into technical content creation. Nitya's multifaceted skill set fuels our innovation engine.      </h>
+    </div>
+    <div className="h-[300px] md:block hidden p-[10px] text-justify about-member__description">
+    <div className="flex flex-col justify-center my-[10px] ">
+        <h2 className="font-bold text-[30px] text-indigo-600	 ">Founder<p className="font-bold text-black text-[20px]">Devendra Singh Rana</p>
+</h2>
+      </div>    
+      <h>
+      Devendra Singh Rana, our Founder, brings a wealth of international expertise, having spearheaded transformative initiatives at an esteemed Australian firm. His tenure as MTS 1 at Fyle Company further solidifies his strategic prowess in shaping technological landscapes, and fostering a culture of excellence. His visionary leadership and extensive industry experience drive the technological prowess that underpins our innovation.      </h>
+    </div>
+    <div className="h-[300px] md:block hidden p-[10px] text-justify about-member__description">
     <div className="flex flex-col justify-center my-[10px] ">
         <h2 className="font-bold text-[30px] text-indigo-600	">Co-Founder<p className="text-black font-bold text-[20px]">Nitya Dwivedi</p>
 </h2>
