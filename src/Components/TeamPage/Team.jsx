@@ -19,8 +19,8 @@ return (
         <div className="team-member__img">
           <Image
             // src={require(`..//images/team/${image}`).default.src}
-            // src={require(`../../Assets/Images/team/${image}`).default.src}
-            src={require('../../Assets/Images/team/yojana_tripathi.jpeg')}
+            src={require(`../../Assets/Images/team/${image}`)}
+            // src={require('../../Assets/Images/team/yojana_tripathi.jpeg')}
             alt=""
           />
         </div>
@@ -33,8 +33,8 @@ return (
       {imageAlignment === 'right' && (
         <div className="team-member__img">
           <Image
-            // src={require(`../../Assets/Images/team/${image}`).default.src}
-            src={require('../../Assets/Images/team/yojana_tripathi.jpeg')}
+            src={require(`../../Assets/Images/team/${image}`)}
+            // src={require('../../Assets/Images/team/yojana_tripathi.jpeg')}
             alt=""
           />
         </div>
