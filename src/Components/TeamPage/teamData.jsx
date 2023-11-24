@@ -1,36 +1,78 @@
+// const teamData = {
+//   title: "meet the team",
+//   tagline: "people behind it",
+//   teams: [
+//     {
+//       id: 1,
+//       image: "ashutosh_mishra.jpeg",
+//       title: "Chief Technical Officer",
+//       name: "Ashutosh Mishra",
+//       description:
+//         "Ashutosh Mishra, our tech luminary fresh from the esteemed halls of IIT Delhi, brings over 3 years of coding brilliance to the table. With finesse that could rival a magician, he effortlessly navigates the realms of frontend and backend, transforming lines of code into symphonies of innovation. Ashutosh doesn't just debug; he conducts thorough investigations that could put Sherlock Holmes to shame. His knack for making code sing and dance is so impressive; even Alexa takes notes on his programming wisdom!",
+//     },
+//     {
+//       id: 2,
+//       image: "yojana_tripathi.jpeg",
+//       title: "Engineering Manager",
+//       name: "Yojana Tripathi",
+//       description:
+//         "Yojana Tripathi, our tech virtuoso from IIT Delhi, brings over 2 years of expertise akin to a digital maestro. Crafting seamless user experiences is her forte; it's like she's conducting a symphony with pixels and code. Her QA skills? Well, let's just say she finds bugs faster than Google finds search results! Yojana's dedication to perfection is so intense; she once made a line of code pause and admire its own elegance. Her attention to detail is so sharp; she can spot a coding typo from the space station!",
+//     },
+//     {
+//       id: 3,
+//       image: "ayushi_dixit.jpeg",
+//       title: "Staff Engineer",
+//       name: "Ayushi Dixit",
+//       description:
+//         "Ayushi Dixit, our coding dynamo fresh from IIT Delhi, doesn't just write code; she engineers digital symphonies. Her knack for transforming complex problems into elegant solutions is quicker than a Formula 1 pit stop. Ayushi's coding prowess is the stuff of legends; she once debugged a system so swiftly, the bugs apologized for taking up her time! Her code efficiency is so impressive; it once optimized itself while she was grabbing a cup of coffee!",
+//     },
+//     {
+//       id: 4,
+//       image: "ashutosh_mishra.jpeg",
+//       title: "Product Manager",
+//       name: "Vidhi Gupta",
+//       description:
+//         "Vidhi Gupta, the design virtuoso from IIT Delhi, doesn't merely craft designs; she sculpts user experiences that feel like a digital embrace. Her eye for design is so sharp; she once made an icon blush with its own elegance! Vidhi's dedication to pixel-perfect perfection is such that even color gradients envy her consistency. Her attention to detail is so remarkable; she once spotted a misplaced pixel from across the room!",
+//     },
+//   ],
+// };
+
+// export default teamData;
+
 const teamData = {
-    title: "meet the team",
-    tagline: "people behind it",
-    teams: [
-      {
-        id: 1,
-        image: "ashutosh_mishra.jpeg",
-        title: "Chief Technical Officer",
-        name: "Ashutosh Mishra",
-        description: "Ashutosh Mishra, graduate from IIT Delhi, stands out as a seasoned developer with over 3 years of expertise. His versatility shines as he seamlessly navigates both frontend and backend development, contributing significantly to our robust technical infrastructure. He harmonizes technical finesse with a keen eye for detail. Ashutosh's contributions play a pivotal role in shaping robust, end-to-end solutions.",
-      },
-      {
-        id: 2,
-        image: "yojana_tripathi.jpeg",
-        title: "Engineering Manager",
-        name: "Yojana Tripathi",
-        description: "Yojana Tripathi, an IIT Delhi graduate, excels in frontend development, channeling over 2 years of experience into creating seamless user experiences. Her dual role in QA ensures our products not only look exceptional but also perform flawlessly. Her dedication to crafting seamless user experiences and ensuring product quality elevates our offerings to unparalleled standards.",
-      },
-      {
-        id: 3,
-        image: "ayushi_dixit.jpeg",
-        title: "Staff Engineer",
-        name: "Ayushi Dixit",
-        description: "Ayushi Dixit, an IIT Delhi alumna, is a dynamic force as a full stack developer, leveraging 2 years of experience to architect holistic solutions. Ayushi's proficiency spans across frontend and backend realms, contributing significantly to our versatile and high-performing products. Her innate ability to decode complex problems into elegant and scalable solutions has been pivotal in the success of our projects.",
-      },
-      {
-        id: 4,
-        image: "ashutosh_mishra.jpeg",
-        title: "Product Manager",
-        name: "Vidhi Gupta",
-        description: "Vidhi Gupta, an IIT Delhi graduate, excels in crafting captivating designs and specializes in frontend development. With over 2 years of experience, her keen eye for design and meticulous approach extend to her role in Quality Assurance, ensuring our products maintain the highest standards of excellence and  harmonize both aesthetics and functionality seamlessly.",
-      },
-    ],
-  };
-  
-  export default teamData;
+  title: "meet the team",
+  tagline: "people behind it",
+  teams: [
+    {
+      id: 3,
+      image: "ashutosh_mishra011.jpeg",
+      title: "Chief Technical Officer",
+      name: "Ashutosh Mishra",
+      description: "Ashutosh Mishra, our tech luminary fresh from the esteemed halls of IIT Delhi, brings over 3 years of coding brilliance to the table. With finesse that could rival a magician, he effortlessly navigates the realms of frontend and backend, transforming lines of code into symphonies of innovation. Ashutosh doesn't just debug; he conducts thorough investigations that could put Sherlock Holmes to shame. His knack for making code sing and dance is so impressive; even Alexa takes notes on his programming wisdom!",
+    },
+    {
+      id: 4,
+      image: "yojana_tripathi011.jpeg",
+      title: "Engineering Manager",
+      name: "Yojana Tripathi",
+      description: "Yojana Tripathi, our tech virtuoso from IIT Delhi, brings over 2 years of expertise akin to a digital maestro. Crafting seamless user experiences is her forte; it's like she's conducting a symphony with pixels and code. Her QA skills? Well, let's just say she finds bugs faster than Google finds search results! Yojana's dedication to perfection is so intense; she once made a line of code pause and admire its own elegance. Her attention to detail is so sharp; she can spot a coding typo from the space station!",
+    },
+    {
+      id: 5,
+      image: "ayushi_dixit011.jpeg",
+      title: "Staff Engineer",
+      name: "Ayushi Dixit",
+      description: "Ayushi Dixit, our coding dynamo fresh from IIT Delhi, doesn't just write code; she engineers digital symphonies. Her knack for transforming complex problems into elegant solutions is quicker than a Formula 1 pit stop. Ayushi's coding prowess is the stuff of legends; she once debugged a system so swiftly, the bugs apologized for taking up her time! Her code efficiency is so impressive; it once optimized itself while she was grabbing a cup of coffee!",
+    },
+    {
+      id: 6,
+      image: "ashutosh_mishra011.jpeg",
+      title: "Product Manager",
+      name: "Vidhi Gupta",
+      description: "Vidhi Gupta, the design virtuoso from IIT Delhi, doesn't merely craft designs; she sculpts user experiences that feel like a digital embrace. Her eye for design is so sharp; she once made an icon blush with its own elegance! Vidhi's dedication to pixel-perfect perfection is such that even color gradients envy her consistency. Her attention to detail is so remarkable; she once spotted a misplaced pixel from across the room!",
+    },
+  ],
+};
+
+
+export default teamData;

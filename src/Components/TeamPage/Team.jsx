@@ -1,80 +1,36 @@
 import React from "react";
-import { Container, Image, Row } from "react-bootstrap";
 import teamData from "./teamData";
-import './teamPage.css';
-
-const { title, tagline, teams } = teamData;
-
-const Team = ({ className = "" }) => {
-  const renderMember = ({ id, name, title, image, description }) => {
-    const isOdd = id % 2 !== 0;
-    const imageAlignment = isOdd ? 'left' : 'right';
-    const textAlignment = isOdd ? 'right' : 'left';
-
-return (
-  <div>
-     <div
-      className={`team-member__container flex-row lg:flex hidden team-member__container--${imageAlignment}`}
-    >
-      {imageAlignment === 'left' && (
-        <div className="team-member__img">
-          <Image
-            // src={require(`..//images/team/${image}`).default.src}
-            src={require(`../../Assets/Images/team/${image}`)}
-            // src={require('../../Assets/Images/team/yojana_tripathi.jpeg')}
-            alt=""
-          />
-        </div>
-      )}
-      <div className={`team-member__details text-${textAlignment}`}>
-        <p className="team-member__title">{title}</p>
-        <h4 className="team-member__name">{name}</h4>
-        <p className="team-member__description">{description}</p>
+import "./teamPage.css"
+const TeamMember = ({ id, title, name, description, image }) => {
+  const isOdd = id % 2 !== 0;
+  return (
+    <div className="team_main">
+      <div className={`team-member ${isOdd ? "odd" : "even"}`}>
+      <div className="team-info lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[600px] max-w-[400px]" >
+        <h2 className="team_title">{title}</h2>
+        <p className="team_name 2xl:text-[5em] xl:text-[4em] lg:text-[4em] text-[4em]">{name}</p>
+        <p className="team_description 2xl:text-[1.3em] xl:text-[1em] lg:text-[1em] text-[1em]">{description}</p>
       </div>
-      {imageAlignment === 'right' && (
-        <div className="team-member__img">
-          <Image
-            src={require(`../../Assets/Images/team/${image}`)}
-            // src={require('../../Assets/Images/team/yojana_tripathi.jpeg')}
-            alt=""
-          />
-        </div>
-      )}
-    </div>
-    <div
-      className={`team-member__container flex-col lg:hidden flex   team-member__container--${imageAlignment}`}
-    >
-      {imageAlignment && (
-        <div className="team-member__img mt-[20px] mb-[-50px]">
-          <Image
-            src={require(`../../Assets/Images/team/${image}`)}
-            alt=""
-          />
-        </div>
-      )}
-      <div className={`team-member__details text-[.9em] text-${textAlignment}`}>
-        <p className="team-member__title">{title}</p>
-        <h4 className="team-member__name">{name}</h4>
-        <p className="team-member__description">{description}</p>
+      <div className="team-image  lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[600px] max-w-[400px]">
+        <img className="team-image rounded-[20px]" src={require(`../../Assets/Images/team/${image}`)}
+ alt={name} />
       </div>
     </div>
-  </div>
+    </div>
     
   );
 };
-
-return (
-  <section className={`team-one-new ${className}`}>
-    <Container>
-      {!className && (
-        <h2 title={title} className="text-center" />
-      )}
-      <Row>
-        {teams.slice(0, className ? undefined : 6).map(renderMember)}
-      </Row>
-    </Container>
-  </section>
-);
+  
+const Team = () => {
+  return (
+    <div className="team-container mb-[100px]">
+      <div className="team-members">
+        {teamData.teams.map((member) => (
+          <TeamMember key={member.id} {...member} />
+        ))}
+      </div>
+    </div>
+  );
 };
 
 
