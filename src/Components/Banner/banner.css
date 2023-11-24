@@ -10,13 +10,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     max-height: 34em;
+    filter:grayscale(40%);
 }
 
 .bannerHome{
-    background-image: url('../../Assets/Images/background/home-page-04.jpg');
+    background-image: url('../../Assets/Images/background/homebanner005.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
-    max-height: 36em;
+    text-transform: uppercase;
+    /* filter */
+    
     /* filter: grayscale(50%); */
     /* filter:brightness(40%); */
 }

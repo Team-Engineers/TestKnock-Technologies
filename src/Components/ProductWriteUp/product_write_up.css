@@ -1,0 +1,66 @@
+/* .image-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-slider img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .image-slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image-slider button:focus {
+    outline: none;
+  }
+  
+  .image-slider button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  } */
+  
+ .eeee{
+  background-color: #3498db6e; /* Set the background color */
+  border: none;
+  color: beige;
+  border-radius: 50%; /* Make it a circle */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Adjust the width and height as needed */
+  height: 40px;
+  transition: background-color 0.3s ease; /* Add a smooth transition */
+
+  &:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+ }
+  .product_wp {
+    margin: auto 60px;
+    font-family: sans-serif;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    @media (max-width:786px) {
+        margin: auto 30px;
+
+    }
+    
+
+  }

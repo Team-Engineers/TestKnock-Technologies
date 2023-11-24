@@ -1,0 +1,70 @@
+.team-one-new{
+    margin: auto 100px;
+  }
+  
+  .team-member {
+    margin: auto 100px;
+    margin-top:60px;
+    margin-bottom: 10px;
+    @media (max-width:786px) {
+      margin: auto 10px;
+    }
+  }
+  
+  .team-member__container {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .team-member__img img {
+    max-width: 350px; /* Adjust image size as needed */
+    max-height: 400px;
+
+    @media (max-width:786px) {
+      max-width: 300px; /* Adjust image size as needed */
+      max-height: 300px;
+    }
+    margin: auto 20px;
+    border-radius: 40px; /* Make images round */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 30px;
+  }
+  
+  .team-member__details {
+    padding: 70px 30px; 
+    text-align: justify;
+    border-radius: 30px;
+    width: 100vw;
+    max-height: 330px;
+  }
+  
+  .team-member__title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #223c86;
+    text-transform: uppercase;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+  }
+  
+  .team-member__name {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin-bottom: 12px;
+  }
+  
+  .team-member__description {
+    font-size: 1.1em;
+    line-height: 1.2;
+    max-height: calc(1.4 * 8); /* Maximum of 8 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .team-member__description:hover {
+    max-height: none; /* Expand description on hover */
+    overflow: visible;
+  }
+  
