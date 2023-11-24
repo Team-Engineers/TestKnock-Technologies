@@ -13,16 +13,18 @@
   padding: 20px;
   color: white;
 }
-
+.cardimage {
+  height: 100%;
+  background-size: cover;
+}
 .App-intro {
   font-size: large;
 }
 
-.logo-header{
+.logo-header {
   justify-content: space-between;
   display: flex;
   align-items: center;
-
 }
 
 @keyframes App-logo-spin {
@@ -33,7 +35,11 @@
     transform: rotate(360deg);
   }
 }
-
+.mySwiper img {
+  background-size: cover;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+

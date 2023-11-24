@@ -28,15 +28,17 @@ const HeaderNew = () => {
     >
       <div className="flex items-center ">
         <div className="mr-4">
-         <a href="/"> <img
-            src="./logo01.png"
-            alt="Logo"
-            className="max-h-[90px] max-w-[150px] px-5" 
-          />
+          <a href="/">
+            {" "}
+            <img
+              src="./logo01.png"
+              alt="Logo"
+              className="max-h-[90px] max-w-[150px] px-5"
+            />
           </a>
-        </div> 
         </div>
-        <div>
+      </div>
+      <div>
         <nav className="flex space-x-10 px-10">
           <NavLink to="/" className="text-white hover:text-gray-300">
             Home
@@ -54,9 +56,8 @@ const HeaderNew = () => {
             Contact
           </NavLink>
         </nav>
-        </div>
+      </div>
     </header>
-
   );
 };
 
