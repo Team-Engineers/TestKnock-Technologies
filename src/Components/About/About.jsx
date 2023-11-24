@@ -104,7 +104,7 @@ return (
   <div className="max-w-[1240px]  mx-auto md:grid grid-cols-2 gap-6">
     <div className=" h-[300px] mx-auto max-w-[550px] my-0 hover:scale-90 duration-100 relative">
       <Image
-        src={require('../../Assets/Images/team/devendra_singh_rana.jpeg')}
+        src={require('../../Assets/Images/team/devendra_singh_rana07.png')}
         alt=""
         className="h-full w-full object-cover"
         layout="fill"
@@ -119,9 +119,11 @@ return (
       <h>
       Devendra Singh Rana, our Founder, brings a wealth of international expertise, having spearheaded transformative initiatives at an esteemed Australian firm. His tenure as MTS 1 at Fyle Company further solidifies his strategic prowess in shaping technological landscapes, and fostering a culture of excellence. His visionary leadership and extensive industry experience drive the technological prowess that underpins our innovation.      </h>
     </div>
-    <div className="h-[300px] mx-auto  max-w-[400px] max-md:my-5 bg-black hover:scale-90 duration-100 relative flex items-center">
+    <div className="h-[300px] mx-auto  max-w-[550px] max-md:my-5 hover:scale-90 duration-100 relative flex items-center">
+    {/* <div className=" h-[300px] mx-auto max-w-[550px] my-0 hover:scale-90 duration-100 relative mt-0"> */}
+
   <Image
-    src={require('../../Assets/Images/team/nitya_dwivedi.jpg')}
+    src={require('../../Assets/Images/team/nitya_dwivedi008.png')}
     alt=""
     className="h-full mx-auto"
     layout="fill"

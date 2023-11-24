@@ -18,8 +18,8 @@
   }
   
   .team-member__img img {
-    max-width: 450px; /* Adjust image size as needed */
-    max-height: 500px;
+    max-width: 350px; /* Adjust image size as needed */
+    max-height: 400px;
 
     @media (max-width:786px) {
       max-width: 300px; /* Adjust image size as needed */
