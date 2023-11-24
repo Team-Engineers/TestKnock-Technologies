@@ -11,8 +11,14 @@ body {
   /* border-bottom: 2px solid black; */
   z-index: 10;
   position: relative;
-  box-shadow: 5px  5px rgba(138, 62, 62, 0.664) ;
+  box-shadow: 5px 5px rgba(138, 62, 62, 0.664);
 }
 .banner {
   z-index: -1;
+}
+
+.contact-page {
+  background-image: url("../public/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
