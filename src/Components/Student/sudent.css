@@ -1,0 +1,126 @@
+.student3 {
+  position: relative;
+  background-image: url("../../Assets/Images/offerings/student-3.jpg");
+}
+
+.student3::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../Assets/Images/offerings/student-3.jpg"); 
+  z-index: 1;
+}
+
+.student3::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  z-index: 2;
+}
+
+.student2 {
+  position: relative;
+  background-image: url("../../Assets/Images/offerings/student-2.jpg");
+}
+
+.student2::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../Assets/Images/offerings/student-2.jpg"); 
+  z-index: 1;
+}
+
+.student2::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%;
+  border: 2px solid #fff; 
+}
+.student1 {
+  position: relative;
+  background-image: url("../../Assets/Images/offerings/student-1.jpg");
+}
+
+.student1::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../Assets/Images/offerings/student-1.jpg"); 
+  z-index: 1;
+}
+
+
+.student1::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%;
+  border: 2px solid #fff; 
+  z-index: 2;
+}
+
+.student4 {
+  position: relative;
+  background-image: url("../../Assets/Images/offerings/student-4.jpg");
+}
+
+.student4::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("../../Assets/Images/offerings/student-4.jpg"); 
+  z-index: 1;
+}
+
+.student4::after {
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px; 
+  height: 110px; 
+  border-radius: 50%;
+  border: 2px solid #fff; 
+  z-index: 2;
+}
