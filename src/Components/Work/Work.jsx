@@ -3,7 +3,7 @@ import "./work.css";
 
 const Work = () => {
   return (
-    <div className="py-[100px] px-4 ">
+    <div className="py-[100px] px-4 overflow-hidden ">
       <div className="flex justify-center ">
         <p className=" text-[30px] text-center font-sans ">
           What We Do <br></br>
