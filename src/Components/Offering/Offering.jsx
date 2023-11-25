@@ -1,99 +1,88 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import "./offering.css";
+
+const fadeIn = (direction, type, delay, duration) => ({
+  hidden: {
+    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
+    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    y: 0,
+    opacity: 1,
+    transition: {
+      type,
+      delay,
+      duration,
+      ease: "easeOut",
+    },
+  },
+});
+
+const staggerContainer = (staggerChildren, delayChildren) => ({
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren,
+      delayChildren,
+    },
+  },
+});
 
 const Offering = () => {
+  const controls1 = useAnimation();
+  const controls2 = useAnimation();
+  const controls3 = useAnimation();
+
+  const [ref1, inView1] = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  const [ref2, inView2] = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  const [ref3, inView3] = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+  useEffect(() => {
+    if (inView2) {
+      controls2.start({ opacity: 1 });
+    } else {
+      controls2.start({ opacity: 0.5 });
+    }
+  }, [controls2, inView2]);
+
+  useEffect(() => {
+    if (inView3) {
+      controls3.start({ opacity: 1 });
+    } else {
+      controls3.start({ opacity: 0.5 });
+    }
+  }, [controls3, inView3]);
+
   return (
-    <div className="w-full bg-white py-16 px-4">
-      <div className="flex justify-center mb-10">
-        <h2 className="font-bold text-4xl font-sans">Top Quality Content</h2>
-      </div>
-      <div className="max-w-[1240px] mx-auto">
-        <div className="flex justify-center">
-          <h2 className="text-green-800  text-4xl mb-4 font-serif">
-            Our Content Offering
-          </h2>
-        </div>
-        <p className=" text-lg text-justify">
-          Our content caters to students in Class 9-10, Class 11-12, and
-          College, providing a diverse range of subjects and topics tailored to
-          meet the educational needs of students in different stages of their
-          academic journey.<br></br>
-          <strong>For Class 9-10:</strong> Our content includes subjects such as
-          Science, Maths, and Current Affairs, offering comprehensive learning
-          resources to help students build a strong foundation.<br></br>
-          <strong>For Class 11-12:</strong> Dive deeper into subjects like
-          Maths, General English, Logical Reasoning, Current Affairs, Polity,
-          History, Geography, and Economics. Our content is designed to prepare
-          students for higher-level examinations and enhance their critical
-          thinking skills.<br></br>
-          <strong>For College Students (Tech):</strong> Specialized content for
-          technical streams covering topics like Quantitative Aptitude, Verbal
-          Ability, Reading, Comprehension, Logical Reasoning, Data
-          Interpretation, and more. We provide a holistic approach to support
-          students in their tech-related studies.<br></br>
-          <strong>For College Students (Non-Tech):</strong> Tailored content for
-          non-tech streams, including Quantitative Aptitude, Verbal Ability,
-          Reading, Comprehension, Logical Reasoning, Data Interpretation, and
-          General Awareness. Our offerings ensure a well-rounded learning
-          experience for students pursuing non-technical disciplines. Immerse
-          yourself in a learning journey designed to make education interactive,
-          enjoyable, and conceptually sound. Whether you're preparing for exams
-          or simply eager to expand your knowledge, our content offering brings
-          subjects to life, making learning a dynamic and fulfilling experience.
-        </p>
-      </div>
-      <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-6 py-10">
-        <div className="shadow-xl h-[550px] w-[400px] my-4 mx-[100px] bg-green-200  hover:scale-90 duration-100 overflow-hidden rounded-3xl">
-          <h2 className="text-3xl font-bold text-center py-8">School</h2>
-          <p className="text-[25px] text-center mx-10">Class 9-10</p>
-          <p className="text-[20px] mx-6 my-4">i. Science</p>
-          <p className="text-[20px] mx-6 my-4">ii. Maths</p>
-          <p className="text-[20px] mx-6 my-4">iii. Current Affairs</p>
-        </div>
-        <div className="shadow-xl h-[550px] w-[400px] my-4 mx-[80px] bg-yellow-100  hover:scale-90 duration-100 overflow-hidden rounded-3xl">
-          <h2 className="text-3xl font-bold text-center py-8">School</h2>
-          <p className="text-[25px] text-center mx-10">Class 11-12</p>
-          <p className="text-[20px] mx-6 my-4">i. Maths</p>
-          <p className="text-[20px] mx-6 my-4">ii. General English</p>
-          <p className="text-[20px] mx-6 my-4">iii. Logical Reasoning</p>
-          <p className="text-[20px] mx-6 my-4">iv. Current Affairs</p>
-          <p className="text-[20px] mx-6 my-4">v. Polity</p>
-          <p className="text-[20px] mx-6 my-4">vi. History</p>
-          <p className="text-[20px] mx-6 my-4">vii. Geography</p>
-          <p className="text-[20px] mx-6 my-4">viii. Economics</p>
-        </div>
-        <div className="shadow-xl h-[550px] w-[400px] my-4 mx-[100px] bg-yellow-100  hover:scale-90 duration-100 overflow-hidden rounded-3xl">
-          <h2 className="text-3xl font-bold text-center py-8">Collage</h2>
-          <p className="text-[25px] text-center mx-10">Tech</p>
-          <p className="text-[20px] mx-6 my-4">i. Quantitative Aptitude</p>
-          <p className="text-[20px] mx-6 my-4">
-            ii. Verbal Ability and Reading
-          </p>
-          <p className="text-[20px] mx-6 my-4">iii. Comprehension</p>
-          <p className="text-[20px] mx-6 my-4">iv. Logical Reasoning</p>
-          <p className="text-[20px] mx-6 my-4">v. Data Interpretation</p>
-        </div>
-        <div className="shadow-xl h-[550px] w-[400px] my-4 mx-[80px] bg-green-200 hover:scale-90 duration-100  overflow-hidden rounded-3xl">
-          <h2 className="text-3xl font-bold text-center py-8">Collage</h2>
-          <p className="text-[25px] text-center mx-10">Non-Tech</p>
-          <p className="text-[20px] mx-6 my-4">i. Quantitative Aptitude</p>
-          <p className="text-[20px] mx-6 my-4">
-            ii. Verbal Ability and Reading
-          </p>
-          <p className="text-[20px] mx-6 my-4">iii. Comprehension</p>
-          <p className="text-[20px] mx-6 my-4">iv. Logical Reasoning</p>
-          <p className="text-[20px] mx-6 my-4">v. Data Interpretation</p>
-          <p className="text-[20px] mx-6 my-4">v. General Awareness</p>
-        </div>
-      </div>
-      <div className="flex justify-center mb-10 py-12">
-        <h2 className=" text-4xl font-bold font-sans">
-          End-To-End Tech Solution
-        </h2>
-      </div>
-      <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-4 py-4">
-        <div className="shadow-xl h-[400px] w-[600px] my-4 bg-gray-200 hover:scale-90 duration-100 overflow-hidden rounded-3xl">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      animate="show"
+      className="w-full bg-white py-16 px-4"
+    >
+      <p className=" text-[40px] text-center font-sans ">OUR SERVICES</p>
+      <motion.div
+        className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-6 py-10 "
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        ref={ref1}
+        animate={controls1}
+      >
+        <div className="offeringbox"></div>
+        <div className="shadow-xl h-[500px] w-[500px] my-4 bg-gray-200 overflow-hidden ">
           <img
-            src={require("../../Assets/Images/offerings/web-1.jpg")}
+            src={require("../../Assets/Images/offerings/offering1.png")}
             alt=""
             className="w-full h-full object-cover"
           />
@@ -112,13 +101,67 @@ const Offering = () => {
             client-side scripting, and user interface design.
           </p>
         </div>
-      </div>
-      <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-4 py-10">
+      </motion.div>
+
+      <motion.div
+        variants={fadeIn("left", "tween", 0.2, 1)}
+        className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-4 py-10"
+        ref={ref2}
+        animate={controls2}
+      >
+        <div className=" h-[400px] my-4 ">
+          <h2 className="text-3xl  text-left py-8 -my-10 text-green-800 font-serif">
+            We Supply
+          </h2>
+          <h2 className="text-[20px] text-left py-6">Class 9th & 10th</h2>
+          <p className=" text-sm text-justify -my-4">
+            Our company provides interactive math ,science and current affairs
+            learning tools designed to enhance the mathematical skills of
+            students in 9th and 10th grades.This holistic approach equips
+            students with a diverse skill set, laying the foundation for future
+            academic pursuits and an informed, thoughtful approach to the
+            challenges of the modern era.
+          </p>
+          <h2 className="text-[20px] text-left py-6">Class 11th & 12th</h2>
+          <p className=" text-sm text-justify -my-4">
+            Our company is dedicated to providing crafted materials in
+            mathematics, guiding students through advanced concepts like
+            calculus, algebra, and statistical analysis. In the realm of general
+            English, our resources aid in mastering literature analysis,
+            language proficiency, and effective communication. Current affairs
+            modules keep students abreast of global events, politics, and
+            socio-economic issues, fostering a well-rounded perspective. Our
+            offerings extend to logical reasoning, developing analytical
+            thinking and problem-solving skills.
+          </p>
+        </div>
+        <div className="shadow-xl h-[700px] w-[400px] my-4 mx-[100px] bg-gray-200 overflow-hidden rounded-3xl">
+          <img
+            src={require("../../Assets/Images/offerings/offering2.png")}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </motion.div>
+      <motion.div
+        className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-4 py-10"
+        variants={fadeIn("right", "tween", 0.2, 1)}
+        ref={ref3}
+        animate={controls3}
+      >
+        <div className="offeringbox1"></div>
+        <div className="shadow-xl h-[400px] w-[600px] my-10 -m-8 bg-gray-200 overflow-hidden rounded-3xl">
+          <img
+            src={require("../../Assets/Images/offerings/offering3.png")}
+            className="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
         <div className=" h-[400px] my-4">
-          <h2 className="text-3xl text-center py-8 text-green-800 font-serif">
+          <h2 className="text-3xl text-center py-8 mx-8 text-green-800 font-serif">
             Mobile App :
           </h2>
-          <p className=" text-lg text-justify">
+          <p className=" text-lg text-justify mx-10">
             In Mobile app development streamline the process, ensuring a
             seamless user experience and functionality. By addressing all facets
             of mobile app creation, these solutions empower businesses to
@@ -126,16 +169,8 @@ const Offering = () => {
             diverse needs of users in today's mobile-centric world."
           </p>
         </div>
-
-        <div className="shadow-xl h-[300px] w-[500px] my-10 bg-gray-200 hover:scale-90 duration-100 overflow-hidden rounded-3xl">
-          <p className="text-[20px] text-center mx-10"></p>
-          <img
-            src={require("../../Assets/Images/offerings/mobile-1.jpg")}
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
