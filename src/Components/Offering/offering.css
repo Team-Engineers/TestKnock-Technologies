@@ -3,3 +3,36 @@
 .font-serif {
   font-family: "Lora", serif;
 }
+
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(20px); /* Adjust this value based on your design */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.offeringbox {
+  height: 530px;
+  width: 500px;
+  border: 1px solid rgb(95, 92, 92);
+  z-index: 100;
+  position: absolute;
+  left: 10vw;
+  margin-top:3vw; 
+}
+
+.offeringbox1{
+  height: 430px;
+  width: 600px;
+  border: 1px solid rgb(49, 37, 37);
+  z-index: 100;
+  position: absolute;
+  left: 10vw;
+  margin-top:5vw; 
+}
+

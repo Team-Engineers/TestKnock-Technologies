@@ -20,9 +20,9 @@ const Work = () => {
         </div>
         <div className=" flex flex-col justify-center">
           <h3 className="text-green-800 flex justify center font-sans; text-[40px] my-10 mx-10">
-            Content
+            Content Creation
           </h3>
-          <p className=" text-[20px] mx-10 ">
+          <p className=" text-[20px] mx-10 text-justify ">
             "Providing quality and concept-based content is our commitment to
             students. We strive to offer educational materials that not only
             meet academic standards but also foster a deep understanding of the
@@ -44,7 +44,7 @@ const Work = () => {
           <h3 className="text-green-800 flex justify center font-sans; text-[40px] my-10 mx-10">
             Tech Solutions
           </h3>
-          <p className=" text-[20px]">
+          <p className=" text-[20px] text-justify">
             "Empowering businesses with innovative and tailored tech solutions
             is at the core of our mission. We specialize in crafting
             cutting-edge technology solutions that address the unique challenges

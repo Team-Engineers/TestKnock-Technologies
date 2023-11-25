@@ -36,7 +36,7 @@ const ContactContainer = styled.div`
     flex-direction: column;
   }
 
-  padding: 20px;
+  padding: 70px 40px;
   backdrop-filter: blur(5px);
   background-color: rgba(223, 207, 207, 0.073);
   border-radius: 8px;
@@ -57,8 +57,8 @@ const ImageContainer = styled.div`
 `;
 
 const ContactHeading = styled.h2`
-  text-align: center;
-  font-size: 2.5rem;
+  text-align: left;
+  font-size: 2rem;
   font-weight: 400;
   color: #ffffff;
   margin-bottom: 20px;
@@ -89,7 +89,7 @@ const FormGroup = styled.div`
 const Label = styled.label`
   display: block;
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #f7ebeb;
 `;
 

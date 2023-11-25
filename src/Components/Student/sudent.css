@@ -1,6 +1,6 @@
 .student3 {
   position: relative;
-  background-image: url("../../Assets/Images/offerings/student-3.jpg");
+  background-color: rgb(149, 223, 182);
 }
 
 .student3::before {
@@ -26,14 +26,17 @@
   width: 110px;
   height: 110px;
   border-radius: 50%;
-  border: 2px solid #fff;
   z-index: 2;
+}
+.student3:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
 
 .student2 {
   position: relative;
-  background-image: url("../../Assets/Images/offerings/student-2.jpg");
-}
+ background-color: rgb(236, 231, 166);
+} 
 
 .student2::before {
   content: "";
@@ -58,11 +61,14 @@
   width: 110px; 
   height: 110px; 
   border-radius: 50%;
-  border: 2px solid #fff; 
+}
+.student2:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
 .student1 {
   position: relative;
-  background-image: url("../../Assets/Images/offerings/student-1.jpg");
+  background-color: rgb(241, 180, 155);
 }
 
 .student1::before {
@@ -89,13 +95,16 @@
   width: 110px; 
   height: 110px; 
   border-radius: 50%;
-  border: 2px solid #fff; 
   z-index: 2;
+}
+.student1:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
 
 .student4 {
   position: relative;
-  background-image: url("../../Assets/Images/offerings/student-4.jpg");
+  background-color: rgb(170, 231, 175);
 }
 
 .student4::before {
@@ -121,6 +130,9 @@
   width: 110px; 
   height: 110px; 
   border-radius: 50%;
-  border: 2px solid #fff; 
   z-index: 2;
+}
+.student4:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
