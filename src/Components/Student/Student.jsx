@@ -8,7 +8,7 @@ const Client = () => {
         </h2>
       </div>
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-4 gap-6 md:py-10">
-        <div className="shadow-xl h-[500px] client1 my-4 bg-blue-400 hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
+        <div className="shadow-xl h-[500px] client1 my-4 bg-yellow-200 hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
@@ -39,7 +39,7 @@ const Client = () => {
             <p className="my-10">Celia Almeda</p>
           </p>
         </div>
-        <div className="shadow-xl h-[500px] client1 my-4 bg-blue-400 hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
+        <div className="shadow-xl h-[500px] client1 my-4 bg-green-200 hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
@@ -54,7 +54,7 @@ const Client = () => {
             <p className="my-10">Celia Almeda</p>
           </p>
         </div>
-        <div className="shadow-xl h-[500px] client1 my-4 bg-blue-400 hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
+        <div className="shadow-xl h-[500px] client1 my-4 bg-red-200 hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"

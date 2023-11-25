@@ -5,7 +5,7 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa";
 
-import { IoMdPin, IoMdMail,IoMdCall } from 'react-icons/io';
+import { IoMdPin, IoMdMail, IoMdCall } from 'react-icons/io';
 import { Link } from "react-router-dom";
 const Footer = () => {
   const updatedDate = new Date().getFullYear();
@@ -13,8 +13,8 @@ const Footer = () => {
     <footer class="bg-black">
       <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div>
-            <div class="flex justify-center text-teal-600 sm:justify-start">
+          <div className="grid justify-center ">  
+            <div class=" flex justify-center gap-6 lg:justify-start text-teal-600  ">
               <Link to="/">
                 <img
                   src="./logo03.png"
@@ -23,59 +23,17 @@ const Footer = () => {
                 />
               </Link>
             </div>
-
-            <p class="mt-6 max-w-md text-center leading-relaxed text-gray-600 sm:max-w-xs sm:text-left">
+            <p class="mt-6 lg:text-justify  text-center leading-relaxed text-gray-600 lg:max-w-xs ml-[20px] mr-[20px] ">
               It's a product, service, or organization that emerged or gained
               prominence after that date. TestKnock is a platform, company, or
               concept related to testing or another field, I recommend checking
               their official website, relevant publications, or news sources for
               the latest and most accurate information.
             </p>
-
-            <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  class="text-teal-700 transition hover:text-teal-400/75"
-                >
-                  <span class="sr-only">Instagram</span>
-              <FaInstagramSquare/>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  class="text-teal-700 transition hover:text-teal-400/75"
-                >
-                  <span class="sr-only">Twitter</span>
-          <FaTwitterSquare/>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  class="text-teal-700 transition hover:text-teal-400/75"
-                >
-                  <span class="sr-only">Facebook</span> 
-                  <FaFacebookSquare/>
-                </a>
-              </li>
-            </ul>
           </div>
-
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
+          <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
             <div class="text-center sm:text-left">
               <p class="text-lg font-medium text-gray-400">Company</p>
-
               <ul class="mt-8 space-y-4 text-md">
                 <li>
                   <a
@@ -112,7 +70,7 @@ const Footer = () => {
                     Offering
                   </a>
                 </li>
-                <li>
+                <li className="max-sm:hidden">
                   <a
                     class="text-gray-600 transition hover:text-gray-400/75"
                     href="/"
@@ -132,7 +90,7 @@ const Footer = () => {
                     class="text-gray-600 transition hover:text-gray-400/75"
                     href="/"
                   >
-                   Class 9th and 10th
+                    Class 9th and 10th
                   </a>
                 </li>
 
@@ -141,7 +99,7 @@ const Footer = () => {
                     class="text-gray-600 transition hover:text-gray-400/75"
                     href="/"
                   >
-                   Class 11th and 12th
+                    Class 11th and 12th
                   </a>
                 </li>
 
@@ -165,7 +123,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div class="text-center sm:text-left">
+            <div class="text-center  max-sm:hidden sm:text-left">
               <p class="text-lg font-medium text-gray-400">Contact Us</p>
 
               <ul class="mt-8 space-y-4 text-md">
@@ -174,7 +132,7 @@ const Footer = () => {
                     class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="/"
                   >
-                    <IoMdMail/>
+                    <IoMdMail />
 
 
                     <span class="flex-1 text-gray-600">info@testknock.com</span>
@@ -186,24 +144,91 @@ const Footer = () => {
                     class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="/"
                   >
-                    <IoMdCall/>
+                    <IoMdCall />
 
                     <span class="flex-1 text-gray-600">9953617456</span>
                   </a>
                 </li>
 
                 <li class="flex items-start text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-<IoMdPin/>
+                  <IoMdPin />
                   <address class="-mt-0.5 flex-1 not-italic text-gray-600">
-                  Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
-                      Sec-45, Noida , 201301
+                    Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
+                    Sec-45, Noida , 201301
                   </address>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <div class="sm:hidden block text-center mt-[6vw] sm:text-left">
+              <a href="/contact" class="text-2xl font-medium text-gray-400">Contact Us</a>
+              <ul class="mt-8 space-y-4 text-md">
+              <li class="flex items-center text-gray-600 justify-center gap-1.5 ">
+                  <a
+                    class="flex items-center text-gray-600 justify-center gap-1.5 "
+                    href="/"
+                  >
+                    <IoMdMail />
+                    <span class="flex-1 text-gray-600">info@testknock.com</span>
+                  </a>
+                </li>
+                <li class="flex items-center text-gray-600 justify-center gap-1.5 ">
+                  <a
+                    class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    href="/"
+                  >
+                    <IoMdCall />
 
+                    <span class="flex-1 text-gray-600">9953617456</span>
+                  </a>
+                </li>
+                <li class="flex items-center text-gray-600 justify-center gap-1.5 ">
+                  <address class=" flex-1 not-italic text-gray-600">
+                    Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
+                    Sec-45, Noida , 201301
+                  </address>
+                </li>
+              </ul>
+            </div>
+        <ul class="mt-8 flex text-[30px] justify-center gap-6  lg:gap-8">
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-400/75"
+            >
+              <span class="sr-only">Instagram</span>
+              <FaInstagramSquare />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-400/75"
+            >
+              <span class="sr-only">Twitter</span>
+              <FaTwitterSquare />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              class="text-teal-700 transition hover:text-teal-400/75"
+            >
+              <span class="sr-only">Facebook</span>
+              <FaFacebookSquare />
+            </a>
+          </li>
+        </ul>
         <div class="mt-12 border-t border-gray-100 pt-6">
           <div class="text-center sm:flex sm:justify-between sm:text-left">
             <p class="text-md text-gray-400">

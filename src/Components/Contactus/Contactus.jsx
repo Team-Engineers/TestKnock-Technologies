@@ -16,8 +16,6 @@ const MainContact = styled.div`
   overflow: hidden;
   position: relative;
   right: 2vw;
-  height: 50vw;
-
   @media (max-width: 786px) {
     height: 200%;
   }
@@ -26,16 +24,16 @@ const MainContact = styled.div`
 const ContactContainer = styled.div`
   position: relative;
   top: 5vw;
+  margin-bottom:20vw;
   justify-content: space-between;
   max-width: 1000px;
-  margin: 0 auto;
+  margin-left:auto;
+  margin-right:auto;
   display: flex;
   flex-direction: row;
-
   @media (max-width: 786px) {
     flex-direction: column;
   }
-
   padding: 70px 40px;
   backdrop-filter: blur(5px);
   background-color: rgba(223, 207, 207, 0.073);
@@ -45,15 +43,12 @@ const ContactContainer = styled.div`
 
 const ImageContainer = styled.div`
   z-index: 100;
-  max-width: 600px;
+  width:100%;
   position: relative;
   top: 5vw;
   height: 100%;
-
   @media (max-width: 786px) {
-    margin: auto 30px;
-    right: 0vw;
-  }
+    margin: auto 30px;  }
 `;
 
 const ContactHeading = styled.h2`
@@ -67,19 +62,13 @@ const ContactHeading = styled.h2`
 
 const ContactFormContainer = styled.div`
   display: flex;
-  width: 500px;
   position: relative;
   margin: auto 20px;
-  top: -5vw;
-
-  @media (max-width: 786px) {
-    max-width: 70vw;
+    @media (max-width: 786px) {
   }
 `;
 
 const ContactForm = styled.form`
-  width: 100%;
-  max-width: 400px;
 `;
 
 const FormGroup = styled.div`
@@ -173,7 +162,7 @@ const Contactus = () => {
     <MainContact>
       <ContactContainer>
         <ContactFormContainer>
-          <ContactForm onSubmit={handleSubmit}>
+          <ContactForm className='md:w-[30vw] w-[80vw]' onSubmit={handleSubmit}>
             <ContactHeading>Contact Us</ContactHeading>
 
             <FormGroup>
@@ -223,8 +212,9 @@ const Contactus = () => {
             </FormGroup>
           </ContactForm>
         </ContactFormContainer>
-        <ImageContainer>
+        <ImageContainer >
           <img
+          className="max-md:hidden"
             src={require("../../Assets/Images/contact/contac1.png")}
             alt="Contact"
           />

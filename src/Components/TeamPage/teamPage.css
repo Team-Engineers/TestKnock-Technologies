@@ -6,13 +6,23 @@
 }
 
 .team-member {
-  justify-content: space-around;
+  justify-content: center;
   display: flex;
-  margin-bottom: 50px;
   margin: auto 100px;
+  @media (max-width:767px) {
+    margin: auto 20px;
+  }
 }
-.team_main{
-  margin-top: 60px;
+.team_main {
+  margin-top: 5vw;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .team_main {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .team-info {
   margin-bottom: 50px;
@@ -41,9 +51,9 @@
 }
 
 .odd {
+  margin-bottom: 5vw;
   flex-direction: row-reverse;
 }
-
 .even {
   flex-direction: row;
 }

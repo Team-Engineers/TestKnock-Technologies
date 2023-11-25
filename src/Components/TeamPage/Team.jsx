@@ -5,7 +5,7 @@ const TeamMember = ({ id, title, name, description, image }) => {
   const isOdd = id % 2 !== 0;
   return (
     <div className="team_main">
-      <div className={`team-member ${isOdd ? "odd" : "even"}`}>
+      <div className={`team-member 2xl:gap-[1vw] xl:gap-[7vw] lg:gap-[7vw] gap-[8vw]  ${isOdd ? "odd" : "even"}`}>
       <div className="team-info lg:max-w-[400px] xl:max-w-[400px] 2xl:max-w-[600px] max-w-[400px]" >
         <h2 className="team_title">{title}</h2>
         <p className="team_name 2xl:text-[5em] xl:text-[4em] lg:text-[4em] text-[4em]">{name}</p>
@@ -23,7 +23,7 @@ const TeamMember = ({ id, title, name, description, image }) => {
   
 const Team = () => {
   return (
-    <div className="team-container mb-[100px]">
+    <div className="team-container ">
       <div className="team-members">
         {teamData.teams.map((member) => (
           <TeamMember key={member.id} {...member} />

@@ -56,15 +56,13 @@ return (
         <AboutMember key={member.id} {...member} />
       ))}
     </div>
-
     <div className="py-[10px] about_below">
       <div className="flex justify-center">
         <h2 className="font-bold text-[40px]  max-md:mt-[40px] p-[30px]">OUR TEAM</h2>
       </div>
       <div className="max-w-[1240px]  mx-auto md:grid grid-cols-2 gap-6">
-        <div>
-          <div className="relative ">
-            <h1 className="absolute z-[-1] lg:left-[9vw] left-[-5vw] h-[300px]  w-[300px] bg-[#4698c7] rounded-full "></h1>
+        <div className="overflow-hidden relative">
+        <div className="absolute   z-[-1] hover:scale-0 md:left-[10vh]  h-[300px] overflow-hidden  w-[300px] bg-[#4698c7] rounded-full ">
           </div>
           <div className="relative z-[1] h-[380px] mx-auto max-w-[450px] my-0 hover:scale-90 duration-100">
             <img
@@ -77,9 +75,9 @@ return (
 
           </div>
         </div>
-        <div className="h-[350px] md:hidden block p-[10px] text-justify about-member__description">
+        <div className=" md:hidden block p-[10px] text-justify about-member__description">
           <div className="flex flex-col justify-center my-[10px] ">
-            <h2 className="page_font font-bold text-[20px] text-indigo-600	 ">Founder<p className="page_font font-bold text-black text-[30px]">Devendra Singh Rana</p>
+            <h2 className="page_font font-bold text-[20px] text-indigo-600	 ">Founder<p className="page_font font-bold text-black text-[60px]">Devendra Singh Rana</p>
             </h2>
           </div>
           <h >
@@ -93,10 +91,9 @@ return (
               Pikachu parade!  </h>
         </div>
         
-        <div>
-          <div className="relative">
-            <div className="absolute lg:right-[8vw] right-[-5vw] z-[-1] hover:scale-0  h-[300px] w-[300px] bg-yellow-400 rounded-full ">
-            </div>
+        <div className="overflow-hidden relative">
+          
+          <div className="absolute overflow-hidden   z-[-1] hover:scale-0  h-[300px] md:left-[10vw] left-[1vw]   w-[300px] bg-yellow-400 rounded-full ">
           </div>
           <div className="h-[400px] mx-auto  max-w-[400px] max-md:my-5 hover:scale-90 duration-100 relative flex items-center">
             <img
@@ -107,9 +104,9 @@ return (
             />
           </div>
         </div>
-        <div className="h-[300px] md:hidden block  p-[10px] text-justify about-member__description">
+        <div className=" md:hidden block  p-[10px] text-justify about-member__description">
           <div className="flex flex-col justify-center my-[10px] ">
-            <h2 className="page_font font-bold text-[20px] text-indigo-600	">Co-Founder<p className="page_font  text-black font-bold text-[30px]">Nitya Dwivedi</p>
+            <h2 className="page_font font-bold text-[20px] text-indigo-600	">Co-Founder<p className="page_font  text-black font-bold text-[60px]">Nitya Dwivedi</p>
             </h2>
           </div>      <h>
           Introducing Nitya Dwivedi, our jack-of-all-tech-trades Co-founder!
@@ -135,7 +132,7 @@ return (
               and industry wizardry make our innovation more electric than a
               Pikachu parade! </h>
         </div>
-        <div className="h-[300px] md:block hidden p-[10px] text-justify about-member__description">
+        <div className="h-[300px] md:block  hidden p-[10px] text-justify about-member__description">
           <div className="flex flex-col justify-center my-[10px] ">
             <h2 className="page_font font-bold xl:text-[20px] 2xl:text-[25px] lg:text-[20px]  text-indigo-600 "><span className=" page_font uppercase">co-Founder</span><p className="page_font  text-black font-bold xl:text-[50px] 2xl:text-[50px] lg:text-[40px]">Nitya Dwivedi</p>
             </h2>
@@ -150,7 +147,7 @@ return (
         </div>
       </div>
       <div className="flex justify-center  ">
-        <a href="/team" className="bg-[black] w-[200px] rounded-md font-medium my-10 py-3 text-white text-center">
+        <a href="/team" className="bg-[black] w-[200px] rounded-md font-medium mt-[20vw] my-10 py-3 text-white text-center">
           Meet Our Team
         </a>
         </div>
