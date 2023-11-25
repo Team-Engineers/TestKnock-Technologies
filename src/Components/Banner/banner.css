@@ -5,23 +5,20 @@
   max-height: 34em;
 }
 
-.bannerAbout {
-  background-image: url("../../Assets/Images/background/home-page01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 34em;
-  filter: grayscale(40%);
-}
-
 .bannerHome {
   background-image: url("../../Assets/Images/background/homebanner005.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
   /* filter */
+}
 
-  /* filter: grayscale(50%); */
-  /* filter:brightness(40%); */
+.bannerAbout {
+  background-image: url("../../Assets/Images/background/about_011.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 34em;
+  filter: grayscale(40%);
 }
 
 .bannerOffer {
@@ -29,4 +26,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
+}
+
+.page_font {
+  font-family: Arial, Helvetica, sans-serif;
 }

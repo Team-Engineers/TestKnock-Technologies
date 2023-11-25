@@ -30,7 +30,7 @@ const HeaderNew = () => {
       <div className="flex items-center ">
         <div className="mr-4">
          <a href="/"> <img
-            src="./logo01.png"
+            src="./logo03.png"
             alt="Logo"
             className="max-h-[90px] max-w-[150px] px-5" 
           />
