@@ -66,7 +66,7 @@ const teamData = {
     },
     {
       id: 6,
-      image: "ashutosh_mishra011.jpeg",
+      image: "vidhi.jpg",
       title: "Product Manager",
       name: "Vidhi Gupta",
       description: "Vidhi Gupta, the design virtuoso from IIT Delhi, doesn't merely craft designs; she sculpts user experiences that feel like a digital embrace. Her eye for design is so sharp; she once made an icon blush with its own elegance! Vidhi's dedication to pixel-perfect perfection is such that even color gradients envy her consistency. Her attention to detail is so remarkable; she once spotted a misplaced pixel from across the room!",
