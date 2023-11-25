@@ -171,7 +171,7 @@ const Footer = () => {
               <ul class="mt-8 space-y-4 text-md">
                 <li>
                   <a
-                    class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="/"
                   >
                     <IoMdMail/>
@@ -183,7 +183,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                     href="/"
                   >
                     <IoMdCall/>
@@ -192,7 +192,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                <li class="flex items-start text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
 <IoMdPin/>
                   <address class="-mt-0.5 flex-1 not-italic text-gray-600">
                   Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
