@@ -2,12 +2,12 @@ import React from "react";
 
 const BannerHome = () => {
   return (
-    <div className="bannerHome text-white md:h-[45vw] h-[150vw] bg-[#e7d987]">
-      <div className="max-w-[800px] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
-        <div className="mt-[-96px] text-center">
-          <p className="page_font text-[white] font-bold p-2 md:text-5xl text-2xl ">Revise Smarter, Score Better:</p>
+    <div className="bannerHome w text-white bg-[#e7d987]">
+      <div className="w-[80vw] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
+        <div className="sm:mt-[10vw] mt-[30vw]  text-center">
+          <p className="page_font text-[white] font-bold p-2 md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl text-2xl ">Revise Smarter, Score Better:</p>
           <p className="page_font text-[#c9c0c0] font-bold p-1 md:text-1.5xl text-1xl">with our</p>
-          <h1 className="page_font  text-[white] md:text-6xl sm:text-4xl text-2xl font-bold md:p-2 w-[70vw]">
+          <h1 className="page_font mx-auto flex  text-[white] md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-7xl text-2xl  font-bold md:p-2 ">
           Expert Solutions, Scorecards, and Top-tier Technical & IT Services
           </h1>
         </div>  

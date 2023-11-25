@@ -9,7 +9,7 @@ function ProdWP() {
       <div className="flex justify-center ">
         <h2 className="page_font font-bold mt-[2vw] mb-[3vw] text-[30px] my-[30px]">OUR PRODUCT</h2>
       </div>
-      <div className="flex lg:flex-row flex-col h-[30vw]">
+      <div className="flex lg:flex-row flex-col md:h-[30vw] h-[40vw]">
         <div className="w-[500px] h-full border-2 shadow-2xl shadow-gray-600 border-gray rounded-[20px] mx-auto md:w-[700px] md:py-[30px]">
           <img className="bg-cover w-full h-full " src={require("../../Assets/Images/productWriteUp/productWP03.gif")}/>
         </div>
