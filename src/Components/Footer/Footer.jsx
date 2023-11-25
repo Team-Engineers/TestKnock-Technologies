@@ -8,10 +8,10 @@ import {
 
 const Footer = () => {
   return (
-    <div className="bg-[#e7d987] overflow-hidden  w-full">
+    <div className="bg-black overflow-hidden  w-full">
       <div className="max-w-[1240px] mx-auto mr-[10px] ml-[10px] py-16 px-4 lg:grid lg:grid-cols-3 gap-8 text-[gray]">
         <div className="lg:col-span-1">
-          <h1 className="w-full text-3xl font-bold text-black">KUCH BHI</h1>
+          <h1 className="w-full text-3xl font-bold text-white">TestKnock</h1>
           <p className="py-4">
             Lorem, ipsum dolor sit amet consectetur adipisicing ullam iste
             repellat accusantium.
@@ -25,20 +25,26 @@ const Footer = () => {
         </div>
         <div className="lg:col-span-2 flex flex-cols- lg:flex-row justify-between mt-6 lg:px-4">
           <div className="mb-8 lg:mb-0">
-            <h6 className="font-medium text-black text-lg lg:text-2xl">Solutions</h6>
+            <h6 className="font-medium text-white text-lg lg:text-2xl">
+              Solutions
+            </h6>
             <ul>
               <li className="py-2 text-base lg:text-xl">Analytics</li>
               <li className="py-2 text-base lg:text-xl">Marketing</li>
             </ul>
           </div>
           <div className="mb-8 lg:mb-0">
-            <h6 className="font-medium text-black text-lg lg:text-2xl">Support</h6>
+            <h6 className="font-medium text-white text-lg lg:text-2xl">
+              Support
+            </h6>
             <ul>
               <li className="py-2 text-base lg:text-xl">Documentation</li>
             </ul>
           </div>
           <div className="mb-8 lg:mb-0">
-            <h6 className="font-medium text-black text-lg lg:text-2xl">Company</h6>
+            <h6 className="font-medium text-white text-lg lg:text-2xl">
+              Company
+            </h6>
             <ul>
               <li className="py-2 text-base lg:text-xl">About</li>
               <li className="py-2 text-base lg:text-xl">Blog</li>
@@ -46,7 +52,9 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h6 className="font-medium text-black text-lg lg:text-2xl">Legal</h6>
+            <h6 className="font-medium text-white text-lg lg:text-2xl">
+              Legal
+            </h6>
             <ul>
               <li className="py-2 text-base lg:text-xl">Claim</li>
               <li className="py-2 text-base lg:text-xl">Policy</li>
