@@ -3,12 +3,9 @@ import "./work.css";
 
 const Work = () => {
   return (
-    <div className="py-[100px] px-4 overflow-hidden ">
-      <div className="flex justify-center ">
-        <p className=" text-[30px] text-center font-sans ">
-          What We Do <br></br>
-          <span className="text-[50px] ">OUR SERVICES</span>
-        </p>
+    <div className="py-[100px] px-4 ">
+      <div className="flex justify-center  ">
+        <p className=" text-[40px] text-center font-sans ">What We Craft</p>
       </div>
       <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-6">
         <div className="shadow-xl  h-[400px] my-10">
@@ -18,7 +15,7 @@ const Work = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className=" flex flex-col justify-center">
+        <div className="  max-lg:max-w-[90%] md:h-[400px] flex flex-col justify-center">
           <h3 className="text-green-800 flex justify center font-sans; text-[40px] my-10 mx-10">
             Content Creation
           </h3>
@@ -57,13 +54,13 @@ const Work = () => {
             evolving demands of tomorrow. Partner with us for a transformative
             journey into the world of unparalleled technological solutions."
           </p>
-          <button className="bg-black text-white w-[300px] rounded-lg font-medium my-6 hover:text-[gray] cursor-pointer mx-auto md:mx-0 py-3 text-[20px]">
+          <button className="bg-black text-white w-[300px] rounded-lg font-medium my-6 hover:text-[gray] cursor-pointer mx-auto md:mx-0 py-3 text-[20px] ">
             <a href="/contact">Connect to Know more</a>
           </button>
         </div>
-        <div className="shadow-xl  h-[300px] my-40 border border-r-2">
+        <div className="shadow-xl  h-[400px] my-40 ">
           <img
-            src={require("../../Assets/Images/offerings/work10.gif")}
+            src={require("../../Assets/Images/offerings/work-1.png")}
             alt=""
             className="w-full h-full object-cover"
           />

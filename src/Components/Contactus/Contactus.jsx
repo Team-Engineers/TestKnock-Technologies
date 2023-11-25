@@ -52,7 +52,7 @@ const ImageContainer = styled.div`
 
   @media (max-width: 786px) {
     margin: auto 30px;
-    right: 30vw;
+    right: 0vw;
   }
 `;
 
