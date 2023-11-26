@@ -8,7 +8,7 @@
 .team-member {
   justify-content: center;
   display: flex;
-  margin: auto 100px;
+  margin: auto 10px;
   @media (max-width:767px) {
     margin: auto 20px;
   }
@@ -33,7 +33,7 @@
   letter-spacing: .1em;
   text-transform: uppercase;
   color: rgb(28, 40, 148);
-  font-size: 1.4em;
+  /* font-size: 1.5em; */
 }
 .team_description{
   text-align: justify;
@@ -41,19 +41,21 @@
 .team_name{
   margin-bottom: 2vw;
   margin-top: 2vw;
-  width: 20px;
+  /* width: 20px; */
   line-height: 1.2em;
-  letter-spacing: -2px;
+  /* letter-spacing: -2px;
 }
 .team-image {
   flex: 1;
+  max-height: 400px;
 
 }
 
 .odd {
-  margin-bottom: 5vw;
+  /* margin-bottom: 5vw; */
   flex-direction: row-reverse;
 }
 .even {
   flex-direction: row;
+  margin-bottom: 0px !important;
 }
