@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const BannerOffering = () => {
   return (
@@ -13,11 +14,11 @@ const BannerOffering = () => {
           </h1>
         </div>
         <div className="flex justify-center items-center">
-          <a href="/contact">
+          <NavLink to="/contact">
             <button className="bg-[black] w-[180px] rounded-md font-medium my-6 py-3 text-white">
               Know More
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

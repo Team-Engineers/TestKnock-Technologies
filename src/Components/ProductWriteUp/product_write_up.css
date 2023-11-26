@@ -1,14 +1,14 @@
 
   .product_wp {
-    margin: auto 60px;
     overflow: hidden;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 30px;
+    margin: auto 20px;
+    z-index: 10;
     @media (max-width:786px) {
-        margin: auto 30px;
+        margin: auto 20px;
 
     }
 
   }
+
 

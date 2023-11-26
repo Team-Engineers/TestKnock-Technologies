@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './banner.css';
 
 export const BannerAbout = () => {
@@ -12,11 +13,11 @@ export const BannerAbout = () => {
           </h1>
         </div>  
         <div className="flex justify-center items-center">
-          <a href="/team">
+          <NavLink to="/team">
             <button className="bg-[black] w-[200px] rounded-md font-medium my-6 py-3 text-white">
               Meet Our Team
             </button>
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>

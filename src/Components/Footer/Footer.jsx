@@ -1,232 +1,248 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaTwitterSquare,
 } from "react-icons/fa";
 
-import { IoMdPin, IoMdMail,IoMdCall } from 'react-icons/io';
+import { IoMdPin, IoMdMail, IoMdCall } from "react-icons/io";
 import { Link } from "react-router-dom";
 const Footer = () => {
   const updatedDate = new Date().getFullYear();
   return (
-    <footer class="bg-black">
-      <div class="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <div>
-            <div class="flex justify-center text-teal-600 sm:justify-start">
+    <footer className="bg-black">
+      <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div className="grid justify-center ">
+            <div className=" flex justify-center gap-6 lg:justify-start text-teal-600  ">
               <Link to="/">
                 <img
-                  src="./logo03.png"
+                  src="./logo_new.jpg"
                   alt="Logo"
                   className="max-h-[90px] max-w-[150px] px-5"
                 />
               </Link>
             </div>
-
-            <p class="mt-6 max-w-md text-center leading-relaxed text-gray-600 sm:max-w-xs sm:text-left">
+            <p className="mt-6 lg:text-justify  text-center leading-relaxed text-gray-600 lg:max-w-xs ml-[20px] mr-[20px] ">
               It's a product, service, or organization that emerged or gained
               prominence after that date. TestKnock is a platform, company, or
               concept related to testing or another field, I recommend checking
               their official website, relevant publications, or news sources for
               the latest and most accurate information.
             </p>
-
-            <ul class="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8">
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  class="text-teal-700 transition hover:text-teal-400/75"
-                >
-                  <span class="sr-only">Instagram</span>
-              <FaInstagramSquare/>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  class="text-teal-700 transition hover:text-teal-400/75"
-                >
-                  <span class="sr-only">Twitter</span>
-          <FaTwitterSquare/>
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  class="text-teal-700 transition hover:text-teal-400/75"
-                >
-                  <span class="sr-only">Facebook</span> 
-                  <FaFacebookSquare/>
-                </a>
-              </li>
-            </ul>
           </div>
-
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
-            <div class="text-center sm:text-left">
-              <p class="text-lg font-medium text-gray-400">Company</p>
-
-              <ul class="mt-8 space-y-4 text-md">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
+            <div className="text-center sm:text-left">
+              <p className="text-lg font-medium text-gray-400">Company</p>
+              <ul className="mt-8 space-y-4 text-md">
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
+                  <NavLink
+                    className="text-gray-600 transition hover:text-gray-400/75"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
+                  <NavLink
+                    className="text-gray-600 transition hover:text-gray-400/75"
+                    to="/about"
                   >
                     About Us
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
+                  <NavLink
+                    className="text-gray-600 transition hover:text-gray-400/75"
+                    to="/team"
                   >
                     Our Team
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
+                  <NavLink
+                    className="text-gray-600 transition hover:text-gray-400/75"
+                    to="/offering"
                   >
                     Offering
-                  </a>
+                  </NavLink>
                 </li>
-                <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
+                <li className="max-sm:hidden">
+                  <NavLink
+                    className="text-gray-600 transition hover:text-gray-400/75"
+                    to="/contact"
                   >
                     Contact Us
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
 
-            <div class="text-center sm:text-left">
-              <p class="text-lg font-medium text-gray-400">Whom we Serve</p>
+            <div className="text-center sm:text-left">
+              <p className="text-lg font-medium text-gray-400">Whom we Serve</p>
 
-              <ul class="mt-8 space-y-4 text-md">
+              <ul className="mt-8 space-y-4 text-md">
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
-                  >
-                   Class 9th and 10th
-                  </a>
+                  <p className="text-gray-600 transition hover:text-gray-400/75">
+                    className 9th and 10th
+                  </p>
                 </li>
 
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
-                  >
-                   Class 11th and 12th
-                  </a>
+                  <p className="text-gray-600 transition hover:text-gray-400/75">
+                    className 11th and 12th
+                  </p>
                 </li>
 
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
-                  >
+                  <p className="text-gray-600 transition hover:text-gray-400/75">
                     Under Graduates
-                  </a>
+                  </p>
                 </li>
 
                 <li>
-                  <a
-                    class="text-gray-600 transition hover:text-gray-400/75"
-                    href="/"
-                  >
+                  <p className="text-gray-600 transition hover:text-gray-400/75">
                     Private School
-                  </a>
+                  </p>
                 </li>
               </ul>
             </div>
 
-            <div class="text-center sm:text-left">
-              <p class="text-lg font-medium text-gray-400">Contact Us</p>
+            <div className="text-center  max-sm:hidden sm:text-left">
+              <p className="text-lg font-medium text-gray-400">Contact Us</p>
 
-              <ul class="mt-8 space-y-4 text-md">
+              <ul className="mt-8 space-y-4 text-md">
                 <li>
-                  <a
-                    class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="/"
+                  <NavLink
+                    className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    to="/"
                   >
-                    <IoMdMail/>
+                    <IoMdMail />
 
-
-                    <span class="flex-1 text-gray-600">info@testknock.com</span>
-                  </a>
+                    <span className="flex-1 text-gray-600">
+                      info@testknock.com
+                    </span>
+                  </NavLink>
                 </li>
 
                 <li>
-                  <a
-                    class="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    href="/"
+                  <NavLink
+                    className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                    to="/"
                   >
-                    <IoMdCall/>
+                    <IoMdCall />
 
-                    <span class="flex-1 text-gray-600">9953617456</span>
-                  </a>
+                    <span className="flex-1 text-gray-600">9953617456</span>
+                  </NavLink>
                 </li>
 
-                <li class="flex items-start text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
-<IoMdPin/>
-                  <address class="-mt-0.5 flex-1 not-italic text-gray-600">
-                  Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
-                      Sec-45, Noida , 201301
+                <li className="flex items-start text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                  <IoMdPin />
+                  <address className="-mt-0.5 flex-1 not-italic text-gray-600">
+                    Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
+                    Sec-45, Noida , 201301
                   </address>
                 </li>
               </ul>
             </div>
           </div>
         </div>
+        <div className="sm:hidden block text-center mt-[6vw] sm:text-left">
+          <NavLink to="/contact" className="text-2xl font-medium text-gray-400">
+            Contact Us
+          </NavLink>
+          <ul className="mt-8 space-y-4 text-md">
+            <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
+              <NavLink
+                className="flex items-center text-gray-600 justify-center gap-1.5 "
+                to="/"
+              >
+                <IoMdMail />
+                <span className="flex-1 text-gray-600">info@testknock.com</span>
+              </NavLink>
+            </li>
+            <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
+              <NavLink
+                className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                to="/"
+              >
+                <IoMdCall />
 
-        <div class="mt-12 border-t border-gray-100 pt-6">
-          <div class="text-center sm:flex sm:justify-between sm:text-left">
-            <p class="text-md text-gray-400">
-              <span class="block sm:inline">All rights reserved.</span>
+                <span className="flex-1 text-gray-600">9953617456</span>
+              </NavLink>
+            </li>
+            <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
+              <address className=" flex-1 not-italic text-gray-600">
+                Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
+                Sec-45, Noida , 201301
+              </address>
+            </li>
+          </ul>
+        </div>
+        <ul className="mt-8 flex text-[30px] justify-center gap-6  lg:gap-8">
+          <li>
+            <NavLink
+              to="/"
+              rel="noreferrer"
+              target="_blank"
+              className="text-teal-700 transition hover:text-teal-400/75"
+            >
+              <span className="sr-only">Instagram</span>
+              <FaInstagramSquare />
+            </NavLink>
+          </li>
 
-              <a
-                class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                href="/"
+          <li>
+            <NavLink
+              to="/"
+              rel="noreferrer"
+              target="_blank"
+              className="text-teal-700 transition hover:text-teal-400/75"
+            >
+              <span className="sr-only">Twitter</span>
+              <FaTwitterSquare />
+            </NavLink>
+          </li>
+
+          <li>
+            <NavLink
+              to="/"
+              rel="noreferrer"
+              target="_blank"
+              className="text-teal-700 transition hover:text-teal-400/75"
+            >
+              <span className="sr-only">Facebook</span>
+              <FaFacebookSquare />
+            </NavLink>
+          </li>
+        </ul>
+        <div className="mt-12 border-t border-gray-100 pt-6">
+          <div className="text-center sm:flex sm:justify-between sm:text-left">
+            <p className="text-md text-gray-400">
+              <span className="block sm:inline">All rights reserved.</span>
+
+              <NavLink
+                className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                to="/"
               >
                 Terms & Conditions
-              </a>
+              </NavLink>
 
               <span>&middot;</span>
 
-              <a
-                class="inline-block text-teal-600 underline transition hover:text-teal-600/75"
-                href="/"
+              <NavLink
+                className="inline-block text-teal-600 underline transition hover:text-teal-600/75"
+                to="/"
               >
                 Privacy Policy
-              </a>
+              </NavLink>
             </p>
 
-            <p class="mt-4 text-md text-gray-400 sm:order-first sm:mt-0">
+            <p className="mt-4 text-md text-gray-400 sm:order-first sm:mt-0">
               &copy; {updatedDate} TestKnock
             </p>
           </div>
