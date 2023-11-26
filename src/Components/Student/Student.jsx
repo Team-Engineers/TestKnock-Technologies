@@ -12,7 +12,7 @@ const Client = () => {
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-              src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
+              src={require("../../Assets/Images/offerings/student-1.png")}
               alt=""
             />
           </div>
@@ -28,7 +28,7 @@ const Client = () => {
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-              src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
+              src={require("../../Assets/Images/offerings/student-2.png")}
               alt=""
             />
           </div>
@@ -44,7 +44,7 @@ const Client = () => {
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-              src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
+              src={require("../../Assets/Images/offerings/student-3.png")}
               alt=""
             />
           </div>
@@ -56,11 +56,12 @@ const Client = () => {
             <p className="my-10">Bob Roberts</p>
           </p>
         </div>
+
         <div className="shadow-xl h-[500px] client1 my-4 bg-red-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
           <div className="w-32 h-32 lg:top-[160px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
             <img
               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-              src="https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B"
+              src={require("../../Assets/Images/offerings/student-4.png")}
               alt=""
             />
           </div>

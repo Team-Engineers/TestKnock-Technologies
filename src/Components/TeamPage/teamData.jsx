@@ -24,6 +24,7 @@ const teamData = {
       description: "Ayushi Dixit, our coding dynamo fresh from IIT Delhi, doesn't just write code; she engineers digital symphonies. Her knack for transforming complex problems into elegant solutions is quicker than a Formula 1 pit stop. Ayushi's coding prowess is the stuff of legends; she once debugged a system so swiftly, the bugs apologized for taking up her time! Her code efficiency is so impressive; it once optimized itself while she was grabbing a cup of coffee!",
     },
     {
+
       id: 4,
       image: "vidhi.jpeg",
       title: "Product Manager",
