@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 const StyledBurger = styled.button`
   position: relative;
@@ -87,11 +88,11 @@ const BurgerAndMenu = () => {
         <div />
       </StyledBurger>
       <StyledMenu open={open}>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/team">Our Team </a>
-        <a href="/offering">Offering</a>
-        <a href="/contact">Contact</a>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/team">Our Team </NavLink>
+        <NavLink to="/offering">Offering</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </StyledMenu>
     </>
   );

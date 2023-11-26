@@ -23,18 +23,18 @@ const HeaderNew = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 flex max-lg:h-[9vh] items-center justify-between px-4 py-3 logo-header ${
+      className={`fixed top-0 left-0 w-full z-50 flex max-lg:h-[9vh] items-center justify-between px-4 py-2 logo-header ${
         isScrolled ? "bg-black" : "bg-transparent"
       } transition-all duration-300 ease-in-out`}
     >
       <div className="flex items-center ">
         <div className="mr-4">
-         <a href="/"> <img
-            src="./logo03.png"
+         <NavLink to="/"> <img
+            src="./logo_new.jpg"
             alt="Logo"
-            className="max-h-[90px] max-w-[150px] px-5" 
+            className="max-h-[90px] max-w-[90px] px-4" 
           />
-          </a>
+          </NavLink>
         </div> 
         </div>
         <div className="md:flex hidden">
