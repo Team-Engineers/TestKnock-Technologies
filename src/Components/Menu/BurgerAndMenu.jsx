@@ -47,7 +47,7 @@ const StyledMenu = styled.nav`
   backdrop-filter: blur(20px);
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   right: 0;
-  height: 60vh;
+  height: 100vh;
   text-align: left;
   padding: 2rem;
   position: absolute;
@@ -56,7 +56,7 @@ const StyledMenu = styled.nav`
 
   transition: transform 0.3s ease-in-out;
   @media (max-width: 576px) {
-    width: 50%;
+    width: 100%;
   }
 
   a {

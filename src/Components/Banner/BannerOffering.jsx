@@ -15,7 +15,7 @@ const BannerOffering = () => {
         </div>
         <div className="flex justify-center items-center">
           <NavLink to="/contact">
-            <button className="bg-[black] w-[180px] rounded-md font-medium my-6 py-3 text-white">
+            <button className="bg-[black] w-[180px] hover:text-[gray] rounded-md font-medium my-6 py-3 text-white">
               Know More
             </button>
           </NavLink>

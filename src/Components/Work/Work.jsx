@@ -4,7 +4,7 @@ import "./work.css";
 
 const Work = () => {
   return (
-    <div className="py-[70px] px-4 mx-auto ml-[20px] mr-[20px] overflow-hidden">
+    <div className="py-[50px] px-4 mx-auto ml-[20px] mr-[20px] overflow-hidden">
       <div className="flex justify-center">
       <h2 className="page_font font-bold md:my-[1vw] my-[-3vw] text-[40px] ">What We Craft</h2>
       </div>

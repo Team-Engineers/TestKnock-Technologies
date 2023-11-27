@@ -30,12 +30,15 @@ const HeaderNew = () => {
       <div className="flex items-center ">
         <div className="mr-4">
          <NavLink to="/"> <img
-            src="./logo_new.jpg"
+            src="./logo_04.png"
             alt="Logo"
-            className="max-h-[90px] max-w-[90px] px-4" 
+            className="max-h-[100px] max-w-[100px] px-4" 
           />
           </NavLink>
-        </div> 
+        </div>
+        <div className="text-yellow-100 font-sans font-bold text-[150%] ml-[-13%]" >
+          <h2 >TestKnock</h2>
+          </div> 
         </div>
         <div className="md:flex hidden">
         <nav className="flex space-x-10 px-10">
