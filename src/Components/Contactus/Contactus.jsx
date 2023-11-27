@@ -16,6 +16,7 @@ const MainContact = styled.div`
   overflow: hidden;
   position: relative;
   right: 2vw;
+  height:70vw;
   @media (max-width: 786px) {
     height: 200%;
   }
@@ -23,10 +24,10 @@ const MainContact = styled.div`
 
 const ContactContainer = styled.div`
   position: relative;
-  top: 5vw;
-  margin-bottom:20vw;
+  top: 17vw;
+  margin-bottom:25vw;
   justify-content: space-between;
-  max-width: 1000px;
+  max-width: 1400px;
   margin-left:auto;
   margin-right:auto;
   display: flex;
@@ -162,7 +163,7 @@ const Contactus = () => {
     <MainContact>
       <ContactContainer>
         <ContactFormContainer>
-          <ContactForm className='md:w-[30vw] w-[80vw]' onSubmit={handleSubmit}>
+          <ContactForm className='md:w-[30vw] w-[80vw] md:top-[12vw]' onSubmit={handleSubmit}>
             <ContactHeading>Contact Us</ContactHeading>
 
             <FormGroup>
