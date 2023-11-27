@@ -1,3 +1,3 @@
 # TestKnock Technologies
 
-## Welcome to our company
+## Welcome to our company.
