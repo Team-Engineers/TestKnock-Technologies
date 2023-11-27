@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const BannerHome = () => {
   return (
-    <div className="bannerHome w text-white bg-[#e7d987]">
+    <div className="bannerHome w text-white bg-black">
       <div className="w-[80vw] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
         <div className="sm:mt-[10vw] mt-[30vw]  text-center">
           <p className="page_font text-[white] font-bold p-2 md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl text-2xl ">Revise Smarter, Score Better:</p>

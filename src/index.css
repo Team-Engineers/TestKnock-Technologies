@@ -26,8 +26,9 @@ body {
 
 .contact-page {
   background-image: url("../public/contact.jpg");
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
+  /* position: absolute; */
 }
 
 .page_font{
