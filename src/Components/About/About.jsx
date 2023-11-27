@@ -28,7 +28,7 @@ about: [
 
 const AboutMember = ({ id, title, name, description, image }) => {
 const isOdd = id % 2 !== 0;
-const below = id ===3;
+const below = id === 3;
 return (
   <div className="about_main">
     <div className={`about-member ${isOdd ? "odd" : "even"}`}>
@@ -42,7 +42,7 @@ return (
             </div>
         <h2 className="about_title">{title}</h2>
         <p className="about_name 2xl:text-[5em] xl:text-[4em] lg:text-[4em] text-[4em]">{name}</p>
-        <p className="about_description 2xl:text-[1.3em] xl:text-[1em] lg:text-[1em] text-[1em]">{description}</p>
+        <p className="about_description xl:text-[110%] 2xl:text-[130%] lg:text-[100%] 1xl:text-[100%]  text-[80%]">{description}</p>
       </div>
     </div>
   </div>
@@ -59,26 +59,25 @@ return (
     </div>
     <div className="py-[10px] about_below">
       <div className="flex justify-center">
-        <h2 className="font-bold text-[40px]  max-md:mt-[40px] p-[30px]">OUR TEAM</h2>
+        <h2 className="font-bold text-[40px] text-center max-md:mt-[40px] mb-[5%] p-[30px]">OUR FOUNDING MEMBERS</h2>
       </div>
       <div className="max-w-[1240px]  mx-auto md:grid grid-cols-2 gap-6">
-        <div className="overflow-hidden relative">
+        <div className="max-md:overflow-hidden relative">
         <div className="absolute   z-[-1] hover:scale-0 md:left-[14vh]  h-[300px] overflow-hidden  w-[300px] bg-[#4698c7] rounded-full ">
           </div>
-          <div className="relative z-[1] h-[380px] mx-auto max-w-[450px] my-0 hover:scale-90 duration-100">
+          <div className="relative z-[1] h-[380px] mx-auto max-w-[450px] my-0 hover:scale-110 duration-100">
             <img
               src={require('../../Assets/Images/team/devendra_singh_rana07.png')}
               alt=""
               className="h-full w-full object-cover rounded-md "
               layout="fill"
               objectFit="cover"
-            />
-
+            />  
           </div>
         </div>
         <div className=" md:hidden block p-[10px] text-justify about-member__description">
           <div className="flex flex-col justify-center my-[10px] ">
-            <h2 className="page_font font-bold text-[20px] text-indigo-600	 ">Founder<p className="page_font font-bold text-black text-[60px]">Devendra Singh Rana</p>
+            <h2 className="page_font font-bold text-[20px] text-indigo-600	 ">Founder<p className="page_font font-bold text-black text-[250%]">Devendra Singh Rana</p>
             </h2>
           </div>
           <h >
@@ -92,11 +91,11 @@ return (
               Pikachu parade!  </h>
         </div>
         
-        <div className="overflow-hidden relative">
+        <div className="max-md:overflow-hidden relative">
           
           <div className="absolute overflow-hidden   z-[-1] hover:scale-0  h-[300px] md:left-[10vw] left-[1vw]   w-[300px] bg-yellow-400 rounded-full ">
           </div>
-          <div className="h-[380px] mx-auto  max-w-[450px] max-md:my-5 hover:scale-90 duration-100 relative flex items-center">
+          <div className="h-[380px] mx-auto  max-w-[450px] max-md:my-5 hover:scale-110 duration-100 relative flex items-center">
             <img
               src={require('../../Assets/Images/team/nitya_dwivedi008.png')}
               alt=""
@@ -107,7 +106,7 @@ return (
         </div>
         <div className=" md:hidden block  p-[10px] text-justify about-member__description">
           <div className="flex flex-col justify-center my-[10px] ">
-            <h2 className="page_font font-bold text-[20px] text-indigo-600	">Co-Founder<p className="page_font  text-black font-bold text-[60px]">Nitya Dwivedi</p>
+            <h2 className="page_font font-bold text-[20px] text-indigo-600	">Co-Founder<p className="page_font  text-black font-bold text-[250%]">Nitya Dwivedi</p>
             </h2>
           </div>      <h>
           Introducing Nitya Dwivedi, our jack-of-all-tech-trades Co-founder!

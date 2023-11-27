@@ -16,15 +16,23 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="grid justify-center ">
             <div className=" flex justify-center gap-6 lg:justify-start text-teal-600  ">
-              <Link to="/">
-                <img
-                  src="./logo_new.jpg"
-                  alt="Logo"
-                  className="max-h-[90px] max-w-[150px] px-5"
-                />
-              </Link>
+              <div className="flex items-center ">
+                <div className="mr-4">
+                  <NavLink to="/">
+                    {" "}
+                    <img
+                      src="./logo_04.png"
+                      alt="Logo"
+                      className="max-h-[100px] max-w-[100px] px-4"
+                    />
+                  </NavLink>
+                </div>
+                <div className="text-yellow-100 font-sans font-bold text-[150%] ml-[-13%]">
+                  <h2>TestKnock</h2>
+                </div>
+              </div>
             </div>
-            <p className="mt-6 lg:text-justify  text-center leading-relaxed text-gray-600 lg:max-w-xs ml-[20px] mr-[20px] ">
+            <p className="mt-6 lg:text-justify md:text-[100%] text-[80%] text-center leading-relaxed text-gray-600 lg:max-w-xs ml-[20px] mr-[20px] ">
               It's a product, service, or organization that emerged or gained
               prominence after that date. TestKnock is a platform, company, or
               concept related to testing or another field, I recommend checking
@@ -33,9 +41,9 @@ const Footer = () => {
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-400">Company</p>
-              <ul className="mt-8 space-y-4 text-md">
+            <div className="text-center ">
+              <p className="md:text-[120%] text-[90%] text-gray-400">Company</p>
+              <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li>
                   <NavLink
                     className="text-gray-600 transition hover:text-gray-400/75"
@@ -81,31 +89,31 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
-            <div className="text-center sm:text-left">
-              <p className="text-lg font-medium text-gray-400">Whom we Serve</p>
-
-              <ul className="mt-8 space-y-4 text-md">
+            <div className="text-center ">
+              <p className="md:text-[120%] text-[90%]  text-gray-400 whitespace-nowrap">
+                Whom we Serve
+              </p>
+              <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li>
-                  <p className="text-gray-600 transition hover:text-gray-400/75">
-                    className 9th and 10th
+                  <p className="text-gray-600 transition hover:text-gray-400/75 whitespace-nowrap">
+                    Class 9th & 10th
                   </p>
                 </li>
 
                 <li>
-                  <p className="text-gray-600 transition hover:text-gray-400/75">
-                    className 11th and 12th
+                  <p className="text-gray-600 transition hover:text-gray-400/75 whitespace-nowrap">
+                    Class 11th & 12th
                   </p>
                 </li>
 
                 <li>
-                  <p className="text-gray-600 transition hover:text-gray-400/75">
+                  <p className="text-gray-600 transition hover:text-gray-400/75 whitespace-nowrap">
                     Under Graduates
                   </p>
                 </li>
 
                 <li>
-                  <p className="text-gray-600 transition hover:text-gray-400/75">
+                  <p className="text-gray-600 transition hover:text-gray-400/75 whitespace-nowrap">
                     Private School
                   </p>
                 </li>
@@ -113,8 +121,9 @@ const Footer = () => {
             </div>
 
             <div className="text-center  max-sm:hidden sm:text-left">
-              <p className="text-lg font-medium text-gray-400">Contact Us</p>
-
+              <p className="text-[120%] font-medium text-gray-400">
+                Contact Us
+              </p>
               <ul className="mt-8 space-y-4 text-md">
                 <li>
                   <NavLink
@@ -152,10 +161,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="sm:hidden block text-center mt-[6vw] sm:text-left">
-          <NavLink to="/contact" className="text-2xl font-medium text-gray-400">
+          <NavLink
+            to="/contact"
+            className="text-[110%] font-medium text-gray-400"
+          >
             Contact Us
           </NavLink>
-          <ul className="mt-8 space-y-4 text-md">
+          <ul className="mt-8 space-y-4 text-[80%]">
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
               <NavLink
                 className="flex items-center text-gray-600 justify-center gap-1.5 "
@@ -222,7 +234,7 @@ const Footer = () => {
         </ul>
         <div className="mt-12 border-t border-gray-100 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">
-            <p className="text-md text-gray-400">
+            <p className="md:text-[100%] text-[90%] text-gray-400">
               <span className="block sm:inline">All rights reserved.</span>
 
               <NavLink
@@ -242,7 +254,7 @@ const Footer = () => {
               </NavLink>
             </p>
 
-            <p className="mt-4 text-md text-gray-400 sm:order-first sm:mt-0">
+            <p className="mt-4 md:text-[100%] text-[90%] text-gray-400 sm:order-first sm:mt-0">
               &copy; {updatedDate} TestKnock
             </p>
           </div>

@@ -14,7 +14,7 @@ export const BannerAbout = () => {
         </div>  
         <div className="flex justify-center items-center">
           <NavLink to="/team">
-            <button className="bg-[black] w-[200px] rounded-md font-medium my-6 py-3 text-white">
+            <button className="bg-[black]  hover:text-[gray] w-[200px] rounded-md font-medium my-6 py-3 text-white">
               Meet Our Team
             </button>
           </NavLink>
