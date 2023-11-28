@@ -147,7 +147,7 @@ return (
         </div>
       </div>
       <div className="flex justify-center  ">
-        <NavLink to="/team" className="bg-[black] w-[200px] rounded-md font-medium md:mt-[8vw] mt-[20vw] my-10 py-3 text-white text-center">
+        <NavLink to="/team" className="bg-[black] w-[200px] hover:text-[gray] rounded-md font-medium md:mt-[8vw] mt-[20vw] my-10 py-3 text-white text-center">
           Meet Our Team
         </NavLink>
         </div>
