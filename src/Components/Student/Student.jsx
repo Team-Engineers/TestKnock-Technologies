@@ -3,14 +3,14 @@ import "./student.css";
 
 const Student = () => {
   return (
-    <div className="container md:mb-[5%] mb-[15%]">
-      <div className="heading md:text-[30px] text-[30px]  font-sans my-5">
+    <div className="container mr-auto ml-auto md:mb-[5%] mb-[15%]">
+      <div className="heading md:text-[30px] text-[30px]  font-sans md:my-[5%] my-[20%]">
         <h2>What Our Students Say</h2>
       </div>
       <div className="cards-container">
-        <div className="card-1 md:hover:scale-[110%] duration-100">
+        <div className="card-1  md:hover:scale-[110%] duration-100 h-[400px]">
           <img
-            className="profile-image"
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-1.png")}
             alt=""
           />
@@ -22,9 +22,9 @@ const Student = () => {
           <p className="author">- Srishti</p>
         </div>
 
-        <div className="card-2 md:hover:scale-[110%] duration-100">
+        <div className="card-2 md:hover:scale-[110%] duration-100 h-[400px]">
           <img
-            className="profile-image"
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-2.png")}
             alt=""
           />
@@ -36,9 +36,9 @@ const Student = () => {
           <p className="author">- Parth Garg</p>
         </div>
 
-        <div className="card-3 md:hover:scale-[110%] duration-100">
+        <div className="card-3 md:hover:scale-[110%] duration-100 h-[400px]">
           <img
-            className="profile-image"
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-3.png")}
             alt=""
           />
@@ -50,9 +50,9 @@ const Student = () => {
           <p className="author">- Piyush Sharma</p>
         </div>
 
-        <div className="card-4 md:hover:scale-[110%] duration-100">
+        <div className="card-4 md:hover:scale-[110%] duration-100 h-[400px]">
           <img
-            className="profile-image"
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-4.png")}
             alt=""
           />
@@ -69,3 +69,5 @@ const Student = () => {
 };
 
 export default Student;
+
+
