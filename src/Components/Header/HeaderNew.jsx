@@ -42,7 +42,7 @@ const HeaderNew = () => {
         </div>
       </NavLink>
 
-      <div className="md:flex hidden">
+      <div className="lg:flex hidden">
         <nav className="flex space-x-10 px-10">
           <NavLink to="/" className="text-white hover:text-gray-300">
             Home
@@ -62,7 +62,7 @@ const HeaderNew = () => {
         </nav>
       </div>
 
-      <div className="md:hidden flex ">
+      <div className="lg:hidden flex ">
         <BurgerAndMenu />
       </div>
     </header>

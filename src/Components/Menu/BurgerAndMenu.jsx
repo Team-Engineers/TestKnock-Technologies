@@ -48,18 +48,16 @@ const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   right: 0;
   height: 100vh;
-  text-align: left;
+  text-align: center;
   padding: 2rem;
   position: absolute;
   top: 0;
   background: black;
 
   transition: transform 0.3s ease-in-out;
-  @media (max-width: 576px) {
-    width: 100%;
-  }
 
   a {
+    text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
     padding: 1rem 0;
@@ -87,7 +85,7 @@ const BurgerAndMenu = () => {
         <div />
         <div />
       </StyledBurger>
-      <StyledMenu open={open}>
+      <StyledMenu className="max-lg:w-full" open={open}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/team">Our Team </NavLink>
