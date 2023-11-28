@@ -27,20 +27,22 @@ const HeaderNew = () => {
         isScrolled ? "bg-black" : "bg-transparent"
       } transition-all duration-300 ease-in-out`}
     >
-      <div className="flex items-center ">
-        <div className="mr-4">
-         <NavLink to="/"> <img
-            src="./logo_04.png"
-            alt="Logo"
-            className="max-h-[100px] max-w-[100px] px-4" 
-          />
-          </NavLink>
+      <NavLink to="/">
+        <div className="flex items-center">
+          <div className="mr-4">
+            <img
+              src="./logo_04.png"
+              alt="Logo"
+              className="max-h-[100px] max-w-[100px] px-4"
+            />
+          </div>
+          <div className="text-white font-sans font-bold text-[150%] ml-[-13%]">
+            <h2>TestKnock</h2>
+          </div>
         </div>
-        <div className="text-yellow-100 font-sans font-bold text-[150%] ml-[-13%]" >
-          <h2 >TestKnock</h2>
-          </div> 
-        </div>
-        <div className="md:flex hidden">
+      </NavLink>
+
+      <div className="md:flex hidden">
         <nav className="flex space-x-10 px-10">
           <NavLink to="/" className="text-white hover:text-gray-300">
             Home
@@ -58,13 +60,12 @@ const HeaderNew = () => {
             Contact
           </NavLink>
         </nav>
-        </div>
+      </div>
 
-        <div className="md:hidden flex ">
-          <BurgerAndMenu/>
-        </div>
+      <div className="md:hidden flex ">
+        <BurgerAndMenu />
+      </div>
     </header>
-
   );
 };
 

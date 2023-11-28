@@ -16,28 +16,28 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="grid justify-center ">
             <div className=" flex justify-center gap-6 lg:justify-start text-teal-600  ">
-              <div className="flex items-center ">
-                <div className="mr-4">
-                  <NavLink to="/">
-                    {" "}
+              <NavLink to="/">
+                <div className="flex items-center">
+                  <div className="mr-4">
                     <img
                       src="./logo_04.png"
                       alt="Logo"
                       className="max-h-[100px] max-w-[100px] px-4"
                     />
-                  </NavLink>
+                  </div>
+                  <div className="text-white font-sans font-bold text-[150%] ml-[-13%]">
+                    <h2>TestKnock</h2>
+                  </div>
                 </div>
-                <div className="text-yellow-100 font-sans font-bold text-[150%] ml-[-13%]">
-                  <h2>TestKnock</h2>
-                </div>
-              </div>
+              </NavLink>
             </div>
             <p className="mt-6 lg:text-justify md:text-[100%] text-[80%] text-center leading-relaxed text-gray-600 lg:max-w-xs ml-[20px] mr-[20px] ">
-              It's a product, service, or organization that emerged or gained
-              prominence after that date. TestKnock is a platform, company, or
-              concept related to testing or another field, I recommend checking
-              their official website, relevant publications, or news sources for
-              the latest and most accurate information.
+              At TestKnock, we are dedicated to more than just academic success;
+              our unwavering commitment extends to providing you with the
+              essential tools and expert guidance. So,Join us on this
+              transformative expedition and discover where educational
+              excellence is not just an aspiration but an inspiring and
+              achievable pursuit.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">

@@ -19,7 +19,7 @@ function ProdWP() {
           Test Knock is more than just a platform; it's your personal gateway to conquering Aptitude Skills effortlessly and interactively. Our mission goes beyond teaching; we're here to ignite a passion for learning, making the journey towards excellence an adventure rather than a task. Join our vibrant community and discover a world where mastering crucial skills feels more like an exciting quest than a challenge. At Test Knock, we're committed to providing the tools and guidance you need to not just succeed but thrive in your academic and professional endeavors.
           </p>
           <NavLink target="_blank" to="https://ourntamockpapers.com/">
-            <button className="bg-[#161616] w-[180px] flex justify-center rounded-md font-medium my-6 mx-auto px-4 py-3 text-white">
+            <button className="bg-[#161616] w-[180px] hover:text-[gray] flex justify-center rounded-md font-medium my-6 mx-auto px-4 py-3 text-white">
               Checkout Product
             </button>
           </NavLink>
