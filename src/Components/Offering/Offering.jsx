@@ -1,88 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 import "./offering.css";
-
-const fadeIn = (direction, type, delay, duration) => ({
-  hidden: {
-    x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
-    y: direction === "up" ? 100 : direction === "down" ? -100 : 0,
-    opacity: 0,
-  },
-  show: {
-    x: 0,
-    y: 0,
-    opacity: 1,
-    transition: {
-      type,
-      delay,
-      duration,
-      ease: "easeOut",
-    },
-  },
-});
-
-const staggerContainer = (staggerChildren, delayChildren) => ({
-  hidden: {},
-  show: {
-    transition: {
-      staggerChildren,
-      delayChildren,
-    },
-  },
-});
-
 const Offering = () => {
-  const controls1 = useAnimation();
-  const controls2 = useAnimation();
-  const controls3 = useAnimation();
-  const controls4 = useAnimation();
-
-  const [ref1, inView1] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-  const [ref2, inView2] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-  const [ref3, inView3] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-  const [ref4, inView4] = useInView({
-    triggerOnce: false,
-    threshold: 0.5,
-  });
-  useEffect(() => {
-    if (inView2) {
-      controls2.start({ opacity: 1 });
-    } else {
-      controls2.start({ opacity: 0.5 });
-    }
-  }, [controls2, inView2]);
-
-  useEffect(() => {
-    if (inView3) {
-      controls3.start({ opacity: 1 });
-    } else {
-      controls3.start({ opacity: 0.5 });
-    }
-  }, [controls3, inView3]);
-
-  useEffect(() => {
-    if (inView4) {
-      controls4.start({ opacity: 1 });
-    } else {
-      controls4.start({ opacity: 0.5 });
-    }
-  }, [controls4, inView4]);
 
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      animate="show"
+    <div
       className=" bg-white overflow-hidden py-[100px] px-4 mx-auto ml-[20px] mr-[20px]"
     >
       <p className=" text-[20px] font-bold text-center font-sans ">
@@ -91,11 +13,8 @@ const Offering = () => {
           OUR SERVICES
         </span>
       </p>
-      <motion.div
+      <div
         className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10 "
-        variants={fadeIn("up", "tween", 0.2, 1)}
-        ref={ref1}
-        animate={controls1}
       >
         <div>
           <div className="shadow-xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[450px] 2xl:h-[550px] lg:w-[370px] lg:h-[460px] xl:w-[500px] xl:h-[450px] w-[300px] h-[360px] my-10 relative">
@@ -122,13 +41,10 @@ const Offering = () => {
             empowering you to excel in your academic and professional endeavors.
           </p>
         </div>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
+      <div
         className="max-w-[1240px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
-        ref={ref2}
-        animate={controls2}
       >
         <div className=" h-[400px] relative top-[10vw]  lg:flex hidden  flex-col justify-center">
           <h3 className="text-[#063970] flex justify-center  mx-auto font-sans; text-[38px] md:text-4xl ">
@@ -223,12 +139,9 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
-      </motion.div>
-      <motion.div
+      </div>
+      <div
         className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10 "
-        variants={fadeIn("right", "tween", 0.2, 1)}
-        ref={ref3}
-        animate={controls3}
       >
         <div className="shadow-xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] w-[260px] h-[300px] my-10 relative">
           <div className="absolute top-[4vw] 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] w-[260px] h-[300px] left-[3vw] z-10 inset-0 border-[2px] border-black  "></div>
@@ -256,12 +169,9 @@ const Offering = () => {
             integrated healthcare information systems.
           </p>
         </div>
-      </motion.div>
-      <motion.div
-        variants={fadeIn("up", "tween", 0.2, 1)}
+      </div>
+      <div
         className="max-w-[1240px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
-        ref={ref4}
-        animate={controls4}
       >
         <div className=" h-[400px] relative top-[10vw]  lg:flex hidden  flex-col justify-center">
           <h2 className="text-[#063970] flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl ">
@@ -367,8 +277,8 @@ const Offering = () => {
             </p>
           </p>
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 };
 

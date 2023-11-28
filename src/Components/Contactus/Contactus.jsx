@@ -9,45 +9,21 @@ const spin = keyframes`
   100% { transform: rotate(360deg); }
 `;
 
-const MainContact = styled.div`
-  background-image: url("../public/contact.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-  overflow: hidden;
-  position: relative;
-  right: 2vw;
-  height:70vw;
-  @media (max-width: 786px) {
-    height: 200%;
-  }
-`;
-
 const ContactContainer = styled.div`
-  position: relative;
-  top: 17vw;
-  margin-bottom:25vw;
-  justify-content: space-between;
-  max-width: 1400px;
-  margin-left:auto;
-  margin-right:auto;
   display: flex;
-  flex-direction: row;
+  justify-content : center;
+  align-items:  center;
+  padding : 7rem 0;
   @media (max-width: 786px) {
     flex-direction: column;
   }
-  padding: 70px 40px;
   backdrop-filter: blur(5px);
-  background-color: rgba(223, 207, 207, 0.073);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const ImageContainer = styled.div`
-  z-index: 100;
-  width:100%;
-  position: relative;
-  top: 5vw;
-  height: 100%;
+
   @media (max-width: 786px) {
     margin: auto 30px;  }
 `;
@@ -160,7 +136,7 @@ const Contactus = () => {
   };
 
   return (
-    <MainContact>
+    <div>
       <ContactContainer>
         <ContactFormContainer>
           <ContactForm className='md:w-[30vw] w-[80vw] md:top-[12vw]' onSubmit={handleSubmit}>
@@ -222,7 +198,7 @@ const Contactus = () => {
         </ImageContainer>
       </ContactContainer>
       <ToastContainer />
-    </MainContact>
+    </div>
   );
 };
 
