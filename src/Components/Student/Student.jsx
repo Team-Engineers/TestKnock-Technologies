@@ -8,7 +8,7 @@ const Student = () => {
         <h2>What Our Students Say</h2>
       </div>
       <div className="cards-container">
-        <div className="card-1  md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-1  md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-1.png")}
@@ -23,7 +23,7 @@ const Student = () => {
           <p className="author">- Srishti</p>
         </div>
 
-        <div className="card-2 md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-2 md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-2.png")}
@@ -38,7 +38,7 @@ const Student = () => {
           <p className="author">- Parth Garg</p>
         </div>
 
-        <div className="card-3 md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-3 md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-3.png")}
@@ -53,7 +53,7 @@ const Student = () => {
           <p className="author">- Piyush Sharma</p>
         </div>
 
-        <div className="card-4 md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-4 md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student-4.png")}
