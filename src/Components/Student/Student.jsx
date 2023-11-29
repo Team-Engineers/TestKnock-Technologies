@@ -3,7 +3,7 @@ import "./student.css";
 
 const Student = () => {
   return (
-    <div className="container md:mb-[5%] mb-[15%]">
+    <div className="container mr-auto ml-auto md:mb-[5%] mb-[15%]">
       <div className="heading_main text-center font-bold md:mb-[6%] md:mt-[3%] my-[12%] md:text-[40px] text-[30px]">
         <h2>What Our Students Say</h2>
       </div>
@@ -60,10 +60,10 @@ const Student = () => {
             alt=""
           />
           <p className="quote ">
-            Impressive Student Content! The study materials are
-            organized and effective, and the quizzes are a brilliant way to
-            track progress. It's an indispensable resource for anyone aiming to
-            excel in aptitude tests.
+            Impressive Student Content! The study materials are organized and
+            effective, and the quizzes are a brilliant way to track progress.
+            It's an indispensable resource for anyone aiming to excel in
+            aptitude tests.
           </p>
           <p className="author">- Akshra Tiwari</p>
         </div>
