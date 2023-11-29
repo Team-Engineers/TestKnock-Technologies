@@ -4,7 +4,7 @@ const OurAdvisory = () => {
   return (
     <>
       <div className="flex justify-center ">
-        <h2 className="heading_main text-center font-bold md:my-[2%] my-[12%] md:text-[40px] text-[30px] ">OUR ADVISORY TEAM</h2>
+        <h2 className="heading_main text-center font-bold md:my-[2%] my-[12%] md:text-[40px] text-[30px] ">OUR ADVISORY MEMBERS</h2>
       </div>
       <div className="h-[120%]">
         <div className="grid mr-auto ml-auto justify-center grid-cols-1  md:grid-cols-3 ">
