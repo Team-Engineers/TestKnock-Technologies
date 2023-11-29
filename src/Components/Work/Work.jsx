@@ -81,7 +81,6 @@ const Work = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <NavLink to="/offering">
           <button className="bg-[#161616] hover:text-[gray] w-[240px] flex justify-center my-6 mx-auto rounded-md font-medium  px-4 py-3 text-white">
             Get To Know More..
           </button>

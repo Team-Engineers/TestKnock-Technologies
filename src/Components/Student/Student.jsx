@@ -3,12 +3,12 @@ import "./student.css";
 
 const Student = () => {
   return (
-    <div className="container md:mb-[5%] mb-[15%]">
+    <div className="container mr-auto ml-auto md:mb-[5%] mb-[15%]">
       <div className="heading_main text-center font-bold md:mb-[6%] md:mt-[3%] my-[12%] md:text-[40px] text-[30px]">
         <h2>What Our Students Say</h2>
       </div>
       <div className="cards-container">
-        <div className="card-1  md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-1  md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student1.jpeg")}
@@ -23,7 +23,7 @@ const Student = () => {
           <p className="author">- Srishti</p>
         </div>
 
-        <div className="card-2 md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-2 md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student2.jpeg")}
@@ -38,7 +38,7 @@ const Student = () => {
           <p className="author">- Parth Garg</p>
         </div>
 
-        <div className="card-3 md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-3 md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student3.jpeg")}
@@ -53,17 +53,17 @@ const Student = () => {
           <p className="author">- Piyush Sharma</p>
         </div>
 
-        <div className="card-4 md:hover:scale-[110%] duration-100 h-[400px]">
+        <div className="card-4 md:hover:scale-[110%] duration-100 h-[315px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/student4.jpeg")}
             alt=""
           />
           <p className="quote ">
-            Impressive Student Content! The study materials are
-            organized and effective, and the quizzes are a brilliant way to
-            track progress. It's an indispensable resource for anyone aiming to
-            excel in aptitude tests.
+            Impressive Student Content! The study materials are organized and
+            effective, and the quizzes are a brilliant way to track progress.
+            It's an indispensable resource for anyone aiming to excel in
+            aptitude tests.
           </p>
           <p className="author">- Akshra Tiwari</p>
         </div>
