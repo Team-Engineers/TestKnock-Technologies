@@ -27,9 +27,9 @@ const Footer = () => {
               </NavLink>
             </div>
             <p className="mt-6 lg:text-justify md:text-[100%] text-[80%] hover:text-white text-center leading-relaxed text-gray-600 lg:max-w-xs ml-[20px] mr-[20px] ">
-              At TestKnock, we are dedicated to more than just academic success;
-              our unwavering commitment extends to providing you with the
-              essential tools and expert guidance. So,Join us on this
+              At TestKnock, we are dedicated to more than just academic success.
+              Our unwavering commitment extends to providing you with the
+              essential tools and expert guidance. So join us on this
               transformative expedition and discover where educational
               excellence is not just an aspiration but an inspiring and
               achievable pursuit.
@@ -193,19 +193,22 @@ const Footer = () => {
         <div className="mt-12 border-t border-gray-100 pt-6 ml-[20px] mr-[20px]">
           <div className="text-center sm:flex justify-between sm:text-left">
             <p className="block text-gray-400 sm:inline">All rights reserved.</p>
+            <p>
+
              <NavLink
                 className="inline-block text-[#063970] underline transition hover:text-blue-800"
                 to="/"
-              >
+                >
                 Terms & Conditions
               </NavLink>
-
+              <p className="block text-gray-400 sm:inline"> | </p>
               <NavLink
                 className="inline-block text-[#063970] underline transition hover:text-blue-800"
                 to="/"
-              >
+                >
                 Privacy Policy
               </NavLink>
+                </p>
 
             <p className="mt-4 md:text-[100%] text-[90%] text-gray-400 sm:order-first sm:mt-0">
               &copy; {updatedDate} TestKnock
