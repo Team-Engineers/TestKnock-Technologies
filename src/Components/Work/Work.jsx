@@ -37,7 +37,7 @@ const Work = () => {
           </p>
           <NavLink to="/contact">
             <button className="bg-[#161616] hover:text-[gray] w-[260px] flex justify-center my-6 mx-auto rounded-md font-medium  px-4 py-3 text-white">
-              Subscribe our product to test
+              Subscribe to experience our product
             </button>
           </NavLink>
         </div>
@@ -83,7 +83,7 @@ const Work = () => {
       <div className="flex justify-center">
         <NavLink to="/offering">
           <button className="bg-black text-white sm:w-[300px] w-[250px] rounded-lg font-medium mb-2 hover:text-[gray] cursor-pointer mx-auto md:mx-0 py-3 text-[20px] ">
-            Get To Know More..
+            Get To Know More
           </button>
         </NavLink>
       </div>
