@@ -15,13 +15,17 @@ const Footer = () => {
                 <div className="flex items-center">
                   <div className="mr-4 mb-[-12px] ">
                     <img
-                      src="./logo_04.png"
+                      src="./logo_final.png"
                       alt="Logo"
-                      className="max-h-[100px] max-w-[100px] px-4 pb-2"
+                      className="max-h-[60px] max-w-[60px] px-4 pb-2"
                     />
                   </div>
                   <div className="text-white font-sans font-bold text-[150%] ml-[-13%]">
-                    <h2>TestKnock</h2>
+                    <h2>
+                      <span>Tes</span> 
+                      <span>tKn</span> 
+                      <span>ock</span>
+                    </h2>
                   </div>
                 </div>
               </NavLink>
