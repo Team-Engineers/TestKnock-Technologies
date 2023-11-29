@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { NavLink } from "react-router-dom";
 import "./offering.css";
 
 const fadeIn = (direction, type, delay, duration) => ({
@@ -87,9 +88,11 @@ const Offering = () => {
     >
       <p className=" text-[20px] md:text-[30px] font-bold text-center font-sans ">
         What We Do <br></br>
-        <span className="text-[30px]  md:text-[40px] font-bold text-center  font-sans">
-          OUR SERVICES
-        </span>
+        <NavLink to="/offering">
+          <button className="bg-[#161616] hover:text-[gray] w-[260px] flex justify-center my-6 mx-auto rounded-md font-medium  px-4 py-3 text-white">
+            OUR SERVICES
+          </button>
+        </NavLink>
       </p>
       <motion.div
         className="max-w-[1240px] mx-auto lg:grid grid-cols-2 gap-10 "
