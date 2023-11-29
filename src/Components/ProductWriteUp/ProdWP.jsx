@@ -5,7 +5,7 @@ import "./product_write_up.css";
 
 function ProdWP() {
   return (
-    <div className="product_wp  mx-auto ml-[30px] mr-[30px] ">
+    <div className="product_wp relative z-[10]  mx-auto ml-[30px] mr-[30px] ">
       <div className="flex justify-center ">
       <h2 className="heading_main text-center font-bold md:my-[5%] my-[15%] md:text-[40px] text-[30px] ">OUR PRODUCTS</h2>
       </div>

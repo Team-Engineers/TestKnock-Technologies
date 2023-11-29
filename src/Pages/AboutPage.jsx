@@ -12,7 +12,7 @@ export const AboutPage = () => {
       <HeaderNew />
       <BannerAbout/>
       <About/>
-      <OurAdvisory/>
+      <OurAdvisory/>  
       <Footer/>
     </div>
   )
