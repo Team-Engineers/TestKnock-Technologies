@@ -85,9 +85,9 @@ const Offering = () => {
       animate="show"
       className=" bg-white overflow-hidden py-[100px] px-4 mx-auto ml-[20px] mr-[20px]"
     >
-      <p className=" text-[20px] font-bold text-center font-sans ">
+      <p className=" text-[20px] md:text-[30px] font-bold text-center font-sans ">
         What We Do <br></br>
-        <span className="text-[30px] font-bold text-center  font-sans">
+        <span className="text-[30px]  md:text-[40px] font-bold text-center  font-sans">
           OUR SERVICES
         </span>
       </p>
@@ -240,7 +240,7 @@ const Offering = () => {
         </div>
         <div className=" flex flex-col justify-center">
           <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl ">
-            End-To-End Tech Soltuion
+            End-To-End Tech Solution
           </h3>
           <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 ">
             An end-to-end solution (E2ES) is a term that means that the provider
@@ -322,7 +322,7 @@ const Offering = () => {
           />
         </div>
       </motion.div>
-      <div className=" md:h-[400px]   lg:hidden block ">
+      <div className=" md:h-[400px]   lg:hidden block  ">
         <h2 className="text-3xl  text-left  flex justify-center text-[#063970] font-serif">
           We Provide
         </h2>
@@ -363,10 +363,101 @@ const Offering = () => {
           <p className=" text-sm text-justify my-2">5.Cybersecurity Measures</p>
         </p>
       </div>
-      {/* </motion.div> */}
+      <motion.div
+        variants={fadeIn("up", "tween", 0.2, 1)}
+        className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10  "
+        ref={ref4}
+        animate={controls4}
+      >
+        <div className="shadow-2xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] w-[260px] h-[300px] my-10 relative">
+          <div className="absolute top-[4vw] 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] w-[260px] h-[300px] left-[3vw] z-10 inset-0 border-[3px] border-black"></div>
+          <img
+            src={require("../../Assets/Images/offerings/offering7.png")}
+            className="w-full h-full object-cover"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            Top Quality Content
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center">
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/blockchain.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Block Chain</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/cloudintergration.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cloud Integration</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/crossplatform.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cross Platform</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/cybersecurity.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cyber Security</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/frontend.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Frontend</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/miandai.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>MI and AI</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/progressive.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Progressive</p>
+            </div>
+
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/responsive.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Responsive</p>
+            </div>
+          </div>
+        </div>
+      </motion.div>
     </motion.div>
   );
 };
 
 export default Offering;
-

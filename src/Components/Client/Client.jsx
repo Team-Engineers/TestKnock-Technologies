@@ -4,7 +4,7 @@ import "./client.css";
 const Client = () => {
   return (
     <div className="container mr-auto ml-auto md:mb-[5%] mb-[15%]">
-      <div className="heading md:text-[30px] text-[30px]  font-sans md:my-[5%] my-[20%]">
+      <div className="heading_main text-center font-bold md:mb-[4%] md:mt-[3%] my-[12%] md:text-[40px] text-[30px]">
         <h2>What Our Clients Say</h2>
       </div>
       <div className="cards-container ">
@@ -33,7 +33,7 @@ const Client = () => {
             express how much this website has simplified my decision-making
             process. "
           </p>
-          <p className="author">- Jamie Mah</p>
+          <p className="author">- Mansi Sharma</p>
         </div>
 
         <div className="card-3 md:hover:scale-[110%] duration-100 h-[400px]">
@@ -61,7 +61,7 @@ const Client = () => {
             one-stop-shop for academic insights. Whether you're a freshman or a
             seasoned student."
           </p>
-          <p className="author">- Travis Smith</p>
+          <p className="author">Abhay Yadav</p>
         </div>
       </div>
     </div>
