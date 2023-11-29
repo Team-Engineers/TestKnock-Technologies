@@ -1,7 +1,7 @@
 
   .product_wp {
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 40px;
     margin: auto 40px;
     z-index: 10;
     @media (max-width:786px) {

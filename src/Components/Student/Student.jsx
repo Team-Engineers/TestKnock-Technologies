@@ -4,7 +4,7 @@ import "./student.css";
 const Student = () => {
   return (
     <div className="container md:mb-[5%] mb-[15%]">
-      <div className="heading md:text-[30px] text-[30px]  font-sans my-5">
+      <div className="heading_main text-center font-bold md:mb-[4%] md:mt-[3%] my-[12%] md:text-[40px] text-[30px]">
         <h2>What Our Students Say</h2>
       </div>
       <div className="cards-container">

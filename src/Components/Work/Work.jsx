@@ -6,13 +6,13 @@ const Work = () => {
   return (
     <div className="py-[50px] px-4 mx-auto ml-[20px] mr-[20px] overflow-hidden">
       <div className="flex justify-center">
-        <h2 className="page_font font-bold md:my-[1vw] my-[-3vw] text-[30px] ">
+        <h2 className="heading_main text-center font-bold md:mt-[0%] md:mb-[3%] my-[10%] md:text-[40px] text-[30px]">
           What We Craft
         </h2>
       </div>
 
-      <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10 ">
-        <div className="shadow-2xl  h-[500px] my-10">
+      <div className="max-w-[1200px] mx-auto md:grid grid-cols-2 gap-10 ">
+        <div className="shadow-2xl  h-[400px] my-10 shadow-slate-950 ">
           <img
             src={require("../../Assets/Images/offerings/work7.gif")}
             alt=""
@@ -20,7 +20,7 @@ const Work = () => {
           />
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex justify-center my-5 mx-auto font-sans; md:text-4xl text-4xl ">
+          <h3 className="subheading_main p-2 md:text-4xl text-4xl flex justify-center md:mb-[1vw] mb-[3vw] tracking-wide ">
             Content Creation
           </h3>
           <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 ">
@@ -41,8 +41,8 @@ const Work = () => {
           </NavLink>
         </div>
       </div>
-      <div className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10">
-        <div className="shadow-2xl shadow-slate-950 md:hidden block h-[400px] my-[5vw] ">
+      <div className="max-w-[1200px] mx-auto md:grid grid-cols-2 gap-10">
+        <div className="shadow-2xl shadow-slate-950 rounded-[20px] md:hidden block h-[400px] my-[5vw] ">
           <img
             src={require("../../Assets/Images/offerings/work-1.png")}
             alt=""
@@ -50,7 +50,7 @@ const Work = () => {
           />
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex justify-center my-5  mx-auto font-sans; md:text-4xl text-4xl ">
+          <h3 className="subheading_main p-2 md:text-4xl text-4xl flex justify-center md:mb-[1vw] mb-[3vw] tracking-wide">
             Tech Solutions
           </h3>
           <p className="  text-[20px] lg:text-[15px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7">
@@ -70,7 +70,7 @@ const Work = () => {
             <NavLink to="/contact">Connect to Know more</NavLink>
           </button>
         </div>
-        <div className="shadow-2xl shadow-neutral-500 md:block hidden  h-[500px] my-40 ">
+        <div className="shadow-2xl shadow-slate-950 md:block hidden  h-[400px] my-[8vw] ">
           <img
             src={require("../../Assets/Images/offerings/work-1.png")}
             alt=""
@@ -80,7 +80,7 @@ const Work = () => {
       </div>
       <div className="flex justify-center">
         <NavLink to="/offering">
-          <button className="bg-black text-white sm:w-[300px] w-[250px] rounded-lg font-medium mb-6 hover:text-[gray] cursor-pointer mx-auto md:mx-0 py-3 text-[20px] ">
+          <button className="bg-black text-white sm:w-[300px] w-[250px] rounded-lg font-medium mb-2 hover:text-[gray] cursor-pointer mx-auto md:mx-0 py-3 text-[20px] ">
             Get To Know More..
           </button>
         </NavLink>

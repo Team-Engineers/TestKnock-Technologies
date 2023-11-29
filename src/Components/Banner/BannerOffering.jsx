@@ -3,17 +3,17 @@ import { NavLink } from "react-router-dom";
 
 const BannerOffering = () => {
   return (
-    <div className="bannerOffer text-white md:h-[50vh] h-[50vh] bg-black">
-      <div className="h-[100%] mx-auto flex flex-col justify-center items-center">
-        <div className=" text-center">
-          <h1 className="text-[#f2c9c9] m-[14px] md:text-6xl sm:text-4xl text-2xl font-bold md:p-2 w-[70vw]">
+    <div className="bannerOffer text-white md:h-[41vw] h-[130vw] bg-black">
+      <div className="max-w-[800px] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
+        <div className="mt-[-46px] text-center">
+          <h1 className="page_font text-[white] md:text-7xl sm:text-5xl text-4xl font-bold md:py-6">
             HOW WE HELP
           </h1>
-        </div>
+        </div>  
         <div className="flex justify-center items-center">
-          <NavLink to="/contact">
-            <button className="bg-[black] w-[180px] hover:text-[gray] rounded-md font-medium my-6 py-3 text-white">
-              Know More
+          <NavLink to="/team">
+            <button className="bg-[black]  hover:text-[gray] w-[200px] rounded-md font-medium my-6 py-3 text-white">
+              Know more
             </button>
           </NavLink>
         </div>
