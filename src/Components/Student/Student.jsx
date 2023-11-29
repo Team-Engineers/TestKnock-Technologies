@@ -60,10 +60,10 @@ const Student = () => {
             alt=""
           />
           <p className="quote ">
-            Impressive Student Content! The study materials are
-            organized and effective, and the quizzes are a brilliant way to
-            track progress. It's an indispensable resource for anyone aiming to
-            excel in aptitude tests.
+            Impressive Student Content! The study materials are organized and
+            effective, and the quizzes are a brilliant way to track progress.
+            It's an indispensable resource for anyone aiming to excel in
+            aptitude tests.
           </p>
           <p className="author">- Akshra Tiwari</p>
         </div>
