@@ -11,7 +11,7 @@ const Client = () => {
         <div className="card-1  md:hover:scale-[110%] duration-100 h-[415px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
-            src={require("../../Assets/Images/offerings/client-1.png")}
+            src={require("../../Assets/Images/offerings/client1.jpeg")}
             alt=""
           />
           <p className="quote ">
@@ -23,7 +23,7 @@ const Client = () => {
         <div className="card-2 md:hover:scale-[110%] duration-100 h-[415px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
-            src={require("../../Assets/Images/offerings/client-2.png")}
+            src={require("../../Assets/Images/offerings/client2.jpeg")}
             alt=""
           />
           <p className="quote">
@@ -35,7 +35,7 @@ const Client = () => {
         <div className="card-3 md:hover:scale-[110%] duration-100 h-[415px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
-            src={require("../../Assets/Images/offerings/client-3.png")}
+            src={require("../../Assets/Images/offerings/client3.jpeg")}
             alt=""
           />
           <p className="quote">
@@ -47,7 +47,7 @@ const Client = () => {
         <div className="card-4 md:hover:scale-[110%] duration-100 h-[415px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
-            src={require("../../Assets/Images/offerings/client-4.png")}
+            src={require("../../Assets/Images/offerings/client4.jpeg")}
             alt=""
           />
           <p className="quote">
