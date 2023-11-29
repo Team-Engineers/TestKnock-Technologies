@@ -36,8 +36,8 @@ const Work = () => {
             of discovery and academic excellence!
           </p>
           <NavLink to="/contact">
-            <button className="bg-[#161616] hover:text-[gray] w-[260px] flex justify-center my-6 mx-auto rounded-md font-medium  px-4 py-3 text-white">
-              Subscribe to experience our product
+            <button className="bg-[#161616] hover:text-[gray] w-[320px] flex justify-center my-6 mx-auto rounded-md font-medium  px-3 py-3 text-white">
+              Subscribe to Experience Our Product
             </button>
           </NavLink>
         </div>
@@ -82,7 +82,7 @@ const Work = () => {
       </div>
       <div className="flex justify-center">
         <NavLink to="/offering">
-          <button className="bg-black text-white sm:w-[300px] w-[250px] rounded-lg font-medium mb-2 hover:text-[gray] cursor-pointer mx-auto md:mx-0 py-3 text-[20px] ">
+          <button className="bg-[#161616] hover:text-[gray] w-[240px] flex justify-center my-6 mx-auto rounded-md font-medium  px-4 py-3 text-white">
             Get To Know More
           </button>
         </NavLink>
