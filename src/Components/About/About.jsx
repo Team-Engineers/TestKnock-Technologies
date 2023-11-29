@@ -64,9 +64,9 @@ const About = () => {
         </div>
         <div className="max-w-[1200px]  mx-auto md:grid grid-cols-2 gap-6">
           <div className="max-md:overflow-hidden relative flex items-center justify-center">
-            <div className="absolute z-[-1] hover:scale-0 h-[300px] overflow-hidden w-[300px] bg-[#4698c7] rounded-full mx-auto">
+            <div className="absolute z-[-1] hover:scale-0 h-[230px] overflow-hidden w-[230px] bg-[#4698c7] rounded-full mx-auto">
             </div>
-            <div className="relative z-[1] h-[350px] mx-auto max-w-[400px] my-0 hover:scale-110 duration-100">
+            <div className="relative z-[1] h-[250px] mx-auto max-w-[300px] my-0 hover:scale-110 duration-100">
               <img
                 src={require('../../Assets/Images/team/devendra_singh_rana07.png')}
                 alt=""
@@ -93,9 +93,9 @@ const About = () => {
           </div>
 
           <div className="max-md:overflow-hidden relative flex items-center justify-center">
-            <div className="absolute overflow-hidden   z-[-1] hover:scale-0  h-[300px]  w-[300px] bg-yellow-400 rounded-full ">
+            <div className="absolute overflow-hidden   z-[-1] hover:scale-0  h-[230px]  w-[230px] bg-yellow-400 rounded-full ">
             </div>
-            <div className="h-[350px] mx-auto  max-w-[400px] max-md:my-5 hover:scale-110 duration-100 relative flex items-center">
+            <div className="h-[250px] mx-auto  max-w-[300px] max-md:my-5 hover:scale-110 duration-100 relative flex items-center">
               <img
                 src={require('../../Assets/Images/team/nitya_dwivedi008.png')}
                 alt=""
