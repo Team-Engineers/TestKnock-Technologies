@@ -3,6 +3,9 @@ import React from "react";
 const OurAdvisory = () => {
   return (
     <div className=" container mx-auto">
+      <div className="flex justify-center ">
+        <h2 className="heading_main text-center font-bold md:my-[2%] my-[12%] md:text-[40px] text-[30px] ">OUR ADVISORY MEMBERS</h2>
+      </div>
       <div className="grid md:grid-cols-3 grid-cols-1 overflow-hidden ">
         <div className="flex  flex-col">
           <div className="w-50 h-50 rounded-full mr-auto ml-auto flex justify-center">
