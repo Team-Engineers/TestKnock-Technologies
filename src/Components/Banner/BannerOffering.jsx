@@ -6,7 +6,7 @@ const BannerOffering = () => {
     <div className="bannerOffer text-white md:h-[41vw] h-[130vw] bg-black">
       <div className="max-w-[800px] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
         <div className="mt-[-46px] text-center">
-          <h1 className="page_font text-[white] md:text-7xl sm:text-5xl text-4xl font-bold md:py-6">
+          <h1 className="page_font text-[white] md:text-7xl sm:text-5xl text-5xl font-bold md:py-6">
             HOW WE HELP
           </h1>
         </div>  
