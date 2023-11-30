@@ -84,25 +84,20 @@ const Offering = () => {
       variants={staggerContainer}
       initial="hidden"
       animate="show"
-      className=" bg-white overflow-hidden  ml-[20px] mr-[20px]"
+      className=" bg-white overflow-hidden mt-[10px]  ml-[20px] mr-[20px]"
     >
-      <p className=" text-[20px] md:text-[30px] font-bold text-center font-sans ">
-        What We Do <br></br>
-        <NavLink to="/offering">
-          <button className="bg-[#161616] hover:text-[gray] w-[260px] flex justify-center my-6 mx-auto rounded-md font-medium  px-4 py-3 text-white">
-            OUR SERVICES
-          </button>
-        </NavLink>
-      </p>
+       <div className="heading text-[20px] md:text-[30px] font-bold text-center font-sans my-[20px]">
+        <h2> What We Do <br></br> <span className="text-[30px] md:text-[40px]">OUR SERVICES</span> </h2>
+      </div> 
       <motion.div
-        className="max-w-[1240px] mx-auto lg:grid grid-cols-2 gap-10 "
+        className="max-w-[1240px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
         variants={fadeIn("up", "tween", 0.2, 1)}
         ref={ref1}
         animate={controls1}
       >
         <div>
-          <div className="shadow-2xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[500px] xl:h-[450px] md:w-[400px] w-[300px] h-[300px] my-10 relative ">
-            <div className="absolute top-[3vw] 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[500px] xl:h-[450px] md:w-[400px] w-[300px] h-[300px]  left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
+          <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
             <img
               src={require("../../Assets/Images/offerings/offering5.png")}
               alt=""
@@ -114,7 +109,7 @@ const Offering = () => {
           <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             Top Quality Content
           </h3>
-          <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 ">
+          <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
             Explore a premier platform tailored for students seeking top-tier
             aptitude practice. Our site curates exclusive, high-quality content
             meticulously designed for professionals-in-training. Elevate your
@@ -175,7 +170,7 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
-        <div className="shadow-2xl mx-auto lg:h-[700px] h-[400px] w-[500px]  my-10">
+        <div className="shadow-2xl  lg:h-[700px] mx-auto h-[400px] sm:w-[80%] w-[85%] lg:w-[500px]    my-10">
           <img
             src={require("../../Assets/Images/offerings/offering6.png")}
             alt=""
@@ -227,13 +222,13 @@ const Offering = () => {
         </div>
       </motion.div>
       <motion.div
-        className="max-w-[1240px] mx-auto lg:grid grid-cols-2 gap-10 "
+        className="max-w-[1240px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
         variants={fadeIn("right", "tween", 0.2, 1)}
         ref={ref3}
         animate={controls3}
       >
-        <div className="shadow-2xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[650px] xl:h-[350px] md:w-[400px] w-[230px] h-[300px] my-10 relative">
-          <div className="absolute top-[4vw] 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] md:w-[400px] w-[230px] h-[300px] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
+         <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
           <img
             src={require("../../Assets/Images/offerings/offering4.png")}
             className="w-full h-full object-cover"
@@ -244,7 +239,7 @@ const Offering = () => {
           <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl ">
             End-To-End Tech Solution
           </h3>
-          <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 ">
+          <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
             An end-to-end solution (E2ES) is a term that means that the provider
             of an application program, software and system will supply all the
             software as well as hardware requirements of the customer such that
@@ -363,7 +358,7 @@ const Offering = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-2xl lg:h-[700px] mx-auto h-[400px] w-[500px] my-10">
+        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering-1.png")}
             alt=""
@@ -384,8 +379,8 @@ const Offering = () => {
             development:
             <br />
           </p>
-          <div className=" grid grid-cols-4 gap-[80px] justify-center items-center ml-auto mr-auto my-8">
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+          <div className="flex flex-wrap mx-auto gap-[30px] justify-center items-center ml-auto mr-auto mt-[10px] mb-[30px] ">
+            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
               <img
                 src={require("../../Assets/Images/offerings/responsive.png")}
                 className="w-full h-full object-cover"
@@ -393,7 +388,7 @@ const Offering = () => {
               />
               <p>Responsive</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
               <img
                 src={require("../../Assets/Images/offerings/frontend.png")}
                 className="w-full h-full object-cover"
@@ -401,7 +396,7 @@ const Offering = () => {
               />
               <p>Frontend</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
               <img
                 src={require("../../Assets/Images/offerings/server side.png")}
                 className="w-full h-full object-cover"
@@ -409,7 +404,7 @@ const Offering = () => {
               />
               <p>Server-Side Scripting</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
               <img
                 src={require("../../Assets/Images/offerings/progressive.png")}
                 className="w-full h-full object-cover"
@@ -424,7 +419,8 @@ const Offering = () => {
             address various challenges in mobile app development.Key aspects of
             tech solutions for mobile apps include:<br></br>
           </p>
-          <div className=" grid grid-cols-5 gap-[80px] justify-center items-center ml-auto mr-auto my-8">
+          <div className="container justify-center mx-auto">
+            <div className=" flex flex-wrap  gap-[30px] justify-center items-center mx-auto mt-[10px] mb-[30px] ">
             <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
               <img
                 src={require("../../Assets/Images/offerings/crossplatform.png")}
@@ -466,6 +462,8 @@ const Offering = () => {
               <p>Cyber Security</p>
             </div>
           </div>
+          </div>
+          
         </div>
       </motion.div>
     </motion.div>
