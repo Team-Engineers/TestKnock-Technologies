@@ -36,7 +36,7 @@ const Work = () => {
             of discovery and academic excellence!
           </p>
           <NavLink to="/contact">
-            <button className="bg-[#161616] hover:text-[gray] w-[320px] flex justify-center my-6 mx-auto rounded-md font-medium  px-3 py-3 text-white">
+            <button className="bg-[#161616] hover:text-[gray] text-[80%]  md:text-[100%]  flex justify-center my-6 mx-auto rounded-md font-medium  px-3 py-3 text-white">
               Subscribe to Experience Our Product
             </button>
           </NavLink>
