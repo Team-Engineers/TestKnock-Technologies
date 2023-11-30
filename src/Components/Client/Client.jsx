@@ -3,12 +3,12 @@ import "./client.css";
 
 const Client = () => {
   return (
-    <div className="container mr-auto ml-auto md:mb-[5%] mb-[15%]">
+    <div className="max-w-[1240px] mx-auto md:mb-[5%] mb-[15%]">
       <div className="heading md:text-[30px] text-[30px]  font-sans md:my-[5%] my-[20%]">
         <h2>What Our Clients Say</h2>
       </div>
-      <div className="cards-container ">
-        <div className="card-1  md:hover:scale-[110%] duration-100 h-[415px]">
+      <div className="cards-container mr-[10px] ml-[10px] grid  max-md:grid-cols-1 lg:grid-cols-4 grid-cols-2">
+        <div className="card-1  md:hover:scale-[110%] duration-100 max-h-[550px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/client1.jpeg")}
@@ -20,7 +20,7 @@ const Client = () => {
           <p className="author">- Ayush Dubey</p>
         </div>
 
-        <div className="card-2 md:hover:scale-[110%] duration-100 h-[415px]">
+        <div className="card-2 md:hover:scale-[110%] duration-100 max-h-[550px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/client2.jpeg")}
@@ -32,7 +32,7 @@ const Client = () => {
           <p className="author">- Monika Bist</p>
         </div>
 
-        <div className="card-3 md:hover:scale-[110%] duration-100 h-[415px]">
+        <div className="card-3 md:hover:scale-[110%] duration-100 max-h-[550px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/client3.jpeg")}
@@ -44,7 +44,7 @@ const Client = () => {
           <p className="author">- Harshika Bansal</p>
         </div>
 
-        <div className="card-4 md:hover:scale-[110%] duration-100 h-[415px]">
+        <div className="card-4 md:hover:scale-[110%] duration-100 max-h-[550px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"
             src={require("../../Assets/Images/offerings/client4.jpeg")}

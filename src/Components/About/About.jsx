@@ -58,7 +58,7 @@ const About = () => {
           <AboutMember key={member.id} {...member} />
         ))}
       </div>
-      <div className="py-[10px] about_below">
+      <div className=" ml-[10px] mr-[10px]">
         <div className="flex justify-center">
           <h2 className="heading_main text-center font-bold md:my-[2%] my-[12%] md:text-[40px] text-[30px]">OUR FOUNDING MEMBERS</h2>
         </div>

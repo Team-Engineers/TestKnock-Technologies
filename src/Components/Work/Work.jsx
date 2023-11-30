@@ -12,7 +12,7 @@ const Work = () => {
       </div>
 
       <div className="max-w-[1200px] mx-auto md:grid grid-cols-2 gap-10 ">
-        <div className="shadow-2xl  h-[400px] my-10 shadow-slate-950 ">
+        <div className="  h-[400px] my-10 drop-shadow-2xl lg:shadow-2xl lg:shadow-slate-950 ">
           <img
             src={require("../../Assets/Images/offerings/content_001.jpeg")}
             alt=""
@@ -43,7 +43,7 @@ const Work = () => {
         </div>
       </div>
       <div className="max-w-[1200px] mx-auto md:grid grid-cols-2 gap-10">
-        <div className="shadow-2xl shadow-slate-950 rounded-[20px] md:hidden block h-[400px] my-[5vw] ">
+        <div className="drop-shadow-2xl lg:shadow-2xl lg:shadow-slate-950 rounded-[20px] md:hidden block h-[400px] my-[5vw] ">
           <img
             src={require("../../Assets/Images/offerings/work-1.png")}
             alt=""
