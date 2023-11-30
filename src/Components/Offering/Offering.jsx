@@ -55,11 +55,19 @@ const Offering = () => {
     triggerOnce: false,
     threshold: 0.5,
   });
+
+  useEffect(() => {
+    if (inView1) {
+      controls1.start({ opacity: 1 });
+    } else {
+      controls1.start({ opacity: 0.2 });
+    }
+  }, [controls1, inView1]);
   useEffect(() => {
     if (inView2) {
       controls2.start({ opacity: 1 });
     } else {
-      controls2.start({ opacity: 0.5 });
+      controls2.start({ opacity: 0.2 });
     }
   }, [controls2, inView2]);
 
@@ -67,7 +75,7 @@ const Offering = () => {
     if (inView3) {
       controls3.start({ opacity: 1 });
     } else {
-      controls3.start({ opacity: 0.5 });
+      controls3.start({ opacity: 0.2 });
     }
   }, [controls3, inView3]);
 
@@ -75,7 +83,7 @@ const Offering = () => {
     if (inView4) {
       controls4.start({ opacity: 1 });
     } else {
-      controls4.start({ opacity: 0.5 });
+      controls4.start({ opacity: 0.2 });
     }
   }, [controls4, inView4]);
 

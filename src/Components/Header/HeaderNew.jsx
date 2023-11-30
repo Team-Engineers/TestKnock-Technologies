@@ -23,7 +23,7 @@ const HeaderNew = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 flex max-lg:h-[9vh] items-center justify-between px-4 py-2 logo-header ${
+      className={`fixed top-0 left-0 w-full z-50 flex max-lg:h-[70px] items-center justify-between px-4 py-2 logo-header ${
         isScrolled ? "bg-black" : "bg-transparent"
       } transition-all duration-300 ease-in-out`}
     >
@@ -42,7 +42,7 @@ const HeaderNew = () => {
         </div>
       </NavLink>
 
-      <div className="lg:flex hidden">
+      <div className="md:flex hidden">
         <nav className="flex space-x-10 px-10">
           <NavLink to="/" className="text-white hover:text-gray-300">
             Home
@@ -62,7 +62,7 @@ const HeaderNew = () => {
         </nav>
       </div>
 
-      <div className="lg:hidden flex ">
+      <div className="md:hidden flex ">
         <BurgerAndMenu />
       </div>
     </header>
