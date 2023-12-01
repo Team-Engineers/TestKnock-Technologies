@@ -55,38 +55,7 @@ const Offering = () => {
     triggerOnce: false,
     threshold: 0.5,
   });
-
-  // useEffect(() => {
-  //   if (inView1) {
-  //     controls1.start({ opacity: 1 });
-  //   } else {
-  //     controls1.start({ opacity: 0.2 });
-  //   }
-  // }, [controls1, inView1]);
-  // useEffect(() => {
-  //   if (inView2) {
-  //     controls2.start({ opacity: 1 });
-  //   } else {
-  //     controls2.start({ opacity: 0.2 });
-  //   }
-  // }, [controls2, inView2]);
-
-  // useEffect(() => {
-  //   if (inView3) {
-  //     controls3.start({ opacity: 1 });
-  //   } else {
-  //     controls3.start({ opacity: 0.2 });
-  //   }
-  // }, [controls3, inView3]);
-
-  // useEffect(() => {
-  //   if (inView4) {
-  //     controls4.start({ opacity: 1 });
-  //   } else {
-  //     controls4.start({ opacity: 0.2 });
-  //   }
-  // }, [controls4, inView4]);
-
+ 
   return (
     <motion.div
       variants={staggerContainer}
@@ -94,11 +63,11 @@ const Offering = () => {
       animate="show"
       className=" bg-white overflow-hidden mt-[10px]  ml-[20px] mr-[20px]"
     >
-       <div className="heading text-[20px] md:text-[30px] font-bold text-center font-sans my-[20px]">
-        <h2> What We Do <br></br> <span className="text-[30px] md:text-[40px]">OUR SERVICES</span> </h2>
+       <div className="heading_main text-center font-bold md:mt-[5%] mt-[15%] md:mb-[2%] mb-[12%] md:text-[40px] text-[30px] ">
+        <h2> What We Do </h2>
       </div> 
       <motion.div
-        className="max-w-[1240px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
         variants={fadeIn("up", "tween", 0.2, 1)}
         ref={ref1}
         animate={controls1}
@@ -131,7 +100,7 @@ const Offering = () => {
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="max-w-[1240px] mt-[5vw]  max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 max-lg:mb-[20%]"
+        className="max-w-[1200px] mt-[5vw]  max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 max-lg:mb-[20%]"
         ref={ref2}
         animate={controls2}
       >
@@ -230,7 +199,7 @@ const Offering = () => {
         </div>
       </motion.div>
       <motion.div
-        className="max-w-[1240px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
         variants={fadeIn("right", "tween", 0.2, 1)}
         ref={ref3}
         animate={controls3}
@@ -264,7 +233,7 @@ const Offering = () => {
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="max-w-[1240px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
+        className="max-w-[1200px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
         ref={ref4}
         animate={controls4}
       >
