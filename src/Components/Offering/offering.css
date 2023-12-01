@@ -25,6 +25,22 @@
   margin-top:5vw; 
 }
 
+.offeringimage{
+  gap: 20%;
+  @media (max-width:360px) {
+    gap: 10%;
+
+  }
+}
+
+.offeringimage2{
+  gap: 120px;
+  @media (min-width:450px) {
+    gap: 10%;
+
+  }
+}
+
 .offeringbox1{
   height: 430px;
   width: 600px;

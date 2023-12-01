@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const updatedDate = new Date().getFullYear();
   return (
-    <footer className="bg-black">
-      <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+    <footer className="bg-black overflow-hidden ">
+      <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="grid justify-center ">
             <div className=" flex justify-center gap-6 lg:justify-start text-[#063970] ">
@@ -106,19 +106,18 @@ const Footer = () => {
                 </li>
 
                 <li>
-                  <p className="text-gray-600 transition hover:text-white whitespace-nowrap">
+                  <p className="text-gray-600  transition hover:text-white whitespace-nowrap">
                     Educational Institutions
                   </p>
                 </li>
 
                 <li>
-                  <p className="text-gray-600 transition hover:text-white whitespace-nowrap">
+                  <p className="text-gray-600 transition  hover:text-white whitespace-nowrap">
                     Private Schools
                   </p>
                 </li>
               </ul>
             </div>
-
             <div className="text-center  max-sm:hidden sm:text-left">
               <p className="text-[120%] hover:text-white font-medium text-gray-400">
                 Contact Us
@@ -197,23 +196,22 @@ const Footer = () => {
         <div className="mt-12 border-t border-gray-100 pt-6 ml-[20px] mr-[20px]">
           <div className="text-center sm:flex justify-between sm:text-left">
             <p className="block text-gray-400 sm:inline">All rights reserved.</p>
-            <p>
+            <p className="flex sm:flex-row flex-col  gap-[10px] max-md:justify-center  md:text-[100%] text-[90%] ">
 
              <NavLink
-                className="inline-block text-[#063970] underline transition hover:text-blue-800"
+                className=" whitespace-nowrap  text-[#063970] underline transition hover:text-blue-800"
                 to="/"
                 >
                 Terms & Conditions
               </NavLink>
-              <p className="block text-gray-400 sm:inline"> | </p>
+              <p className="md:block hidden  text-gray-400 sm:inline"> | </p>
               <NavLink
-                className="inline-block text-[#063970] underline transition hover:text-blue-800"
+                className="whitespace-nowrap text-[#063970] underline transition hover:text-blue-800"
                 to="/"
                 >
                 Privacy Policy
               </NavLink>
                 </p>
-
             <p className="mt-4 md:text-[100%] text-[90%] text-gray-400 sm:order-first sm:mt-0">
               &copy; {updatedDate} TestKnock
             </p>

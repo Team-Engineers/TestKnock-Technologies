@@ -58,7 +58,7 @@ const About = () => {
           <AboutMember key={member.id} {...member} />
         ))}
       </div>
-      <div className="py-[10px] about_below">
+      <div className=" ml-[10px] mr-[10px]">
         <div className="flex justify-center">
           <h2 className="heading_main text-center font-bold md:my-[2%] my-[12%] md:text-[40px] text-[30px]">OUR FOUNDING MEMBERS</h2>
         </div>
@@ -78,7 +78,7 @@ const About = () => {
           </div>
           <div className=" md:hidden block p-[10px] text-justify about-member__description">
             <div className="flex flex-col justify-center my-[10px] ">
-              <h2 className="page_font font-bold text-[20px] text-[#063970]	 ">Founder<p className="page_font font-bold text-black text-[250%]">Devendra Singh Rana</p>
+              <h2 className="page_font font-bold text-[20px] text-[#063970]	 ">Founder<p className="page_font font-bold text-black leading-[50px] text-[250%]">Devendra Singh Rana</p>
               </h2>
             </div>
             <h >
@@ -106,7 +106,7 @@ const About = () => {
           </div>
           <div className=" md:hidden block  p-[10px] text-justify about-member__description">
             <div className="flex flex-col justify-center my-[10px] ">
-              <h2 className="page_font font-bold text-[20px] text-[#063970]">Co-Founder<p className="page_font  text-black font-bold text-[250%]">Nitya Dwivedi</p>
+              <h2 className="page_font font-bold text-[20px] text-[#063970]">Co-Founder<p className="page_font  text-black leading-[50px] font-bold text-[250%]">Nitya Dwivedi</p>
               </h2>
             </div>      <h>
               Introducing Nitya Dwivedi, our jack-of-all-tech-trades Co-founder!

@@ -14,7 +14,7 @@ const ContactContainer = styled.div`
   justify-content : center;
   align-items:  center;
   padding : 7rem 0;
-  @media (max-width: 786px) {
+  @media (max-width: 768px) {
     flex-direction: column;
   }
   backdrop-filter: blur(5px);
@@ -29,7 +29,7 @@ const ImageContainer = styled.div`
 `;
 
 const ContactHeading = styled.h2`
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   font-weight: 400;
   color: #ffffff;

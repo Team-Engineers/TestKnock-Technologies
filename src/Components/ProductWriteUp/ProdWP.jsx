@@ -10,7 +10,7 @@ function ProdWP() {
       <h2 className="heading_main text-center font-bold md:my-[5%] my-[15%] md:text-[40px] text-[30px] ">OUR PRODUCTS</h2>
       </div>
       <div className="max-w-[1240px]  mb-[6%] mx-auto md:grid grid-cols-2 gap-10 ">
-        <div className=" border-2 max-md:mb-[5vw] max-md:h-full max-lg:h-[25em]  shadow-2xl shadow-slate-950 rounded-[20px] ">
+        <div className=" border-2 max-md:mb-[5vw] max-md:h-full	max-lg:h-[25em] drop-shadow-xl lg:shadow-2xl lg:shadow-slate-950 rounded-[20px] ">
           <img className="bg-cover w-full h-full  rounded-[20px]" src={require("../../Assets/Images/productWriteUp/productWP03.gif")}/>
         </div>
         <div className="flex flex-col justify-center ">
