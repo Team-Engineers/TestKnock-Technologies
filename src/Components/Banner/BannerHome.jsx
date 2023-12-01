@@ -14,7 +14,7 @@ const BannerHome = () => {
         </div>  
         <div className="flex justify-center items-center">
           <NavLink target="_blank" to="https://ourntamockpapers.com/">
-            <button className="bg-[black] border border-white hover:text-[gray] w-[180px] rounded-md font-medium mb-[5vw] my-9 py-3 text-white">
+            <button className="bg-[black] border border-white hover:text-[gray] sm:w-[180px] w-[140px] rounded-md font-medium mb-[5vw] my-9 py-2 sm:py-3 text-white">
               Explore
             </button>
           </NavLink>
