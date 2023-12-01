@@ -56,36 +56,36 @@ const Offering = () => {
     threshold: 0.5,
   });
 
-  useEffect(() => {
-    if (inView1) {
-      controls1.start({ opacity: 1 });
-    } else {
-      controls1.start({ opacity: 0.2 });
-    }
-  }, [controls1, inView1]);
-  useEffect(() => {
-    if (inView2) {
-      controls2.start({ opacity: 1 });
-    } else {
-      controls2.start({ opacity: 0.2 });
-    }
-  }, [controls2, inView2]);
+  // useEffect(() => {
+  //   if (inView1) {
+  //     controls1.start({ opacity: 1 });
+  //   } else {
+  //     controls1.start({ opacity: 0.2 });
+  //   }
+  // }, [controls1, inView1]);
+  // useEffect(() => {
+  //   if (inView2) {
+  //     controls2.start({ opacity: 1 });
+  //   } else {
+  //     controls2.start({ opacity: 0.2 });
+  //   }
+  // }, [controls2, inView2]);
 
-  useEffect(() => {
-    if (inView3) {
-      controls3.start({ opacity: 1 });
-    } else {
-      controls3.start({ opacity: 0.2 });
-    }
-  }, [controls3, inView3]);
+  // useEffect(() => {
+  //   if (inView3) {
+  //     controls3.start({ opacity: 1 });
+  //   } else {
+  //     controls3.start({ opacity: 0.2 });
+  //   }
+  // }, [controls3, inView3]);
 
-  useEffect(() => {
-    if (inView4) {
-      controls4.start({ opacity: 1 });
-    } else {
-      controls4.start({ opacity: 0.2 });
-    }
-  }, [controls4, inView4]);
+  // useEffect(() => {
+  //   if (inView4) {
+  //     controls4.start({ opacity: 1 });
+  //   } else {
+  //     controls4.start({ opacity: 0.2 });
+  //   }
+  // }, [controls4, inView4]);
 
   return (
     <motion.div
@@ -114,7 +114,7 @@ const Offering = () => {
           </div>
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+          <h3 className="text-[#063970] font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             Top Quality Content
           </h3>
           <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
@@ -136,10 +136,10 @@ const Offering = () => {
         animate={controls2}
       >
         <div className=" h-[400px] relative top-[10vw]  lg:flex hidden  flex-col justify-center">
-          <h3 className="text-[#063970] flex justify-center  mx-auto font-sans; text-3xl md:text-4xl ">
+        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
           </h3>
-          <h2 className="text-[20px] text-left py-6">Class 9th & 10th</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 9th & 10th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company provides interactive math ,science and current affairs
             learning tools designed to enhance the mathematical skills of
@@ -148,7 +148,7 @@ const Offering = () => {
             academic pursuits and an informed, thoughtful approach to the
             challenges of the modern era.
           </p>
-          <h2 className="text-[20px] text-left py-6">Class 11th & 12th</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 11th & 12th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company is dedicated to providing crafted materials in
             mathematics, guiding students through advanced concepts like
@@ -160,7 +160,7 @@ const Offering = () => {
             offerings extend to logical reasoning, developing analytical
             thinking and problem-solving skills.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Technical Education, we offer specialized resources to fortify
             skills in technical quantitative aptitude, verbal ability,
@@ -168,7 +168,7 @@ const Offering = () => {
             targeted content, interactive learning modules, and practice
             assessments tailored to enhance proficiency in technical subjects.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Non-Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Non-Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Non-Tech education, we provide a specialized and targeted
             approach to enhance skills in Quantitative Aptitude, Verbal Ability,
@@ -178,7 +178,7 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
-        <div className="shadow-2xl  lg:h-[700px] mx-auto h-[400px] sm:w-[80%] w-[85%] lg:w-[500px]    my-10">
+        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering6.png")}
             alt=""
@@ -186,10 +186,10 @@ const Offering = () => {
           />
         </div>
         <div className="  max-lg:h-[500px]md:h-[400px] max-md:h-full lg:hidden block ">
-          <h2 className="text-3xl  text-left flex justify-center text-[#063970] font-serif">
+          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
-          </h2>
-          <h2 className="text-[20px] text-left py-6">Class 9th & 10th</h2>
+          </h3>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 9th & 10th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company provides interactive math ,science and current affairs
             learning tools designed to enhance the mathematical skills of
@@ -198,7 +198,7 @@ const Offering = () => {
             academic pursuits and an informed, thoughtful approach to the
             challenges of the modern era.
           </p>
-          <h2 className="text-[20px] text-left py-6">Class 11th & 12th</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 11th & 12th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company is dedicated to providing crafted materials in
             mathematics, guiding students through advanced concepts like
@@ -210,7 +210,7 @@ const Offering = () => {
             offerings extend to logical reasoning, developing analytical
             thinking and problem-solving skills.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Technical Education, we offer specialized resources to fortify
             skills in technical quantitative aptitude, verbal ability,
@@ -218,7 +218,7 @@ const Offering = () => {
             targeted content, interactive learning modules, and practice
             assessments tailored to enhance proficiency in technical subjects.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Non-Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Non-Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Non-Tech education, we provide a specialized and targeted
             approach to enhance skills in Quantitative Aptitude, Verbal Ability,
@@ -244,8 +244,8 @@ const Offering = () => {
           />
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl ">
-            End-To-End Tech Solution
+          <h3 className="text-[#063970] font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
+            <span className="sm:hidden"> End-To-End <br /> Tech Solution</span> <span className="max-sm:hidden">End-To-End Tech Solution</span>
           </h3>
           <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
             An end-to-end solution (E2ES) is a term that means that the provider
@@ -269,9 +269,9 @@ const Offering = () => {
         animate={controls4}
       >
         <div className=" h-[400px] relative top-[10vw]  lg:flex hidden  flex-col justify-center">
-          <h2 className="text-[#063970] flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl ">
+        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
-          </h2>
+          </h3>
           <h2 className="text-[20px] text-left text-[#063970] py-6">
             Web Development :
           </h2>
@@ -366,7 +366,7 @@ const Offering = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] my-10">
+        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering-1.png")}
             alt=""
@@ -374,9 +374,9 @@ const Offering = () => {
           />
         </div>
         <div className=" md:h-[400px]   lg:hidden block  ">
-          <h2 className="text-3xl  text-left  flex justify-center text-[#063970] font-serif">
+        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
-          </h2>
+          </h3>
           <h2 className="text-[20px] text-left text-[#063970] py-6">
             Web Development :
           </h2>
@@ -387,8 +387,8 @@ const Offering = () => {
             development:
             <br />
           </p>
-          <div className="flex flex-wrap mx-auto gap-[30px] justify-center items-center ml-auto mr-auto mt-[10px] mb-[30px] ">
-            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
+          <div className="flex flex-wrap mx-auto offeringimage2 justify-center items-center ml-auto mr-auto mt-[40px] mb-[50px] ">
+            <div className=" w-[60px] h-[60px] mb-[-60px] relative">
               <img
                 src={require("../../Assets/Images/offerings/responsive.png")}
                 className="w-full h-full object-cover"
@@ -396,7 +396,7 @@ const Offering = () => {
               />
               <p>Responsive</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
+            <div className=" w-[60px] h-[60px] mb-[-60px] relative">
               <img
                 src={require("../../Assets/Images/offerings/frontend.png")}
                 className="w-full h-full object-cover"
@@ -404,7 +404,7 @@ const Offering = () => {
               />
               <p>Frontend</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
+            <div className=" w-[60px] h-[60px]  relative">
               <img
                 src={require("../../Assets/Images/offerings/server side.png")}
                 className="w-full h-full object-cover"
@@ -412,7 +412,7 @@ const Offering = () => {
               />
               <p>Server-Side Scripting</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-5 relative">
+            <div className=" w-[60px] h-[60px]  relative">
               <img
                 src={require("../../Assets/Images/offerings/progressive.png")}
                 className="w-full h-full object-cover"
@@ -421,15 +421,15 @@ const Offering = () => {
               <p>Progressive Web Apps</p>
             </div>
           </div>
-          <h2 className="text-[20px] text-left py-10">Mobile App :</h2>
+          <h2 className="text-[20px] text-left text-[#063970] py-10">Mobile App :</h2>
           <p className=" text-sm text-justify -my-6">
             Mobile app involve the application of advanced technologies to
             address various challenges in mobile app development.Key aspects of
             tech solutions for mobile apps include:<br></br>
           </p>
           <div className="container justify-center mx-auto">
-            <div className=" flex flex-wrap  gap-[30px] justify-center items-center mx-auto mt-[10px] mb-[30px] ">
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className=" flex flex-wrap offeringimage sm justify-center items-center mx-auto mt-[10px] mb-[30px] ">
+            <div className=" w-[60px] h-[60px] my-10 relative">
               <img
                 src={require("../../Assets/Images/offerings/crossplatform.png")}
                 className="w-full h-full object-cover"
@@ -437,7 +437,7 @@ const Offering = () => {
               />
               <p>Cross Platform</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className=" w-[60px] h-[60px] my-10 relative">
               <img
                 src={require("../../Assets/Images/offerings/cloudintergration.png")}
                 className="w-full h-full object-cover"
@@ -445,7 +445,7 @@ const Offering = () => {
               />
               <p>Cloud Integration</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className=" text-center w-[60px] h-[60px] my-10 relative">
               <img
                 src={require("../../Assets/Images/offerings/miandai.png")}
                 className="w-full h-full object-cover"
@@ -453,7 +453,7 @@ const Offering = () => {
               />
               <p>MI and AI</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className=" w-[60px] h-[60px] my-10 relative">
               <img
                 src={require("../../Assets/Images/offerings/blockchain.png")}
                 className="w-full h-full object-cover"
@@ -461,7 +461,7 @@ const Offering = () => {
               />
               <p>Block Chain</p>
             </div>
-            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+            <div className=" w-[60px] h-[60px] my-10 relative">
               <img
                 src={require("../../Assets/Images/offerings/cybersecurity.png")}
                 className="w-full h-full object-cover"

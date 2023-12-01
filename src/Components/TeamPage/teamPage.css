@@ -42,9 +42,7 @@
 .team_name{
   margin-bottom: 2vw;
   margin-top: 1vw;
-  /* width: 20px; */
   line-height: 1.1em;
-  /* letter-spacing: -2px;
 }
 .team-image {
   flex: 1;
@@ -52,11 +50,19 @@
 
 }
 
-.odd {
-  /* margin-bottom: 5vw; */
+.oddteam {
   flex-direction: row-reverse;
+  @media (max-width:786px) {
+    flex-direction: column;
+
+  }
 }
-.even {
+
+.eventeam {
+  margin-bottom:0px;
   flex-direction: row;
-  margin-bottom: 0px !important;
+  @media (max-width:786px) {
+    flex-direction: column;
+
+  }
 }

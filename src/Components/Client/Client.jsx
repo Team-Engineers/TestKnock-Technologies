@@ -7,7 +7,7 @@ const Client = () => {
       <div className="heading_main md:text-[30px] text-[30px]  font-sans md:mt-[40px] md:mb-[90px] max-md:my-[20%]">
         <h2>What Our Clients Say</h2>
       </div>
-      <div className="cards-container mr-[10px] ml-[10px] grid  max-md:grid-cols-1 lg:grid-cols-4 grid-cols-2">
+      <div className="cards-container mr-[10px] ml-[10px] grid  max-md:grid-cols-2 grid-cols-4 max-lg:grid-cols-2  max-sm:grid-cols-1">
         <div className="card-1  md:hover:scale-[110%] duration-100 max-h-[550px]">
           <img
             className="profile-image relative mr-auto ml-auto top-[-70px]"

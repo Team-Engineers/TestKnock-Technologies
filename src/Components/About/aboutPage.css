@@ -4,7 +4,6 @@
   @media (max-width:786px) {
     margin: auto 10px;
   }
-
 }
 
 .about-container {
@@ -12,10 +11,15 @@
 }
 
 .about-members {
-  margin-top: 10vw;
+  margin-top: 250px;
   display: flex;
   margin-bottom: 50px;
   flex-direction: column;
+  @media (max-width:786px) {
+    margin-bottom: 0;
+    margin-top: 60px;
+
+  }
 }
 
 .about-member {
@@ -23,17 +27,11 @@
   display: flex;
   margin-bottom: 50px;
   margin: auto 80px;
-
   @media (max-width:768px) {
     margin: auto 20px;
-
+    margin-bottom: 0px;
   }
 }
-
-.about_main {
-  margin-top: 80px;
-}
-
 .about-info {
   background-color: rgba(255, 255, 255, 0.463);
   padding: 10px;
@@ -45,6 +43,9 @@
     border: 1px solid black;
     border-radius: 5px;
     margin: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
   }
 }
 
@@ -69,25 +70,22 @@
 }
 
 .about-image {
-
   flex: 1;
 }
 
 .odd {
   flex-direction: row-reverse;
-
   @media (max-width:786px) {
-    flex-direction: column-reverse;
-
+    flex-direction: column;
   }
 }
 
 .even {
-  margin-bottom: 15vw;
+  margin-bottom: 0px;
   flex-direction: row;
-
   @media (max-width:786px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    margin-bottom: 0px;
 
   }
 }
@@ -95,17 +93,17 @@
 .oddd {
   position: relative;
   top: -9vw;
+  @media (max-width:786px) {
+    top: 0px;
 
-  @media (max-width:786px) {}
+  }
 }
 
 .evenn {
   position: relative;
   top: 7vw;
-
   @media (max-width:786px) {
     top: 0;
-    margin-bottom: 17vw;
   }
 }
 
@@ -113,10 +111,9 @@
   position: relative;
   top: 0;
   margin-top: 17vw;
-
   @media (max-width:786px) {
-    margin-top: 0;
-
+    margin-top: 50px;
+    
   }
 }
 
@@ -124,4 +121,9 @@
   position: relative;
   top: -9vw;
   margin-top: 17vw;
+  @media (max-width:786px) {
+    margin-top: 0;
+    top:0;
+
+  }
 }
