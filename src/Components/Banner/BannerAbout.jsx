@@ -13,7 +13,8 @@ export const BannerAbout = () => {
         </div>  
         <div className="flex justify-center items-center">
           <NavLink to="/team">
-            <button className="bg-[black]  hover:text-[gray] w-[200px] rounded-md font-medium my-6 py-3 text-white">
+            {/* <button className="bg-[black]  hover:text-[gray] w-[200px] rounded-md font-medium my-6 py-3 text-white"> */}
+            <button className="bg-[black] border border-white hover:text-[gray] sm:w-[180px] w-[140px] rounded-md font-medium mb-[5vw] my-9 py-2 sm:py-3 text-white">
               Meet Our Team
             </button>
           </NavLink>
