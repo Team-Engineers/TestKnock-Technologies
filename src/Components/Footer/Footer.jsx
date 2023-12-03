@@ -123,10 +123,10 @@ const Footer = () => {
               </ul>
             </div>
             <div className="text-center  max-sm:hidden sm:text-left">
-              <p className="text-[120%] hover:text-white font-medium text-gray-400">
+              <p className="md:text-[120%] text-[90%] hover:text-white font-medium text-gray-400">
                 Contact Us
               </p>
-              <ul className="mt-8 space-y-4 text-md">
+              <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
                   <IoMdMail />
                   <h >
@@ -151,21 +151,19 @@ const Footer = () => {
           </div>
         </div>
         <div className="sm:hidden block text-center mt-[6vw] ">
-          <NavLink
-            to="/contact"
+          <h
             className="text-[110%] font-medium text-gray-400"
           >
             Contact Us
-          </NavLink>
-          <ul className="mt-8 text-left space-y-4 text-[80%]">
+          </h>
+          <ul className="mt-8  space-y-4 text-[80%]">
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <NavLink
+              <h
                 className="flex items-center text-gray-600 justify-center gap-1.5 "
-                to="/"
               >
                 <IoMdMail />
                 <span className="flex-1 text-gray-600">info@testknock.com</span>
-              </NavLink>
+              </h>
             </li>
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
               <NavLink
@@ -177,11 +175,14 @@ const Footer = () => {
                 <span className="flex-1 text-gray-600">9953617456</span>
               </NavLink>
             </li>
-            <li className=" mx-auto flex text-center w-[60vw] text-gray-600 justify-center items-center gap-1.5">
-              <IoMdPin className=" mx-auto relative left-[5px]" />
-              <span className="flex-1">
-                Office No. - 42, Durga Vihar, Near Amrapali Saphhire, Sec-45, Noida, 201301
-              </span>
+            <li className="flex mx-auto w-[300px] relative text-ellipsis text-gray-600 justify-center items-center">
+              <h
+                className="flex  text-gray-600 justify-center gap-1.5 "
+              >
+                <IoMdPin className="relative top-[3px] left-[16px]" />
+                <span className="flex-1 text-gray-600"> Office No. - 42, Durga Vihar, Near Amrapali Saphhire, Sec-45, Noida, 201301
+                </span>
+              </h>
             </li>
 
 
