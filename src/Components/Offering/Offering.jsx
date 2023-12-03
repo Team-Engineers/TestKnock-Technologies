@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
-import { NavLink } from "react-router-dom";
 import "./offering.css";
 
 const fadeIn = (direction, type, delay, duration) => ({
@@ -207,7 +206,7 @@ const Offering = () => {
          <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
             <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
           <img
-            src={require("../../Assets/Images/offerings/offering4.png")}
+            src={require("../../Assets/Images/offerings/tech-solution05.jpeg")}
             className="w-full h-full object-cover"
             alt=""
           />

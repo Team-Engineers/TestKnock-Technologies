@@ -89,7 +89,7 @@ const BurgerAndMenu = () => {
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/team">Our Team </NavLink>
-        <NavLink to="/offering">Offering</NavLink>
+        <NavLink to="/offerings">Offering</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </StyledMenu>
     </>

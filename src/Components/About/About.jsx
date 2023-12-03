@@ -1,7 +1,7 @@
 import React from "react";
 
-import "./aboutPage.css";
 import { NavLink } from "react-router-dom";
+import "./aboutPage.css";
 const aboutData = {
   title: "Know about us",
   tagline: "Know more about us.",
@@ -78,7 +78,7 @@ const About = () => {
           </div>
           <div className=" md:hidden block p-[10px] text-justify about-member__description">
             <div className="flex flex-col justify-center my-[10px] ">
-              <h2 className="page_font font-bold text-[20px] text-[#063970]	 ">Founder<p className="page_font font-bold text-black leading-[50px] text-[250%]">Devendra Singh Rana</p>
+              <h2 className="page_font font-bold text-[20px] text-[#063970]	 ">Founder<p className="page_font font-bold text-black leading-[50px] text-[200%]">Devendra Singh Rana</p>
               </h2>
             </div>
             <h >
@@ -106,7 +106,7 @@ const About = () => {
           </div>
           <div className=" md:hidden block  p-[10px] text-justify about-member__description">
             <div className="flex flex-col justify-center my-[10px] ">
-              <h2 className="page_font font-bold text-[20px] text-[#063970]">Co-Founder<p className="page_font  text-black leading-[50px] font-bold text-[250%]">Nitya Dwivedi</p>
+              <h2 className="page_font font-bold text-[20px] text-[#063970]">Co-Founder<p className="page_font  text-black leading-[50px] font-bold text-[200%]">Nitya Dwivedi</p>
               </h2>
             </div>      <h>
               Introducing Nitya Dwivedi, our jack-of-all-tech-trades Co-founder!
@@ -119,7 +119,7 @@ const About = () => {
           </div>
           <div className="h-[300px] md:block hidden p-[10px] text-justify about-member__description">
             <div className="flex flex-col justify-center my-[10px] ">
-              <h2 className="page_font font-bold xl:text-[20px] 2xl:text-[25px] lg:text-[20px] text-[#063970] "> <span className="page_font  uppercase">Founder</span><p className="page_font  font-bold text-black xl:text-[45px] 2xl:text-[45px] lg:text-[32px]">Devendra Singh Rana</p>
+              <h2 className="page_font font-bold xl:text-[20px] 2xl:text-[25px] lg:text-[20px] text-[#063970] "> <span className="page_font  uppercase">Founder</span><p className="page_font  font-bold text-black xl:text-[40px] 2xl:text-[40px] lg:text-[30px]">Devendra Singh Rana</p>
               </h2>
             </div>
             <h>
@@ -134,7 +134,7 @@ const About = () => {
           </div>
           <div className="h-[300px] md:block  hidden p-[10px] text-justify about-member__description">
             <div className="flex flex-col justify-center my-[10px] ">
-              <h2 className="page_font font-bold xl:text-[20px] 2xl:text-[25px] lg:text-[20px]  text-[#063970] "><span className=" page_font uppercase">co-Founder</span><p className="page_font  text-black font-bold xl:text-[45px] 2xl:text-[45px] lg:text-[32px]">Nitya Dwivedi</p>
+              <h2 className="page_font font-bold xl:text-[20px] 2xl:text-[25px] lg:text-[20px]  text-[#063970] "><span className=" page_font uppercase">co-Founder</span><p className="page_font  text-black font-bold xl:text-[40px] 2xl:text-[40px] lg:text-[30px]">Nitya Dwivedi</p>
               </h2>
             </div>       <h>
               Introducing Nitya Dwivedi, our jack-of-all-tech-trades Co-founder!

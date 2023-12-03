@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 
 const BannerHome = () => {
   return (
-    <div className="bannerHome w text-white bg-black">
+    <div className="bannerHome w text-white bg-black md:h-[45vw] h-[150vw]">
       <div className="sm:max-w-[1100px] max-w-[83vw] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
-        <div className="sm:mt-[10vw] mt-[30vw]  text-center">
-          <p className="page_font text-[white] font-bold p-2 md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl text-2xl ">Revise Smarter, Score Better:</p>
-          <p className="page_font text-[#c9c0c0] font-bold my-2 md:text-2xl text-sm">with our</p>
-          <h1 className="page_font mx-auto flex  text-[white] md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-5xl text-2xl  font-bold md:p-5 ">
+        <div className="mt-[-46px]  text-center">
+          <p className="page_font text-[white] font-bold md:text-4xl lg:text-4xl xl:text-5xl 2xl:text-5xl text-2xl ">Revise Smarter, Score Better:</p>
+          <p className="page_font text-[#c9c0c0] font-bold my-4 md:text-2xl text-sm">with our</p>
+          <h1 className="page_font mx-auto flex  text-[white] md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-5xl text-2xl  font-bold ">
           Expert Solutions, Scorecards, and Top-tier Technical & IT Services
           </h1>
         </div>  

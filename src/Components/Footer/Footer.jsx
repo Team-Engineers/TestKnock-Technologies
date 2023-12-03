@@ -1,8 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { IoMdPin, IoMdMail, IoMdCall } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { IoMdCall, IoMdMail, IoMdPin } from "react-icons/io";
 const Footer = () => {
   const updatedDate = new Date().getFullYear();
   return (
@@ -73,12 +72,12 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className="text-gray-600 transition hover:text-white"
-                    to="/offering"
+                    to="/offerings"
                   >
                     Offering
                   </NavLink>
                 </li>
-                <li className="max-sm:hidden">
+                <li >
                   <NavLink
                     className="text-gray-600 transition hover:text-white"
                     to="/contact"
@@ -116,6 +115,11 @@ const Footer = () => {
                     Private Schools
                   </p>
                 </li>
+                <li>
+                  <p className="text-gray-600 transition  hover:text-white whitespace-nowrap">
+                    Private Colleges
+                  </p>
+                </li>
               </ul>
             </div>
             <div className="text-center  max-sm:hidden sm:text-left">
@@ -149,7 +153,7 @@ const Footer = () => {
 
                 <li className="flex items-start hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                   <IoMdPin />
-                  <address className="-mt-0.5 flex-1 not-italic hover:text-white text-gray-600">
+                  <address className="-mt-0.5 flex-1 hover:text-white not-italic text-gray-600">
                     Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
                     Sec-45, Noida , 201301
                   </address>
@@ -186,6 +190,7 @@ const Footer = () => {
               </NavLink>
             </li>
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
+              <IoMdPin/>
               <address className=" flex-1 not-italic text-gray-600">
                 Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
                 Sec-45, Noida , 201301

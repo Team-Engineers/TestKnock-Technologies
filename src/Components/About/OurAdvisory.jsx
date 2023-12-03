@@ -17,21 +17,19 @@ const OurAdvisory = () => {
           </div>
           <div className="lg:w-[300px] w-[250px] mr-auto ml-auto  mt-auto mb-auto">
             <h1 className="mr-auto  ml-auto text-center">
-              <span className="text-[200%]  font-bold">Animesh Ikshit</span>
+              <span className="text-[200%] text-center font-bold">Animesh Ikshit</span>
               <br />
               <span className="yellowww text-[#063970] font-bold  text-[80%]">
                 DESIGN AND CREATIVITY EXPERT
               </span>
               <br />
-              <span className="text-[90%] font-style: italic">
-                <strong>
+              <strong>
                   B. Des. from NIFT Delhi
                 </strong>
-                <br />
+            </h1>
+             <span className="text-[90%] font-style: italic text-justify">
                 "Meet our Design and Creativity Expert, Animesh, who holds a Bachelor's in Design from NIFT Delhi. With a keen eye for aesthetics and a passion for innovation, Animesh brings a wealth of experience in transforming ideas into visually stunning realities. Their creative prowess is a driving force behind our commitment to cutting-edge design."
               </span>
-              <br />
-            </h1>
           </div>
         </div>
         <div className="flex  flex-col ">
@@ -50,15 +48,14 @@ const OurAdvisory = () => {
                 EXPERT IN STRATEGIES
               </span>
               <br />
-              <span className="text-[90%] font-style: italic">
                 <strong>
                   Management Graduate from IIM Indore
                 </strong>
-                <br />
-                "We are proud to have Manoj, an Expert in Strategies, as a valuable member of our advisory team. A graduate from IIM Indore, Manoj brings a strategic mindset that is second to none. Their analytical acumen and business insights play a pivotal role in shaping our long-term goals and ensuring the success of our strategic initiatives."
-              </span>
               <br />
             </h1>
+             <span className="text-[90%] font-style: italic text-justify">
+               "We are proud to have Manoj, an Expert in Strategies, as a valuable member of our advisory team. A graduate from IIM Indore, Manoj brings a strategic mindset that is second to none. Their analytical acumen and business insights play a pivotal role in shaping our long-term goals and ensuring the success of our strategic initiatives."
+              </span>
           </div>
         </div>
         <div className="flex  flex-col ">
