@@ -40,7 +40,9 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
             <div className="text-center ">
-              <p className="md:text-[120%] text-[90%] text-gray-400 hover:text-white ">Company</p>
+              <p className="md:text-[120%] text-[90%] text-gray-400 hover:text-white ">
+                Company
+              </p>
               <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li>
                   <NavLink
@@ -74,10 +76,10 @@ const Footer = () => {
                     className="text-gray-600 transition hover:text-white"
                     to="/offerings"
                   >
-                    Offering
+                    Offerings
                   </NavLink>
                 </li>
-                <li >
+                <li>
                   <NavLink
                     className="text-gray-600 transition hover:text-white"
                     to="/contact"
@@ -128,15 +130,19 @@ const Footer = () => {
               </p>
               <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
+                  <a href="mailto:info@testknock.com" className="gap-1.5 flex ">
                   <IoMdMail />
                   <h >
                     info@testknock.com
                   </h>
+                  </a>
                 </li>
 
                 <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
-                  <IoMdCall />
-                  <h >9953617456</h>
+                  <a href="tel:9953617456" className="gap-1.5 flex ">
+                    <IoMdCall />
+                    <span>9953617456</span>
+                  </a>
                 </li>
 
                 <li className="flex items-start hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
@@ -151,48 +157,47 @@ const Footer = () => {
           </div>
         </div>
         <div className="sm:hidden block text-center mt-[6vw] ">
-          <h
-            className="text-[110%] font-medium text-gray-400"
-          >
-            Contact Us
-          </h>
+          <h className="text-[110%] font-medium text-gray-400">Contact Us</h>
           <ul className="mt-8  space-y-4 text-[80%]">
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <h
-                className="flex items-center text-gray-600 justify-center gap-1.5 "
-              >
-                <IoMdMail />
-                <span className="flex-1 text-gray-600">info@testknock.com</span>
-              </h>
+              <a href="mailto:info@testknock.com">
+                <h className="flex items-center text-gray-600 justify-center gap-1.5 ">
+                  <IoMdMail />
+                  <span className="flex-1 hover:text-white text-gray-600">
+                    info@testknock.com
+                  </span>
+                </h>
+              </a>
             </li>
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <NavLink
-                className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                to="/"
-              >
-                <IoMdCall />
+              <a href="tel:9953617456">
+                <h className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                  <IoMdCall />
 
-                <span className="flex-1 text-gray-600">9953617456</span>
-              </NavLink>
+                  <span className="flex-1 hover:text-white text-gray-600">
+                    9953617456
+                  </span>
+                </h>
+              </a>
             </li>
             <li className="flex mx-auto w-[300px] relative text-ellipsis text-gray-600 justify-center items-center">
-              <h
-                className="flex  text-gray-600 justify-center gap-1.5 "
-              >
+              <h className="flex  text-gray-600 justify-center gap-1.5 ">
                 <IoMdPin className="relative top-[3px] left-[16px]" />
-                <span className="flex-1 text-gray-600"> Office No. - 42, Durga Vihar, Near Amrapali Saphhire, Sec-45, Noida, 201301
+                <span className="flex-1 hover:text-white text-gray-600">
+                  {" "}
+                  Office No. - 42, Durga Vihar, Near Amrapali Saphhire, Sec-45,
+                  Noida, 201301
                 </span>
               </h>
             </li>
-
-
           </ul>
         </div>
         <div className="mt-12 border-t border-gray-100 pt-6 ml-[20px] mr-[20px]">
           <div className="text-center sm:flex justify-between sm:text-left">
-            <p className="block text-gray-400 sm:inline">All rights reserved.</p>
+            <p className="block text-gray-400 sm:inline">
+              All rights reserved.
+            </p>
             <p className="flex sm:flex-row flex-col  gap-[10px] max-md:justify-center  md:text-[100%] text-[90%] ">
-
               <NavLink
                 className=" whitespace-nowrap  text-[#063970] underline transition hover:text-blue-800"
                 to="/"

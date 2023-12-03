@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import styled from "styled-components";
 
 const StyledBurger = styled.button`
   position: relative;
@@ -104,7 +104,7 @@ const BurgerAndMenu = () => {
           Our Team
         </NavLink>
         <NavLink to="/offerings" onClick={handleMenuClick}>
-          Offering
+          Offerings
         </NavLink>
         <NavLink to="/contact" onClick={handleMenuClick}>
           Contact
