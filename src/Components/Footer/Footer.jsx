@@ -21,8 +21,8 @@ const Footer = () => {
                   </div>
                   <div className="text-white font-sans font-bold text-[150%] ml-[-13%]">
                     <h2>
-                      <span>Tes</span> 
-                      <span>tKn</span> 
+                      <span>Tes</span>
+                      <span>tKn</span>
                       <span>ock</span>
                     </h2>
                   </div>
@@ -127,49 +127,37 @@ const Footer = () => {
                 Contact Us
               </p>
               <ul className="mt-8 space-y-4 text-md">
-                <li>
-                  <NavLink
-                    className="flex items-center hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    to="/"
-                  >
-                    <IoMdMail />
-
-                    <span className="flex-1 hover:text-white text-gray-600">
-                      info@testknock.com
-                    </span>
-                  </NavLink>
+                <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
+                  <IoMdMail />
+                  <h >
+                    info@testknock.com
+                  </h>
                 </li>
 
-                <li>
-                  <NavLink
-                    className="flex items-center hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    to="/"
-                  >
-                    <IoMdCall />
-
-                    <span className="flex-1 hover:text-white text-gray-600">9953617456</span>
-                  </NavLink>
+                <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
+                  <IoMdCall />
+                  <h >9953617456</h>
                 </li>
 
                 <li className="flex items-start hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                   <IoMdPin />
-                  <address className="-mt-0.5 flex-1 hover:text-white not-italic text-gray-600">
+                  <h className="-mt-0.5 flex-1 not-italic">
                     Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
                     Sec-45, Noida , 201301
-                  </address>
+                  </h>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="sm:hidden block text-center mt-[6vw] sm:text-left">
+        <div className="sm:hidden block text-center mt-[6vw] ">
           <NavLink
             to="/contact"
             className="text-[110%] font-medium text-gray-400"
           >
             Contact Us
           </NavLink>
-          <ul className="mt-8 space-y-4 text-[80%]">
+          <ul className="mt-8 text-left space-y-4 text-[80%]">
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
               <NavLink
                 className="flex items-center text-gray-600 justify-center gap-1.5 "
@@ -189,13 +177,14 @@ const Footer = () => {
                 <span className="flex-1 text-gray-600">9953617456</span>
               </NavLink>
             </li>
-            <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <IoMdPin/>
-              <address className=" flex-1 not-italic text-gray-600">
-                Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
-                Sec-45, Noida , 201301
-              </address>
+            <li className=" mx-auto flex text-center w-[60vw] text-gray-600 justify-center items-center gap-1.5">
+              <IoMdPin className=" mx-auto relative left-[5px]" />
+              <span className="flex-1">
+                Office No. - 42, Durga Vihar, Near Amrapali Saphhire, Sec-45, Noida, 201301
+              </span>
             </li>
+
+
           </ul>
         </div>
         <div className="mt-12 border-t border-gray-100 pt-6 ml-[20px] mr-[20px]">
@@ -203,25 +192,25 @@ const Footer = () => {
             <p className="block text-gray-400 sm:inline">All rights reserved.</p>
             <p className="flex sm:flex-row flex-col  gap-[10px] max-md:justify-center  md:text-[100%] text-[90%] ">
 
-             <NavLink
+              <NavLink
                 className=" whitespace-nowrap  text-[#063970] underline transition hover:text-blue-800"
                 to="/"
-                >
+              >
                 Terms & Conditions
               </NavLink>
               <p className="md:block hidden  text-gray-400 sm:inline"> | </p>
               <NavLink
                 className="whitespace-nowrap text-[#063970] underline transition hover:text-blue-800"
                 to="/"
-                >
+              >
                 Privacy Policy
               </NavLink>
-                </p>
+            </p>
             <p className="mt-4 md:text-[100%] text-[90%] text-gray-400 sm:order-first sm:mt-0">
               &copy; {updatedDate} TestKnock
             </p>
           </div>
-        </div> 
+        </div>
       </div>
     </footer>
   );

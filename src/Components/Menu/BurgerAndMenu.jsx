@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const StyledBurger = styled.button`
   position: relative;
@@ -78,19 +78,37 @@ const StyledMenu = styled.nav`
 
 const BurgerAndMenu = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
+  const handleMenuClick = () => {
+    setOpen(!open);
+  };
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+       <StyledBurger open={open} onClick={handleMenuClick}>
         <div />
         <div />
         <div />
       </StyledBurger>
       <StyledMenu className="max-lg:w-full" open={open}>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/team">Our Team </NavLink>
-        <NavLink to="/offerings">Offering</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/" onClick={handleMenuClick}>
+          Home
+        </NavLink>
+        <NavLink to="/about" onClick={handleMenuClick}>
+          About
+        </NavLink>
+        <NavLink to="/team" onClick={handleMenuClick}>
+          Our Team
+        </NavLink>
+        <NavLink to="/offerings" onClick={handleMenuClick}>
+          Offering
+        </NavLink>
+        <NavLink to="/contact" onClick={handleMenuClick}>
+          Contact
+        </NavLink>
       </StyledMenu>
     </>
   );
