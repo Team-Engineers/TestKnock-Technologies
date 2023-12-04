@@ -1,31 +1,32 @@
 .bannerTeam {
-  background-image: url("../../Assets/Images/background/banner_team04.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-height: 34em;
-}
-
-.bannerHome {
-  background-image: url("../../Assets/Images/background/homebanner005.jpeg");
+  background-image: url("../../Assets/Images/background/bannerteam06.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
-  /* filter */
+  filter: grayscale(60%);
+}
+  
+.bannerHome {
+  background-image: url("../../Assets/Images/background/homenew3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
 }
 
 .bannerAbout {
   background-image: url("../../Assets/Images/background/about_011.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 34em;
   filter: grayscale(40%);
+  text-transform: uppercase;
 }
 
 .bannerOffer {
-  background-image: url("../../Assets/Images/background/banner_offering001.jpg");
+  background-image: url("../../Assets/Images/background/banneroffer06.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   text-transform: uppercase;
+  filter: grayscale(60%);
 }
 
 .page_font {

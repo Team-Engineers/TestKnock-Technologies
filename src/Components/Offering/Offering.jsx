@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
 import { motion, useAnimation } from "framer-motion";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 import "./offering.css";
 
@@ -54,65 +54,38 @@ const Offering = () => {
     triggerOnce: false,
     threshold: 0.5,
   });
-  useEffect(() => {
-    if (inView2) {
-      controls2.start({ opacity: 1 });
-    } else {
-      controls2.start({ opacity: 0.5 });
-    }
-  }, [controls2, inView2]);
-
-  useEffect(() => {
-    if (inView3) {
-      controls3.start({ opacity: 1 });
-    } else {
-      controls3.start({ opacity: 0.5 });
-    }
-  }, [controls3, inView3]);
-
-  useEffect(() => {
-    if (inView4) {
-      controls4.start({ opacity: 1 });
-    } else {
-      controls4.start({ opacity: 0.5 });
-    }
-  }, [controls4, inView4]);
-
+ 
   return (
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       animate="show"
-      className=" bg-white overflow-hidden py-[100px] px-4 mx-auto ml-[20px] mr-[20px]"
+      className=" bg-white overflow-hidden mt-[10px]  ml-[20px] mr-[20px]"
     >
-      <p className=" text-[20px] font-bold text-center font-sans ">
-        What We Do <br></br>
-        <span className="text-[30px] font-bold text-center  font-sans">
-          OUR SERVICES
-        </span>
-      </p>
+       <div className="heading_main text-center font-bold md:mt-[5%] mt-[15%] md:mb-[2%] mb-[12%] md:text-[40px] text-[30px] ">
+        <h2> What We Do </h2>
+      </div> 
       <motion.div
-        className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10 "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
         variants={fadeIn("up", "tween", 0.2, 1)}
         ref={ref1}
         animate={controls1}
       >
         <div>
-          <div className="shadow-xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[450px] 2xl:h-[550px] lg:w-[370px] lg:h-[460px] xl:w-[500px] xl:h-[450px] w-[300px] h-[360px] my-10 relative">
-            <div className="absolute top-[5vw] 2xl:w-[450px] 2xl:h-[550px] lg:w-[370px] lg:h-[460px] xl:w-[500px] xl:h-[450px] w-[300px] h-[360px] left-[4vw] z-10 inset-0 border-[2px] border-black  "></div>
-
+          <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
             <img
-              src={require("../../Assets/Images/offerings/offering-2.png")}
+              src={require("../../Assets/Images/offerings/offering5.png")}
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-[38px] md:text-4xl  ">
+          <h3 className="text-[#063970] font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             Top Quality Content
           </h3>
-          <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 ">
+          <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
             Explore a premier platform tailored for students seeking top-tier
             aptitude practice. Our site curates exclusive, high-quality content
             meticulously designed for professionals-in-training. Elevate your
@@ -126,15 +99,15 @@ const Offering = () => {
 
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="max-w-[1240px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
+        className="max-w-[1200px] mt-[5vw]  max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 max-lg:mb-[20%]"
         ref={ref2}
         animate={controls2}
       >
         <div className=" h-[400px] relative top-[10vw]  lg:flex hidden  flex-col justify-center">
-          <h3 className="text-[#063970] flex justify-center  mx-auto font-sans; text-[38px] md:text-4xl ">
+        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
           </h3>
-          <h2 className="text-[20px] text-left py-6">Class 9th & 10th</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 9th & 10th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company provides interactive math ,science and current affairs
             learning tools designed to enhance the mathematical skills of
@@ -143,7 +116,7 @@ const Offering = () => {
             academic pursuits and an informed, thoughtful approach to the
             challenges of the modern era.
           </p>
-          <h2 className="text-[20px] text-left py-6">Class 11th & 12th</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 11th & 12th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company is dedicated to providing crafted materials in
             mathematics, guiding students through advanced concepts like
@@ -155,7 +128,7 @@ const Offering = () => {
             offerings extend to logical reasoning, developing analytical
             thinking and problem-solving skills.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Technical Education, we offer specialized resources to fortify
             skills in technical quantitative aptitude, verbal ability,
@@ -163,7 +136,7 @@ const Offering = () => {
             targeted content, interactive learning modules, and practice
             assessments tailored to enhance proficiency in technical subjects.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Non-Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Non-Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Non-Tech education, we provide a specialized and targeted
             approach to enhance skills in Quantitative Aptitude, Verbal Ability,
@@ -173,18 +146,18 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
-        <div className="shadow-xl lg:h-[700px] h-[400px] my-10">
+        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
-            src={require("../../Assets/Images/offerings/offering5.png")}
+            src={require("../../Assets/Images/offerings/offering6.png")}
             alt=""
             className="w-full h-full rounded-2xl object-cover"
           />
         </div>
-        <div className="  md:h-[400px] lg:hidden block ">
-          <h2 className="text-3xl  text-left flex justify-center text-[#063970] font-serif">
+        <div className="  max-lg:h-[500px]md:h-[400px] max-md:h-full lg:hidden block ">
+          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
-          </h2>
-          <h2 className="text-[20px] text-left py-6">Class 9th & 10th</h2>
+          </h3>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 9th & 10th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company provides interactive math ,science and current affairs
             learning tools designed to enhance the mathematical skills of
@@ -193,7 +166,7 @@ const Offering = () => {
             academic pursuits and an informed, thoughtful approach to the
             challenges of the modern era.
           </p>
-          <h2 className="text-[20px] text-left py-6">Class 11th & 12th</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">Class 11th & 12th</h2>
           <p className=" text-sm text-justify -my-4">
             Our company is dedicated to providing crafted materials in
             mathematics, guiding students through advanced concepts like
@@ -205,7 +178,7 @@ const Offering = () => {
             offerings extend to logical reasoning, developing analytical
             thinking and problem-solving skills.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Technical Education, we offer specialized resources to fortify
             skills in technical quantitative aptitude, verbal ability,
@@ -213,7 +186,7 @@ const Offering = () => {
             targeted content, interactive learning modules, and practice
             assessments tailored to enhance proficiency in technical subjects.
           </p>
-          <h2 className="text-[20px] text-left py-6">College(Non-Tech)</h2>
+          <h2 className="text-[20px] text-[#063970] text-left py-6">College(Non-Tech)</h2>
           <p className=" text-sm text-justify -my-4">
             In Non-Tech education, we provide a specialized and targeted
             approach to enhance skills in Quantitative Aptitude, Verbal Ability,
@@ -225,25 +198,24 @@ const Offering = () => {
         </div>
       </motion.div>
       <motion.div
-        className="max-w-[1240px] mx-auto md:grid grid-cols-2 gap-10 "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
         variants={fadeIn("right", "tween", 0.2, 1)}
         ref={ref3}
         animate={controls3}
       >
-        <div className="shadow-xl max-lg:ml-auto max-lg:mr-auto 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] w-[260px] h-[300px] my-10 relative">
-          <div className="absolute top-[4vw] 2xl:w-[550px] 2xl:h-[400px] lg:w-[370px] lg:h-[460px] xl:w-[550px] xl:h-[350px] w-[260px] h-[300px] left-[3vw] z-10 inset-0 border-[2px] border-black  "></div>
-
+         <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
           <img
-            src={require("../../Assets/Images/offerings/offering4.png")}
+            src={require("../../Assets/Images/offerings/tech-solution05.jpeg")}
             className="w-full h-full object-cover"
             alt=""
           />
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-[38px] md:text-4xl ">
-            End-To-End Tech Soltuion
+          <h3 className="text-[#063970] font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
+            <span className="sm:hidden"> End-To-End <br /> Tech Solution</span> <span className="max-sm:hidden">End-To-End Tech Solution</span>
           </h3>
-          <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 ">
+          <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
             An end-to-end solution (E2ES) is a term that means that the provider
             of an application program, software and system will supply all the
             software as well as hardware requirements of the customer such that
@@ -257,115 +229,217 @@ const Offering = () => {
           </p>
         </div>
       </motion.div>
+
       <motion.div
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="max-w-[1240px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
+        className="max-w-[1200px] mt-[5vw] max-lg:mb-[25vw] max-md:mb-[10vw] mx-auto lg:grid grid-cols-2 gap-10 "
         ref={ref4}
         animate={controls4}
       >
         <div className=" h-[400px] relative top-[10vw]  lg:flex hidden  flex-col justify-center">
-          <h2 className="text-[#063970] flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl ">
+        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
+          </h3>
+          <h2 className="text-[20px] text-left text-[#063970] py-6">
+            Web Development :
           </h2>
-          <h2 className="text-[20px] text-left py-6">Web Development</h2>
           <p className=" text-sm text-justify -my-4">
             In web development encompass a wide range of tools and practices
             aimed at creating robust, scalable, and user-friendly websites and
             web applications.Here are some key aspects of tech solutions in web
             development:<br></br>
-            <p className=" text-sm text-justify my-1">1. Responsive Design</p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">
-              2. Front-End Frameworks
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify my-2">
-              3. Server-Side Scripting
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3 ">
-              4. Progressive Web Apps
-            </p>
           </p>
-          <h2 className="text-[20px] text-left py-10">Mobile App</h2>
-          <p className=" text-sm text-justify -my-6">
+          <div className=" grid grid-cols-4 gap-[80px] justify-center items-center ml-auto mr-auto">
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/responsive.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Responsive</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/frontend.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Frontend</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/server side.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Server-Side</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/progressive.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Progressive</p>
+            </div>
+          </div>
+          <h2 className="text-[20px] text-left text-[#063970] py-10 my-6">
+            Mobile App :
+          </h2>
+          <p className=" text-sm text-justify -my-10">
             Mobile app involve the application of advanced technologies to
             address various challenges in mobile app development.Key aspects of
             tech solutions for mobile apps include:<br></br>
-            <p className=" text-sm text-justify my-2">
-              1. Cross-Platform Development
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">2. Cloud Integration</p>
-            <br></br>
-            <p className=" text-sm text-justify my-2">
-              3. Machine Learning and AI
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">
-              4. Blockchain Technology
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify my-2">
-              5. Cybersecurity Measures
-            </p>
           </p>
+          <div className=" grid grid-cols-5 gap-[80px] justify-center items-center ml-auto mr-auto my-8">
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/crossplatform.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cross Platform</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/cloudintergration.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cloud Integration</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/miandai.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>MI and AI</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/blockchain.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Block Chain</p>
+            </div>
+            <div className="shadow-2xl w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/cybersecurity.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cyber Security</p>
+            </div>
+          </div>
         </div>
-        <div className="shadow-xl lg:h-[700px] h-[400px] my-10">
+        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering-1.png")}
             alt=""
             className="w-full h-full rounded-2xl object-cover"
           />
         </div>
-        <div className=" md:h-[400px]   lg:hidden block ">
-          <h2 className="text-3xl  text-left  flex justify-center text-[#063970] font-serif">
+        <div className=" md:h-[400px]   lg:hidden block  ">
+        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
+          </h3>
+          <h2 className="text-[20px] text-left text-[#063970] py-6">
+            Web Development :
           </h2>
-          <h2 className="text-[20px] text-left py-6">Web Development</h2>
           <p className=" text-sm text-justify -my-4">
             In web development encompass a wide range of tools and practices
             aimed at creating robust, scalable, and user-friendly websites and
             web applications.Here are some key aspects of tech solutions in web
             development:
             <br />
-            <p className=" text-sm text-justify my-2">1.Responsive Design</p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">
-              2.Front-End Frameworks
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify my-2">
-              3.Server-Side Scripting
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">
-              4.Progressive Web Apps
-            </p>
           </p>
-          <h2 className="text-[20px] text-left py-10">Mobile App</h2>
+          <div className="flex flex-wrap mx-auto offeringimage2 justify-center items-center ml-auto mr-auto mt-[40px] mb-[50px] ">
+            <div className=" w-[60px] h-[60px] mb-[-60px] relative">
+              <img
+                src={require("../../Assets/Images/offerings/responsive.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Responsive</p>
+            </div>
+            <div className=" w-[60px] h-[60px] mb-[-60px] relative">
+              <img
+                src={require("../../Assets/Images/offerings/frontend.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Frontend</p>
+            </div>
+            <div className=" w-[60px] h-[60px]  relative">
+              <img
+                src={require("../../Assets/Images/offerings/server side.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Server-Side Scripting</p>
+            </div>
+            <div className=" w-[60px] h-[60px]  relative">
+              <img
+                src={require("../../Assets/Images/offerings/progressive.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Progressive Web Apps</p>
+            </div>
+          </div>
+          <h2 className="text-[20px] text-left text-[#063970] py-10">Mobile App :</h2>
           <p className=" text-sm text-justify -my-6">
             Mobile app involve the application of advanced technologies to
             address various challenges in mobile app development.Key aspects of
             tech solutions for mobile apps include:<br></br>
-            <p className=" text-sm text-justify my-2">
-              1.Cross-Platform Development
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">2.Cloud Integration</p>
-            <br></br>
-            <p className=" text-sm text-justify my-2">
-              3.Machine Learning and AI
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify -my-3">
-              4.Blockchain Technology
-            </p>
-            <br></br>
-            <p className=" text-sm text-justify my-2">
-              5.Cybersecurity Measures
-            </p>
           </p>
+          <div className="container justify-center mx-auto">
+            <div className=" flex flex-wrap offeringimage sm justify-center items-center mx-auto mt-[10px] mb-[30px] ">
+            <div className=" w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/crossplatform.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cross Platform</p>
+            </div>
+            <div className=" w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/cloudintergration.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cloud Integration</p>
+            </div>
+            <div className=" text-center w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/miandai.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>MI and AI</p>
+            </div>
+            <div className=" w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/blockchain.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Block Chain</p>
+            </div>
+            <div className=" w-[60px] h-[60px] my-10 relative">
+              <img
+                src={require("../../Assets/Images/offerings/cybersecurity.png")}
+                className="w-full h-full object-cover"
+                alt=""
+              />
+              <p>Cyber Security</p>
+            </div>
+          </div>
+          </div>
+          
         </div>
       </motion.div>
     </motion.div>

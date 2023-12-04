@@ -1,5 +1,5 @@
 .team-members {
-  margin-top: 50px;
+  margin-top: 70px;
   display: flex;
   margin-bottom: 50px;
   flex-direction: column;
@@ -9,53 +9,72 @@
   justify-content: center;
   display: flex;
   margin: auto 10px;
+
   @media (max-width:767px) {
     margin: auto 20px;
   }
 }
+
 .team_main {
-  margin-top: 5vw;
+  margin-top: 3vw;
   position: relative;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .team_main {
     margin-left: auto;
     margin-right: auto;
   }
 }
+
 .team-info {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   flex: 1;
 }
-.team_title{
-  margin-top: 1vw;
+
+.team_title {
+  /* margin-top: 1vw; */
   letter-spacing: .1em;
   text-transform: uppercase;
-  color: rgb(28, 40, 148);
+  color: #063970;
+  font-family: Arial, Helvetica, sans-serif;
   /* font-size: 1.5em; */
 }
-.team_description{
+
+.team_description {
   text-align: justify;
-}
-.team_name{
-  margin-bottom: 2vw;
-  margin-top: 2vw;
-  /* width: 20px; */
   line-height: 1.2em;
-  /* letter-spacing: -2px;
 }
+
+.team_name {
+  margin-bottom: 2vw;
+  margin-top: 1vw;
+  line-height: 1.1em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 .team-image {
   flex: 1;
   max-height: 400px;
 
 }
 
-.odd {
-  /* margin-bottom: 5vw; */
+.oddteam {
   flex-direction: row-reverse;
+
+  @media (max-width:786px) {
+    flex-direction: column;
+
+  }
 }
-.even {
+
+.eventeam {
+  margin-bottom: 0px;
   flex-direction: row;
-  margin-bottom: 0px !important;
+
+  @media (max-width:786px) {
+    flex-direction: column;
+
+  }
 }

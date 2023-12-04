@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 
 const StyledBurger = styled.button`
   position: relative;
@@ -48,18 +48,16 @@ const StyledMenu = styled.nav`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   right: 0;
   height: 100vh;
-  text-align: left;
+  text-align: center;
   padding: 2rem;
   position: absolute;
   top: 0;
   background: black;
 
   transition: transform 0.3s ease-in-out;
-  @media (max-width: 576px) {
-    width: 100%;
-  }
 
   a {
+    text-align: center;
     font-size: 1rem;
     text-transform: uppercase;
     padding: 1rem 0;
@@ -80,19 +78,37 @@ const StyledMenu = styled.nav`
 
 const BurgerAndMenu = () => {
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
+  const handleMenuClick = () => {
+    setOpen(!open);
+  };
   return (
     <>
-      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+       <StyledBurger open={open} onClick={handleMenuClick}>
         <div />
         <div />
         <div />
       </StyledBurger>
-      <StyledMenu open={open}>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/team">Our Team </NavLink>
-        <NavLink to="/offering">Offering</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+      <StyledMenu className="max-lg:w-full" open={open}>
+        <NavLink to="/" onClick={handleMenuClick}>
+          Home
+        </NavLink>
+        <NavLink to="/about" onClick={handleMenuClick}>
+          About
+        </NavLink>
+        <NavLink to="/team" onClick={handleMenuClick}>
+          Our Team
+        </NavLink>
+        <NavLink to="/offerings" onClick={handleMenuClick}>
+          Offerings
+        </NavLink>
+        <NavLink to="/contact" onClick={handleMenuClick}>
+          Contact
+        </NavLink>
       </StyledMenu>
     </>
   );

@@ -1,0 +1,65 @@
+.heading {
+  text-align: center;
+  margin-top: 2%;
+}
+
+.cards-container {
+  gap: 3rem;
+  justify-content: center;
+
+}
+
+.card-1 {
+  background-color: #f58585;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 4% 2%;
+}
+.card-2 {
+  background-color: #ecc571;
+  box-shadow: 1px  4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 4% 2%;
+}
+
+.card-3 {
+  background-color: #71c9ec;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 4% 2%;
+}
+
+.card-4 {
+  background-color: #61ee8b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  margin: 4% 2%;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.quote {
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-top: -50px;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+

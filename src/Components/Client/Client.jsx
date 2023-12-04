@@ -1,150 +1,59 @@
-// import React from "react";
-// const Client = () => {
-//   return (
-//     <div className=" px-4  md:mb-[5%] mb-[15%]">
-//       <div className="flex justify-center">
-//         <h2 className=" md:text-4xl text-3xl font-sans mb-[3%] ">
-//           What Our Client Say
-//         </h2>
-//       </div>
-//       <div className="max-w-[1240px] mx-auto  md:grid-cols-1  lg:grid-cols-2 md:grid  grid-cols-4 gap-6 md:py-12">
-//         <div className="shadow-xl h-[400px]  client1 my-4 bg-red-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-//           <div className="w-32 h-32 lg:top-[120px] max-md:mb-[10vw] top-[50px] relative rounded-full  flex items-center justify-center">
-//             <img
-//               className="w-[120px] h-[120px] max-lg:w-[90px] max-lg:h-[90px] max-md:mb-[10vw] rounded-full object-cover"
-//               src={require("../../Assets/Images/offerings/client-1.png")}
-//             />
-//           </div>
-//           <p className="] relative text-md font-serif lg:my-[200px] text-center mx-4 my-10 ">
-//             "I stumbled upon this website during a stressful exam period, and it
-//             turned out to be a hidden gem. The tips and study strategies shared
-//             by other students were a lifeline. "
-//             <p className="my-10 author">Ayush Dubey</p>
-//           </p>
-//         </div>
-
-//         <div className="shadow-xl h-[400px] client1 my-4 bg-blue-300 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-//           <div className="w-32 h-32 lg:top-[120px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
-//             <img
-//               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-//               src={require("../../Assets/Images/offerings/client-2.png")}
-//             />
-//           </div>
-//           <p className="] relative text-md font-serif lg:my-[200px] text-center mx-4">
-//             "As someone navigating the complex world of academia, I can't
-//             express how much this website has simplified my decision-making
-//             process. "<p className="my-10 author">Jamie Mah</p>
-//           </p>
-//         </div>
-
-//         <div className="shadow-xl h-[400px] client1 my-4 bg-green-300 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-//           <div className="w-32 h-32 lg:top-[120px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
-//             <img
-//               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-//               src={require("../../Assets/Images/offerings/client-3.png")}
-//               alt=""
-//             />
-//           </div>
-//           <p className="] relative text-md font-serif lg:my-[200px] text-center mx-4">
-//             "The intuitive design and diverse range of content make it a
-//             one-stop-shop for academic insights. Whether you're a freshman or a
-//             seasoned student."
-//             <p className="my-10 author">Harshika Bansal</p>
-//           </p>
-//         </div>
-
-//         <div className="shadow-xl h-[400px] client1 my-4 bg-yellow-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-//           <div className="w-32 h-32 lg:top-[120px] max-md:mb-[10vw] relative rounded-full  flex items-center justify-center">
-//             <img
-//               className="w-[120px] h-[120px] max-md:mb-[10vw] rounded-full object-cover"
-//               src={require("../../Assets/Images/offerings/client-4.png")}
-//               alt=""
-//             />
-//           </div>
-//           <p className="] relative text-md font-serif lg:my-[200px] text-center mx-4">
-//             "The intuitive design and diverse range of content make it a
-//             one-stop-shop for academic insights. Whether you're a freshman or a
-//             seasoned student."
-//             <p className="my-10 author">Travis Smith</p>
-//           </p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-
 import React from "react";
+import "./client.css"; 
+
 const Client = () => {
   return (
-    <div className=" px-4 md:my-[5%] my-[15%] ">
-      <div className="flex justify-center">
-        <h2 className=" text-center md:text-3xl text-xl md:mt-[5%] max-md:my-[10%] font-sans ">
-          What Our Client Say
-        </h2>
+    <div className="max-w-[1240px] mx-auto md:mb-[5%] mb-[15%]">
+      <div className="heading_main md:text-[30px] text-[30px]  font-sans md:mt-[40px] md:mb-[90px] max-md:my-[20%]">
+        <h2>What Our Clients Say</h2>
       </div>
-      <div className="max-w-[1240px] mx-auto md:grid grid-cols-4 max-lg:grid-cols-2  gap-6 md:py-12">
-        <div className="shadow-xl h-[500px] client1 my-4 max-lg:my-[30%] bg-green-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-          <div className="w-32 h-32 relative rounded-full flex items-center justify-center">
-            <img
-              className="w-[120px] h-[120px] max-lg:mt-[-14vh]  max-md:mt-[-40vh] rounded-full z-10 absolute md:top-0 object-cover"
-              src={require("../../Assets/Images/offerings/client-1.png")}
-              alt=""
-            />
-          </div>
-          <p className="relative text-md font-serif lg:my-[200px] text-center mx-4">
-            "I stumbled upon this website during a stressful exam period, and it
-            turned out to be a hidden gem. The tips and study strategies
-            shared  by other students were a lifeline. " 
-            <p className="my-10 author">Ayush Dubey</p>
+      <div className="cards-container mr-[10px] ml-[10px] grid  max-md:grid-cols-2 grid-cols-4 max-lg:grid-cols-2  max-sm:grid-cols-1">
+        <div className="card-1  md:hover:scale-[110%] duration-100 max-h-[550px]">
+          <img
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
+            src={require("../../Assets/Images/offerings/client1.jpeg")}
+            alt=""
+          />
+          <p className="quote ">
+          "Working with this team has been an absolute pleasure! They understood our vision for a new website and translated it into a sleek and functional reality. The attention to detail and responsiveness throughout the process was impressive. Our website not only looks fantastic but also performs seamlessly. Highly recommend their services!"
           </p>
+          <p className="author">- Ayush Dubey</p>
         </div>
 
-        <div className="shadow-xl h-[500px] client1 my-4 max-lg:my-[30%] bg-blue-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-          <div className="w-32 h-32 relative rounded-full flex items-center justify-center">
-            <img
-              className="w-[120px] h-[120px] max-lg:mt-[-14vh] max-md:mt-[-40vh] rounded-full z-10 absolute md:top-0 object-cover"
-              src={require("../../Assets/Images/offerings/client-2.png")}
-              alt=""
-            />
-          </div>
-          <p className="relative text-md font-serif lg:my-[200px] text-center mx-4">
-            "As someone navigating the complex world of academia, I can't
-            express how much this website has simplified my decision-making
-            process. "<p className="my-10 author">Jamie Mah</p>
+        <div className="card-2 md:hover:scale-[110%] duration-100 max-h-[550px]">
+          <img
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
+            src={require("../../Assets/Images/offerings/client2.jpeg")}
+            alt=""
+          />
+          <p className="quote">
+          "Incredible experience with this company! They developed a mobile app for our business, and we couldn't be happier with the results. The team demonstrated a deep understanding of our industry, providing valuable insights that enhanced the app's features. Their commitment to delivering on time and within budget exceeded our expectations. Looking forward to future collaborations!"
           </p>
+          <p className="author">- Monika Bist</p>
         </div>
 
-        <div className="shadow-xl h-[500px] client1 my-4 max-lg:my-[30%] bg-yellow-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-          <div className="w-32 h-32 relative rounded-full flex items-center justify-center">
-            <img
-              className="w-[120px] h-[120px] max-lg:mt-[-14vh] max-md:mt-[-40vh] rounded-full z-10 absolute md:top-0 object-cover"
-              src={require("../../Assets/Images/offerings/client-3.png")}
-              alt=""
-            />
-          </div>
-          <p className="] relative text-md font-serif lg:my-[200px] text-center mx-4">
-            "The intuitive design and diverse range of content make it a
-            one-stop-shop for academic insights. Whether you're a freshman or a
-            seasoned student."
-            <p className="my-10 author">Harshika Bansal</p>
+        <div className="card-3 md:hover:scale-[110%] duration-100 max-h-[550px]">
+          <img
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
+            src={require("../../Assets/Images/offerings/client3.jpeg")}
+            alt=""
+          />
+          <p className="quote">
+          "Top-notch service from start to finish! Our website needed a complete overhaul, and this team delivered beyond our expectations. They were creative, technically proficient, and great communicators. The end result is a modern, user-friendly website that truly represents our brand. It's been a game-changer for our online presence. Thank you for the excellent work!"
           </p>
+          <p className="author">- Harshika Bansal</p>
         </div>
 
-        <div className="shadow-xl h-[500px] client1 my-4 max-lg:my-[30%] bg-red-200 lg:hover:scale-[110%] duration-100 rounded-3xl flex flex-col items-center justify-center">
-          <div className="w-32 h-32 relative rounded-full flex items-center justify-center">
-            <img
-              className="w-[120px] h-[120px] max-lg:mt-[-14vh] max-md:mt-[-40vh] rounded-full z-10 absolute md:top-0 object-cover"
-              src={require("../../Assets/Images/offerings/client-4.png")}
-              alt=""
-            />
-          </div>
-          <p className="] relative text-md font-serif lg:my-[200px] text-center mx-4">
-            "The intuitive design and diverse range of content make it a
-            one-stop-shop for academic insights. Whether you're a freshman or a
-            seasoned student."
-            <p className="my-10 author">Travis Smith</p>
+        <div className="card-4 md:hover:scale-[110%] duration-100 max-h-[550px]">
+          <img
+            className="profile-image relative mr-auto ml-auto top-[-70px]"
+            src={require("../../Assets/Images/offerings/client4.jpeg")}
+            alt=""
+          />
+          <p className="quote">
+          "Choosing this company for our app development was one of the best decisions we made. They brought our concept to life with a user-friendly design and robust functionality. The development process was smooth, and they were responsive to our feedback. The app has been well-received by our users, and we continue to receive compliments on its usability. Highly recommended for anyone seeking top-tier development services!"
           </p>
+          <p className="author">- Vinay MR</p>
         </div>
       </div>
     </div>

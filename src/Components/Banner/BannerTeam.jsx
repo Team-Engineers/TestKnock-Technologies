@@ -5,16 +5,16 @@ import './banner.css';
 export const BannerTeam = () => {
   
   return (
-    <div className="bannerTeam text-white md:h-[50vw] h-[150vw] bg-[#e7d987]">
-      <div className=" max-w-[800px] relative top-[50%] md:top-[40%] mx-auto flex flex-col justify-center items-center">
-        <div className="mt-[-96px] text-center">
-          <h1 className="text-[white] brightness-100 md:text-8xl sm:text-6xl text-5xl font-bold md:py-6">
+    <div className="bannerTeam  text-white xl:h-[30em] lg:h-[30em] md:h-[30em]  2xl:h-[35em] h-[30em] flex items-center">
+      <div className="max-w-[1200px] mx-auto flex flex-col justify-center items-center">
+        <div className="text-center">
+        <h1 className="page_font text-[white] md:text-7xl sm:text-5xl text-4xl font-bold md:py-6">
             Meet Our Expert Team
           </h1>
         </div>  
         <div className="flex justify-center items-center">
-          <NavLink to="/offering">
-            <button className="bg-[black] w-[200px] hover:text-[gray] rounded-md font-medium my-6 py-3 text-white">
+          <NavLink to="/offerings">
+          <button className="bg-[black] text-[80%] md:text-[100%] border border-white hover:text-[gray] sm:w-[180px] w-[140px] rounded-md font-medium mb-[5vw] my-9 py-2 sm:py-3 text-white">
               Our Offerings
             </button>
           </NavLink>
