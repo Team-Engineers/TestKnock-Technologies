@@ -5,7 +5,7 @@ const Student = () => {
   return (
     <div className="max-w-[1240px] mx-auto md:mb-[5%] mb-[15%]">
       <div className="heading_main text-center font-bold md:mb-[6%] mb-[20%] md:mt-[3%] my-[12%] md:text-[40px] text-[30px]">
-        <h2>What Our Students Say</h2>
+        <h2>Students Corner</h2>
       </div>
       <div className="cards-container mr-[10px] ml-[10px] grid  max-md:grid-cols-2 grid-cols-4 max-lg:grid-cols-2  max-sm:grid-cols-1">
         <div className="card-1  md:hover:scale-[110%] duration-100  max-h-[400px]">

@@ -2,11 +2,10 @@
   background-image: url("../../Assets/Images/background/bannerteam06.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 34em;
   text-transform: uppercase;
   filter: grayscale(60%);
 }
-
+  
 .bannerHome {
   background-image: url("../../Assets/Images/background/homenew3.jpg");
   background-repeat: no-repeat;
@@ -18,7 +17,6 @@
   background-image: url("../../Assets/Images/background/about_011.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 34em;
   filter: grayscale(40%);
   text-transform: uppercase;
 }

@@ -53,7 +53,7 @@ const HeaderNew = () => {
           <NavLink to="/team" className="text-white whitespace-nowrap hover:text-gray-300">
             Our Team
           </NavLink>
-          <NavLink to="/offering" className="text-white whitespace-nowrap hover:text-gray-300">
+          <NavLink to="/offerings" className="text-white whitespace-nowrap hover:text-gray-300">
             Offerings
           </NavLink>
           <NavLink to="/contact" className="text-white whitespace-nowrap hover:text-gray-300">

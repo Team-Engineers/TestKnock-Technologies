@@ -1,8 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { IoMdPin, IoMdMail, IoMdCall } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { IoMdCall, IoMdMail, IoMdPin } from "react-icons/io";
 const Footer = () => {
   const updatedDate = new Date().getFullYear();
   return (
@@ -22,8 +21,8 @@ const Footer = () => {
                   </div>
                   <div className="text-white font-sans font-bold text-[150%] ml-[-13%]">
                     <h2>
-                      <span>Tes</span> 
-                      <span>tKn</span> 
+                      <span>Tes</span>
+                      <span>tKn</span>
                       <span>ock</span>
                     </h2>
                   </div>
@@ -41,7 +40,9 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:col-span-2">
             <div className="text-center ">
-              <p className="md:text-[120%] text-[90%] text-gray-400 hover:text-white ">Company</p>
+              <p className="md:text-[120%] text-[90%] text-gray-400 hover:text-white ">
+                Company
+              </p>
               <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li>
                   <NavLink
@@ -73,12 +74,12 @@ const Footer = () => {
                 <li>
                   <NavLink
                     className="text-gray-600 transition hover:text-white"
-                    to="/offering"
+                    to="/offerings"
                   >
-                    Offering
+                    Offerings
                   </NavLink>
                 </li>
-                <li className="max-sm:hidden">
+                <li>
                   <NavLink
                     className="text-gray-600 transition hover:text-white"
                     to="/contact"
@@ -116,107 +117,106 @@ const Footer = () => {
                     Private Schools
                   </p>
                 </li>
+                <li>
+                  <p className="text-gray-600 transition  hover:text-white whitespace-nowrap">
+                    Private Colleges
+                  </p>
+                </li>
               </ul>
             </div>
             <div className="text-center  max-sm:hidden sm:text-left">
-              <p className="text-[120%] hover:text-white font-medium text-gray-400">
+              <p className="md:text-[120%] text-[90%] hover:text-white font-medium text-gray-400">
                 Contact Us
               </p>
-              <ul className="mt-8 space-y-4 text-md">
-                <li>
-                  <NavLink
-                    className="flex items-center hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    to="/"
-                  >
-                    <IoMdMail />
-
-                    <span className="flex-1 hover:text-white text-gray-600">
-                      info@testknock.com
-                    </span>
-                  </NavLink>
+              <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
+                <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
+                  <a href="mailto:info@testknock.com" className="gap-1.5 flex ">
+                  <IoMdMail />
+                  <h >
+                    info@testknock.com
+                  </h>
+                  </a>
                 </li>
 
-                <li>
-                  <NavLink
-                    className="flex items-center hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                    to="/"
-                  >
+                <li className="flex items-center hover:text-white text-gray-600  gap-1.5 justify-start ">
+                  <a href="tel:9953617456" className="gap-1.5 flex ">
                     <IoMdCall />
-
-                    <span className="flex-1 hover:text-white text-gray-600">9953617456</span>
-                  </NavLink>
+                    <span>9953617456</span>
+                  </a>
                 </li>
 
                 <li className="flex items-start hover:text-white text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
                   <IoMdPin />
-                  <address className="-mt-0.5 flex-1 not-italic hover:text-white text-gray-600">
+                  <h className="-mt-0.5 flex-1 not-italic">
                     Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
                     Sec-45, Noida , 201301
-                  </address>
+                  </h>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="sm:hidden block text-center mt-[6vw] sm:text-left">
-          <NavLink
-            to="/contact"
-            className="text-[110%] font-medium text-gray-400"
-          >
-            Contact Us
-          </NavLink>
-          <ul className="mt-8 space-y-4 text-[80%]">
+        <div className="sm:hidden block text-center mt-[6vw] ">
+          <h className="text-[110%] font-medium text-gray-400">Contact Us</h>
+          <ul className="mt-8  space-y-4 text-[80%]">
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <NavLink
-                className="flex items-center text-gray-600 justify-center gap-1.5 "
-                to="/"
-              >
-                <IoMdMail />
-                <span className="flex-1 text-gray-600">info@testknock.com</span>
-              </NavLink>
+              <a href="mailto:info@testknock.com">
+                <h className="flex items-center text-gray-600 justify-center gap-1.5 ">
+                  <IoMdMail />
+                  <span className="flex-1 hover:text-white text-gray-600">
+                    info@testknock.com
+                  </span>
+                </h>
+              </a>
             </li>
             <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <NavLink
-                className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                to="/"
-              >
-                <IoMdCall />
+              <a href="tel:9953617456">
+                <h className="flex items-center text-gray-600 justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end">
+                  <IoMdCall />
 
-                <span className="flex-1 text-gray-600">9953617456</span>
-              </NavLink>
+                  <span className="flex-1 hover:text-white text-gray-600">
+                    9953617456
+                  </span>
+                </h>
+              </a>
             </li>
-            <li className="flex items-center text-gray-600 justify-center gap-1.5 ">
-              <address className=" flex-1 not-italic text-gray-600">
-                Office No. - 42, Durga Vihar, Near Amrapali Saphhire,
-                Sec-45, Noida , 201301
-              </address>
+            <li className="flex mx-auto w-[300px] relative text-ellipsis text-gray-600 justify-center items-center">
+              <h className="flex  text-gray-600 justify-center gap-1.5 ">
+                <IoMdPin className="relative top-[3px] left-[16px]" />
+                <span className="flex-1 hover:text-white text-gray-600">
+                  {" "}
+                  Office No. - 42, Durga Vihar, Near Amrapali Saphhire, Sec-45,
+                  Noida, 201301
+                </span>
+              </h>
             </li>
           </ul>
         </div>
         <div className="mt-12 border-t border-gray-100 pt-6 ml-[20px] mr-[20px]">
           <div className="text-center sm:flex justify-between sm:text-left">
-            <p className="block text-gray-400 sm:inline">All rights reserved.</p>
+            <p className="block text-gray-400 sm:inline">
+              All rights reserved.
+            </p>
             <p className="flex sm:flex-row flex-col  gap-[10px] max-md:justify-center  md:text-[100%] text-[90%] ">
-
-             <NavLink
+              <NavLink
                 className=" whitespace-nowrap  text-[#063970] underline transition hover:text-blue-800"
                 to="/"
-                >
+              >
                 Terms & Conditions
               </NavLink>
               <p className="md:block hidden  text-gray-400 sm:inline"> | </p>
               <NavLink
                 className="whitespace-nowrap text-[#063970] underline transition hover:text-blue-800"
                 to="/"
-                >
+              >
                 Privacy Policy
               </NavLink>
-                </p>
+            </p>
             <p className="mt-4 md:text-[100%] text-[90%] text-gray-400 sm:order-first sm:mt-0">
               &copy; {updatedDate} TestKnock
             </p>
           </div>
-        </div> 
+        </div>
       </div>
     </footer>
   );
