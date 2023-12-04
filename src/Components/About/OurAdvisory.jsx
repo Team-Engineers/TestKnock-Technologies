@@ -2,12 +2,12 @@ import React from "react";
 
 const OurAdvisory = () => {
   return (
-    <div className=" container mx-auto">
-      <div className="flex justify-center ">
+    <div className=" container items-center mx-auto mb-[40px] justify-center">
+      <div className="flex justify-center ml-[25px] mr-[25px]  ">
         <h2 className="heading_main text-center font-bold md:my-[2%] my-[12%] md:text-[40px] text-[30px] ">OUR ADVISORY MEMBERS</h2>
       </div>
-      <div className="grid md:grid-cols-3 grid-cols-1 overflow-hidden ">
-        <div className="flex  flex-col">
+      <div className="flex-container ">
+        <div className="flex-item">
           <div className="w-50 h-50 rounded-full mr-auto ml-auto flex justify-center">
             <img
               className="rounded-full h-[180px] w-[180px] my-[20px]"
@@ -15,7 +15,7 @@ const OurAdvisory = () => {
               alt=""
             />
           </div>
-          <div className=" lg:w-[300px] w-[250px] mr-auto ml-auto text-justify  mt-auto mb-auto">
+          <div className=" mr-auto ml-auto text-justify  mt-auto mb-auto">
             <h1 className="mr-auto  ml-auto text-center">
               <span className="text-[200%] text-center font-bold">Animesh Ikshit</span>
               <br />
@@ -32,7 +32,7 @@ const OurAdvisory = () => {
               </h>
           </div>
         </div>
-        <div className="flex  flex-col ">
+        <div className="flex-item">
           <div className="w-50 h-50 rounded-full mr-auto ml-auto flex justify-center">
             <img
               className="rounded-full h-[180px] w-[180px] my-[20px]"
@@ -40,7 +40,7 @@ const OurAdvisory = () => {
               alt=""
             />
           </div>
-          <div className=" lg:w-[300px] w-[250px] mr-auto ml-auto text-justify  mt-auto mb-auto">
+          <div className="  mr-auto ml-auto text-justify  mt-auto mb-auto">
             <h1 className="mr-auto  ml-auto text-center">
               <span className="text-[200%]  font-bold">Manoj Jha</span>
               <br />
@@ -58,7 +58,7 @@ const OurAdvisory = () => {
               </span>
           </div>
         </div>
-        <div className="flex  flex-col ">
+        <div className="flex-item">
           <div className="w-50 h-50 rounded-full mr-auto ml-auto flex justify-center">
             <img
               className="rounded-full h-[180px] w-[180px] my-[20px]"
@@ -66,7 +66,7 @@ const OurAdvisory = () => {
               alt=""
             />
           </div>
-          <div className=" lg:w-[300px] w-[250px] mr-auto ml-auto text-justify  mt-auto mb-auto">
+          <div className="  mr-auto ml-auto text-justify  mt-auto mb-auto">
             <h1 className="mr-auto  ml-auto text-center">
               <span className="text-[200%]  font-bold">Prasanjit Sharma</span>
               <br />
@@ -81,9 +81,7 @@ const OurAdvisory = () => {
               </span>
           </div>
         </div>
-      </div>
-      <div className="flex md:flex-row flex-col gap-[10%] overflow-hidden  justify-center  mr-auto ml-auto my-[5%] ">
-          <div className="flex  flex-col ">
+        <div className="flex-item">
             <div className="w-50 h-50 rounded-full mr-auto ml-auto flex justify-center">
               <img
                 className="rounded-full h-[180px] w-[180px] my-[20px]"
@@ -91,7 +89,7 @@ const OurAdvisory = () => {
                 alt=""
               />
             </div>
-            <div className=" lg:w-[300px] w-[250px] mr-auto ml-auto text-justify  mt-auto mb-auto">
+            <div className="  mr-auto ml-auto text-justify  mt-auto mb-auto">
               <h1 className="mr-auto  ml-auto text-center">
                 <span className="text-[200%]  font-bold">Omansh Mathur</span>
                 <br />
@@ -106,7 +104,7 @@ const OurAdvisory = () => {
                 </span>
             </div>
           </div>
-          <div className="flex  flex-col">
+          <div className="flex-item">
             <div className="w-50 h-50 rounded-full mr-auto ml-auto flex justify-center">
               <img
                 className="rounded-full h-[180px] w-[180px] my-[20px]"
@@ -114,7 +112,7 @@ const OurAdvisory = () => {
                 alt=""
               />
             </div>
-            <div className=" lg:w-[300px] w-[250px] mr-auto ml-auto text-justify  mt-auto mb-auto">
+            <div className="  mr-auto ml-auto text-justify  mt-auto mb-auto">
               <h1 className="mr-auto  ml-auto text-center">
                 <span className="text-[200%]  font-bold">
                   Pranav Vijayvaran
@@ -133,7 +131,7 @@ const OurAdvisory = () => {
                 </span>
             </div>
           </div>
-        </div>
+      </div>
     </div>
   );
 };
