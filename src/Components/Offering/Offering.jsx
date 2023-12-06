@@ -66,26 +66,29 @@ const Offering = () => {
         <h2> What We Do </h2>
       </div> 
       <motion.div
-        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[75px] "
         variants={fadeIn("up", "tween", 0.2, 1)}
         ref={ref1}
         animate={controls1}
       >
         <div>
+           <h3 className="text-[#063970] lg:hidden  font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            Top Quality Content
+          </h3>
           <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
-            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[2px] border-[#063970] "></div>
             <img
-              src={require("../../Assets/Images/offerings/offering5.png")}
+              src={require("../../Assets/Images/offerings/top_quality_content02.jpg")}
               alt=""
               className="w-full h-full object-cover"
             />
           </div>
         </div>
-        <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+        <div className=" flex flex-col relative lg:top-[50px]">
+          <h3 className="text-[#063970] lg:mb-[30px] max-lg:hidden font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             Top Quality Content
           </h3>
-          <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
+          <p className=" text-[90%] lg:text-[15px] xl:text-[15px] 2xl:text-[17px] text-justify  ">
             Explore a premier platform tailored for students seeking top-tier
             aptitude practice. Our site curates exclusive, high-quality content
             meticulously designed for professionals-in-training. Elevate your
@@ -146,15 +149,18 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
-        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
+        <h3 className="text-[#063970] mb-[30px] lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            We Provide
+          </h3>
+        <div className="shadow-2xl lg:h-[700px] relative lg:top-[-10vw] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
-            src={require("../../Assets/Images/offerings/offering6.png")}
+            src={require("../../Assets/Images/offerings/weProvide01.jpg")}
             alt=""
-            className="w-full h-full rounded-2xl object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="  max-lg:h-[500px]md:h-[400px] max-md:h-full lg:hidden block ">
-          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+        <div className="max-lg:h-[500px]md:h-[400px] max-lg:mt-[-10px] max-md:h-full lg:hidden block ">
+          <h3 className="text-[#063970] max-lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
           </h3>
           <h2 className="text-[20px] text-[#063970] text-left py-6">Class 9th & 10th</h2>
@@ -198,24 +204,27 @@ const Offering = () => {
         </div>
       </motion.div>
       <motion.div
-        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[75px] "
         variants={fadeIn("right", "tween", 0.2, 1)}
         ref={ref3}
         animate={controls3}
       >
+         <h3 className="text-[#063970] lg:hidden font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
+            <span className="sm:hidden"> End-To-End <br /> Tech Solution</span> <span className="max-sm:hidden">End-To-End Tech Solution</span>
+          </h3>
          <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
-            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[2px] border-[#063970]  "></div>
           <img
-            src={require("../../Assets/Images/offerings/tech-solution05.jpeg")}
+            src={require("../../Assets/Images/offerings/endToEndTech01.jpg")}
             className="w-full h-full object-cover"
             alt=""
           />
         </div>
-        <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
+        <div className=" flex flex-col relative lg:top-[50px]">
+          <h3 className="text-[#063970] max-lg:hidden font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
             <span className="sm:hidden"> End-To-End <br /> Tech Solution</span> <span className="max-sm:hidden">End-To-End Tech Solution</span>
           </h3>
-          <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
+          <p className=" text-[90%] lg:text-[15px] xl:text-[15px] 2xl:text-[15px] text-justify  ">
             An end-to-end solution (E2ES) is a term that means that the provider
             of an application program, software and system will supply all the
             software as well as hardware requirements of the customer such that
@@ -334,15 +343,18 @@ const Offering = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
+        <h3 className="text-[#063970] lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            We Provide
+          </h3>
+        <div className="shadow-2xl lg:h-[700px] lg:top-[-10vw] relative mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering-1.png")}
             alt=""
-            className="w-full h-full rounded-2xl object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className=" md:h-[400px]   lg:hidden block  ">
-        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+        <h3 className="text-[#063970] max-lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
           </h3>
           <h2 className="text-[20px] text-left text-[#063970] py-6">
