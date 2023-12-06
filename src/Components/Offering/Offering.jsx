@@ -73,9 +73,9 @@ const Offering = () => {
       >
         <div>
           <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
-            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[2px] border-[#063970] "></div>
             <img
-              src={require("../../Assets/Images/offerings/offering5.png")}
+              src={require("../../Assets/Images/offerings/top_quality_content02.jpg")}
               alt=""
               className="w-full h-full object-cover"
             />
@@ -146,11 +146,11 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
-        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
+        <div className="shadow-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
-            src={require("../../Assets/Images/offerings/offering6.png")}
+            src={require("../../Assets/Images/offerings/weProvide01.jpg")}
             alt=""
-            className="w-full h-full rounded-2xl object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="  max-lg:h-[500px]md:h-[400px] max-md:h-full lg:hidden block ">
@@ -204,9 +204,9 @@ const Offering = () => {
         animate={controls3}
       >
          <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
-            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[3px] border-black  "></div>
+            <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[2px] border-[#063970]  "></div>
           <img
-            src={require("../../Assets/Images/offerings/tech-solution05.jpeg")}
+            src={require("../../Assets/Images/offerings/endToEndTech01.jpg")}
             className="w-full h-full object-cover"
             alt=""
           />
@@ -334,11 +334,11 @@ const Offering = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-2xl rounded-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
+        <div className="shadow-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering-1.png")}
             alt=""
-            className="w-full h-full rounded-2xl object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className=" md:h-[400px]   lg:hidden block  ">

@@ -91,7 +91,7 @@ const Footer = () => {
             </div>
             <div className="text-center ">
               <p className="md:text-[120%] text-[90%] hover:text-white  text-gray-400 whitespace-nowrap">
-                Whom we Serve
+                Whom We Serve
               </p>
               <ul className="mt-8 space-y-4 text-[80%] md:text-[100%]">
                 <li>
