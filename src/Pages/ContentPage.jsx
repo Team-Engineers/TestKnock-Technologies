@@ -7,7 +7,7 @@ import Client from "../Components/Client/Client";
 
 export const ContentPage = () => {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <HeaderNew />
       <BannerOffering />
       <Offering />

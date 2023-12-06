@@ -66,12 +66,15 @@ const Offering = () => {
         <h2> What We Do </h2>
       </div> 
       <motion.div
-        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[75px] "
         variants={fadeIn("up", "tween", 0.2, 1)}
         ref={ref1}
         animate={controls1}
       >
         <div>
+           <h3 className="text-[#063970] lg:hidden  font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            Top Quality Content
+          </h3>
           <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
             <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[2px] border-[#063970] "></div>
             <img
@@ -82,7 +85,7 @@ const Offering = () => {
           </div>
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+          <h3 className="text-[#063970] max-lg:hidden font-bold flex text-center justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             Top Quality Content
           </h3>
           <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
@@ -146,6 +149,9 @@ const Offering = () => {
             foundational numerical skills and improve language proficiency.
           </p>
         </div>
+        <h3 className="text-[#063970] mb-[30px] lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            We Provide
+          </h3>
         <div className="shadow-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/weProvide01.jpg")}
@@ -153,8 +159,8 @@ const Offering = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="  max-lg:h-[500px]md:h-[400px] max-md:h-full lg:hidden block ">
-          <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+        <div className="max-lg:h-[500px]md:h-[400px] max-lg:mt-[-10px] max-md:h-full lg:hidden block ">
+          <h3 className="text-[#063970] max-lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
           </h3>
           <h2 className="text-[20px] text-[#063970] text-left py-6">Class 9th & 10th</h2>
@@ -198,11 +204,14 @@ const Offering = () => {
         </div>
       </motion.div>
       <motion.div
-        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[55px] "
+        className="max-w-[1200px]  mx-auto lg:grid grid-cols-2 gap-[75px] "
         variants={fadeIn("right", "tween", 0.2, 1)}
         ref={ref3}
         animate={controls3}
       >
+         <h3 className="text-[#063970] lg:hidden font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
+            <span className="sm:hidden"> End-To-End <br /> Tech Solution</span> <span className="max-sm:hidden">End-To-End Tech Solution</span>
+          </h3>
          <div className="shadow-2xl mb-[50px] lg:w-full w-[90%] mx-auto container my-10 relative ">
             <div className="absolute lg:left-[40px] lg:top-[50px] h-[101%] w-[101%] top-[3vw] left-[3vw] z-10 inset-0 border-[2px] border-[#063970]  "></div>
           <img
@@ -212,7 +221,7 @@ const Offering = () => {
           />
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="text-[#063970] font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
+          <h3 className="text-[#063970] max-lg:hidden font-bold flex text-center justify-center my-5 mx-auto font-sans; text-3xl md:text-4xl ">
             <span className="sm:hidden"> End-To-End <br /> Tech Solution</span> <span className="max-sm:hidden">End-To-End Tech Solution</span>
           </h3>
           <p className=" text-[90%] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify  ">
@@ -334,6 +343,9 @@ const Offering = () => {
             </div>
           </div>
         </div>
+        <h3 className="text-[#063970] lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+            We Provide
+          </h3>
         <div className="shadow-2xl lg:h-[700px] mx-auto md:h-[500px] h-[300px] sm:w-[80%] w-[85%] lg:w-[500px] md:mb-[10%] my-10">
           <img
             src={require("../../Assets/Images/offerings/offering-1.png")}
@@ -342,7 +354,7 @@ const Offering = () => {
           />
         </div>
         <div className=" md:h-[400px]   lg:hidden block  ">
-        <h3 className="text-[#063970] font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
+        <h3 className="text-[#063970] max-lg:hidden font-bold flex justify-center my-2 mx-auto font-sans; text-3xl md:text-4xl  ">
             We Provide
           </h3>
           <h2 className="text-[20px] text-left text-[#063970] py-6">

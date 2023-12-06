@@ -12,6 +12,9 @@ const Work = () => {
       </div>
 
       <div className="max-w-[1200px] mx-auto md:grid grid-cols-2 gap-10 ">
+      <h3 className="subheading_main lg:hidden text-center p-2 md:text-4xl text-4xl flex justify-center max-md:mt-[10px] md:mb-[1vw] mb-[3vw] sm:tracking-wide tracking-[-2.5px]">
+            Content Creation
+          </h3>
       <div className=" md:hidden block  h-[400px] my-10 drop-shadow-2xl rounded-[20px] lg:shadow-2xl lg:shadow-slate-950 ">
           <img
             src={require("../../Assets/Images/offerings/content_001.jpeg")}
@@ -20,7 +23,7 @@ const Work = () => {
           />
         </div>
         <div className=" flex flex-col justify-center">
-        <h3 className="subheading_main text-center p-2 md:text-4xl text-4xl flex justify-center max-md:mt-[10px] md:mb-[1vw] mb-[3vw] sm:tracking-wide tracking-[-2.5px]">
+        <h3 className="subheading_main max-lg:hidden text-center p-2 md:text-4xl text-4xl flex justify-center max-md:mt-[10px] md:mb-[1vw] mb-[3vw] sm:tracking-wide tracking-[-2.5px]">
             Content Creation
           </h3>
           {/* <p className=" text-[20px] lg:text-[18px] xl:text-[18px] 2xl:text-[20px] text-justify leading-7 "> */}
@@ -50,6 +53,9 @@ const Work = () => {
         </div>
       </div>
       <div className="max-w-[1200px] md:mt-[30px] md:mb-[15px] mx-auto md:grid grid-cols-2 gap-10">
+      <h3 className="subheading_main text-center lg:hidden  p-2 md:text-4xl text-4xl flex justify-center max-md:mt-[10px] md:mb-[1vw] mb-[3vw] sm:tracking-wide tracking-[-1px]">
+            Tech Solutions
+          </h3>
         <div className="drop-shadow-2xl lg:shadow-2xl lg:shadow-slate-950 rounded-[20px] block h-[400px] my-[5vw] ">
           <img
             src={require("../../Assets/Images/offerings/tech_solution03.png")}
@@ -58,10 +64,10 @@ const Work = () => {
           />
         </div>
         <div className=" flex flex-col justify-center">
-          <h3 className="subheading_main text-center  p-2 md:text-4xl text-4xl flex justify-center max-md:mt-[10px] md:mb-[1vw] mb-[3vw] sm:tracking-wide tracking-[-1px]">
+          <h3 className="subheading_main max-lg:hidden text-center  p-2 md:text-4xl text-4xl flex justify-center max-md:mt-[10px] md:mb-[1vw] mb-[3vw] sm:tracking-wide tracking-[-1px]">
             Tech Solutions
           </h3>
-          <p className="text-justify xl:text-[100%] 2xl:text-[120%] text-[100%]">
+          <p className="text-justify max-lg:mt-[10px] xl:text-[100%] 2xl:text-[120%] text-[100%]">
             Empowering businesses with innovative and tailored tech solutions
             is at the core of our mission. We specialize in crafting
             cutting-edge technology solutions that address the unique challenges
