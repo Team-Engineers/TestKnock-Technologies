@@ -1,10 +1,10 @@
 import React from "react";
-import "./client.css"; 
+import "./client.css";
 
 const Client = () => {
   return (
     <div className="max-w-[1240px] mx-auto md:mb-[5%] mb-[15%]">
-      <div className="heading_main md:text-[30px] text-[30px]  font-sans md:mt-[40px] md:mb-[90px] max-md:my-[20%]">
+      <div className="heading_main md:text-[30px] text-[30px]  font-sans md:mt-[-40px] md:mb-[100px] max-md:my-[10%]">
         <h2>What Our Clients Say</h2>
       </div>
       <div className="cards-container mr-[10px] ml-[10px] grid  max-md:grid-cols-2 grid-cols-4 max-lg:grid-cols-2  max-sm:grid-cols-1">
